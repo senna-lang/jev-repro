@@ -6,6 +6,8 @@
 
 from __future__ import annotations
 
+from pathlib import Path
+
 import random
 import time
 
@@ -15,6 +17,7 @@ import torch.nn.functional as F
 from data.ag_news import AGNewsExample, eval_split, to_packed_example, train_subset
 from model.forward import JevModel, to_additive_mask
 from model.packer import pack
+from model.readout import PointerReadout
 from model.tree_mask import build_position_ids, build_tree_attention_mask
 
 
@@ -123,10 +126,21 @@ def _build_examples(dataset) -> list[AGNewsExample]:
     label_names = dataset.features["label"].names
     return [to_packed_example(ex["text"], ex["label"], label_names) for ex in dataset]
 
-
-def _main(train_size: int = 2000, eval_size: int = 500, epochs: int = 3) -> None:
-    print(f"train_size={train_size}, eval_size={eval_size}, epochs={epochs}")
+def _main(
+    train_size: int = 2000,
+    eval_size: int = 500,
+    epochs: int = 3,
+    seed: int | None = None,
+) -> None:
+    print(f"train_size={train_size}, eval_size={eval_size}, epochs={epochs}, seed={seed}")
     model = JevModel()
+
+    if seed is not None:
+        # scaling系実験と同じ手順: seedで初期化し直したPointerReadoutから訓練を始める
+        # （データ量以外の要因を揃え、以降のシャッフルも再現可能にする）。
+        torch.manual_seed(seed)
+        random.seed(seed)
+        model.pointer = PointerReadout(model.backbone.config.hidden_size)
 
     train_examples = _build_examples(train_subset(train_size))
     eval_examples = _build_examples(eval_split(eval_size))
@@ -146,6 +160,23 @@ def _main(train_size: int = 2000, eval_size: int = 500, epochs: int = 3) -> None
           f"({'改善' if after['accuracy'] > before['accuracy'] else '悪化/不変'})")
     print(f"ECE:    {before['ece']:.4f} -> {after['ece']:.4f} "
           f"({'改善(低下)' if after['ece'] < before['ece'] else '悪化/不変'})")
+
+    # 訓練済みreadoutの重みをcheckpointに保存する（backboneは固定なので保存対象はpointerのみ）。
+    # 読み込み側は `model.pointer.load_state_dict(torch.load(path)["state_dict"])`。
+    ckpt_dir = Path(__file__).resolve().parent.parent / "checkpoints"
+    ckpt_dir.mkdir(exist_ok=True)
+    ckpt_path = ckpt_dir / f"pointer_agnews_s{train_size}_e{epochs}.pt"
+    torch.save(
+        {
+            "readout": "PointerReadout",
+            "hidden_size": model.backbone.config.hidden_size,
+            "train_size": train_size,
+            "epochs": epochs,
+            "state_dict": model.pointer.state_dict(),
+        },
+        ckpt_path,
+    )
+    print(f"checkpoint: {ckpt_path}")
 
     if after["accuracy"] > before["accuracy"] and after["ece"] < before["ece"]:
         print("\nP3・P4: 予測通り。正解率もECEも両方改善した。")

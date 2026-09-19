@@ -1,4 +1,4 @@
 internal-docs/
 __pycache__/
-*.pyc
+checkpoints/
 .DS_Store
