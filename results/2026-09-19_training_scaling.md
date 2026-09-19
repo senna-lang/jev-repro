@@ -15,5 +15,39 @@
 - 実行時間: スケーリング全サイズ合計 約3時間5分（CPU）。
 - 観察: 訓練損失は終始100〜270台と大きい——未学習のpointer readoutが0/1近傍に飽和した確率を出すため`-log(p_label)`が跳ねる。バグではなく、飽和したdot-product readoutの初期状態の特性（order sensitivityの検証でも同一の飽和が観測されている）。
 - `NoulReadout`はAG Newsにyes/noの訓練データがなく未訓練のまま（意図的な制約）。
-- **注記（checkpointの再訓練）**: 上表の実行はエポック内シャッフル（`random.shuffle`）がseed未固定だった。`checkpoints/pointer_agnews_s10000_e1.pt`（同日の再訓練）はreadout初期化に加えてシャッフルもseed=0で固定してあるため、同一設定・同一データでも上表の0.8300/0.1706と完全一致する重み・数値にはならない（同条件の再現可能な再訓練であって、あの実行の復元ではない）。
-- 再現: `python3 -m experiments.scaling_curve`（スケーリング）/ `python3 -m experiments.train`（単一設定。訓練後のreadoutは`checkpoints/`に保存される）
+- 再現: `python3 -m experiments.scaling_curve`（旧スケーリング）/ `python3 -m experiments.train`（単一設定。訓練後のreadoutは`checkpoints/`に保存）
+
+## 再現可能な10,000件checkpoint再訓練
+
+旧スケーリングのベスト設定（10,000件×1 epoch）を、readout初期化とエポック内シャッフルの両方をseed=0に固定して再訓練した。
+
+| | accuracy | ECE |
+|---|---:|---:|
+| 訓練前 | 0.2260 | 0.5664 |
+| 訓練後 | **0.8040** | **0.1980** |
+
+- train accuracy: 0.7448
+- epoch loss: 262.9216
+- 訓練時間: 2,848.4秒（約47.5分）、訓練前後評価込みwall time: 3,129.43秒（約52.2分）
+- checkpoint: `checkpoints/pointer_agnews_s10000_e1.pt`（約6.1MB、gitignore対象）
+
+```text
+train_size=10000, eval_size=500, epochs=1, seed=0
+
+=== 訓練前 ===
+accuracy=0.2260, ECE=0.5664 (n=500)
+
+=== 訓練 ===
+epoch 0: loss=262.9216, train_acc=0.7448, 2848.4s
+
+=== 訓練後 ===
+accuracy=0.8040, ECE=0.1980 (n=500)
+
+正解率: 0.2260 -> 0.8040 (改善)
+ECE:    0.5664 -> 0.1980 (改善(低下))
+checkpoint: checkpoints/pointer_agnews_s10000_e1.pt
+```
+
+## 再現性についての注記
+
+上段の旧scaling実行はエポック内シャッフル（`random.shuffle`）がseed未固定だった。今回のcheckpointはreadout初期化に加えてシャッフルもseed=0で固定したため、同一設定・同一データでも旧ベスト値0.8300/0.1706と完全一致する重み・数値にはならない。同条件の再現可能な再訓練であり、旧実行のcheckpoint復元ではない。

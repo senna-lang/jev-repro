@@ -382,7 +382,8 @@ def _main() -> None:
     torch.manual_seed(0)
     model = JevModel()
 
-    if len(sys.argv) > 1:
+    trained = len(sys.argv) > 1
+    if trained:
         ckpt = torch.load(sys.argv[1], map_location="cpu")
         model.pointer.load_state_dict(ckpt["state_dict"])
         readout_label = f"訓練済みreadout ({sys.argv[1]}, train_size={ckpt.get('train_size')}, epochs={ckpt.get('epochs')})"
@@ -390,21 +391,40 @@ def _main() -> None:
         readout_label = "未学習readout（ランダム初期化, seed=0）"
     print(f"readout: {readout_label}")
 
+    examples = EXAMPLES
+    if trained:
+        # 訓練済みcheckpointモードではNoulタスクを比較から除外する。
+        # NoulReadout（線形層）はAG Newsにyes/noの訓練データがなく未訓練のため、
+        # その出力を訓練済み扱いで並べるのは誤解を招く。noulのみの例はスキップ、
+        # 混在する例はnoul questionを除いて残りを1リクエストで評価する。
+        examples = []
+        for ex in EXAMPLES:
+            if ex.get("state") is None:
+                examples.append(ex)
+                continue
+            questions = [q for q in ex["questions"] if q[1].kind != "noul"]
+            if not questions:
+                continue
+            examples.append({**ex, "questions": questions})
+        print("NoulReadoutは未訓練（訓練データにyes/noなし）のため、Noulタスクはこの比較から除外")
+
     all_probs: list[float] = []
     n_requests = 0
-    for ex in EXAMPLES:
+    n_questions = 0
+    for ex in examples:
         if ex.get("state") is None:
             all_probs.extend(run_severity_table(model, ex))
             n_requests += len(ex["per_state"])
+            n_questions += len(ex["per_state"])
         else:
             all_probs.extend(run_example(model, ex))
             n_requests += 1
+            n_questions += len(ex["questions"])
 
     # 構造チェック: 全branchの確率が[0,1]内で和が1（noulは単一値）、typed出力の形が保たれているか
-    n_branches = len(all_probs)
     in_range = all(0.0 <= p <= 1.0 for p in all_probs)
     print(f"\n=== 構造チェック ===")
-    print(f"requests={n_requests}, branch outputs={n_branches}")
+    print(f"requests={n_requests}, question outputs={n_questions}, probability values={len(all_probs)}")
     print(f"全確率が[0,1]内: {'OK' if in_range else 'NG'}")
     print(f"（choice/scoreの各分布の和はsoftmax/sigmoidの構造上1。readout: {readout_label}。")
     print(f"  バックボーンも訓練domainも公式Jevと異なるため、数値の一致は比較の目的ではない。）")
