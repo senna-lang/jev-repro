@@ -10,17 +10,15 @@ import torch
 from transformers import AutoModelForCausalLM, Qwen2Model
 
 from .backbone import MODEL_NAME
-from .packer import Branch, PackedRequest, load_packer_tokenizer, pack
+from model.packer import Branch, PackedRequest, load_packer_tokenizer, pack
 from .readout import NoulReadout, PointerReadout, score_expectation
-from .tree_mask import build_position_ids, build_tree_attention_mask
+from model.tree_mask import build_position_ids, build_tree_attention_mask
 
 
 def load_jev_backbone(model_name: str = MODEL_NAME) -> tuple[Qwen2Model, "PreTrainedTokenizerBase"]:  # noqa: F821
-    """packer用の特殊トークンを含んだtokenizerと、それに合わせてembeddingを拡張したQwen2Modelを返す。
+    """packer用のtokenizerと、対応するQwen2Modelを返す。
 
-    `backbone.load_backbone`との違い：packerが追加した`<STATE_END>`/`<SEP>`/`<DECISION>`の3トークン分、
-    埋め込み行列を`resize_token_embeddings`で拡張してから`Qwen2Model`を取り出す。これをしないと、
-    packerが作るinput_idsのうち新トークンのidが埋め込み表の範囲外を指してしまう。
+    packerは自然文のみでpackする（特殊トークンを追加しないので埋め込み行列の拡張は不要）。
 
     `attn_implementation="eager"`を明示：tree attention maskをadditive float maskとして直接渡すため、
     加算方式（`attn_weights + mask`）が確定しているeager実装に固定する（sdpa等はmaskの型解釈が異なる）。
@@ -29,7 +27,6 @@ def load_jev_backbone(model_name: str = MODEL_NAME) -> tuple[Qwen2Model, "PreTra
     causal_lm = AutoModelForCausalLM.from_pretrained(
         model_name, dtype=torch.float32, attn_implementation="eager"
     )
-    causal_lm.resize_token_embeddings(len(tokenizer))
 
     backbone = causal_lm.model
     assert isinstance(backbone, Qwen2Model), f"想定外の型: {type(backbone)}"
@@ -51,14 +48,36 @@ def to_additive_mask(bool_mask: torch.Tensor, dtype: torch.dtype) -> torch.Tenso
     return mask.unsqueeze(0).unsqueeze(0)
 
 
+def pool_options(hidden: torch.Tensor, span, pooling: str) -> torch.Tensor:
+    """1つのbranchの各選択肢につき1本の隠れベクトルを作る（(K, hidden_size)）。
+
+    `pooling="last"`（既定・現行本番）: 各選択肢の最後のトークン1つ。
+    `pooling="mean"`（Gate 1-aのablation候補）: 各選択肢のトークン区間全体の平均。
+    `EXP_HEAD_VS_BACKBONE.md` Gate 1-a: 選択肢が長い説明節の場合、最終トークン1つより
+    区間全体の方がテキスト依存信号を拾いやすい可能性がある一方、長文では平均が均質化して
+    レベル間の差を潰す可能性もある（予測であり、悪化もありうる）。
+    """
+    if pooling == "last":
+        return hidden[span.option_end_indices]
+    if pooling == "mean":
+        return torch.stack(
+            [
+                hidden[start: end + 1].mean(dim=0)
+                for start, end in zip(span.option_start_indices, span.option_end_indices)
+            ]
+        )
+    raise ValueError(f"未知のpooling: {pooling!r}（'last'または'mean'）")
+
+
 class JevModel:
     """packer、tree attention mask、position ID、readoutを結合するforwardラッパー。"""
 
-    def __init__(self, model_name: str = MODEL_NAME) -> None:
+    def __init__(self, model_name: str = MODEL_NAME, option_pooling: str = "last") -> None:
         self.backbone, self.tokenizer = load_jev_backbone(model_name)
         hidden_size = self.backbone.config.hidden_size
         self.pointer = PointerReadout(hidden_size)
         self.noul = NoulReadout(hidden_size)
+        self.option_pooling = option_pooling  # Gate 1-a ablation: "last" | "mean"
 
     @torch.no_grad()
     def forward(self, request: PackedRequest) -> list[dict]:
@@ -82,7 +101,7 @@ class JevModel:
                 results.append({"kind": "noul", "p_true": p_true})
                 continue
 
-            h_opts = hidden[span.option_end_indices]  # (K, hidden_size)
+            h_opts = pool_options(hidden, span, self.option_pooling)  # (K, hidden_size)
             z = self.pointer(h_dec, h_opts)
             p = torch.softmax(z, dim=-1)
             entry = {"kind": branch.kind, "options": branch.options, "probabilities": p.tolist()}

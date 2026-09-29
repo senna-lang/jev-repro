@@ -9,7 +9,7 @@ from __future__ import annotations
 
 import torch
 
-from model.backbone import MODEL_NAME, load_backbone
+from legacy.model_readout.backbone import MODEL_NAME, load_backbone
 
 
 class IndependentScorer:

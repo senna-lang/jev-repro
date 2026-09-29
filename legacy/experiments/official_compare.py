@@ -18,7 +18,9 @@ from __future__ import annotations
 import sys
 
 import torch
-from model.forward import JevModel
+from scipy.stats import kendalltau
+
+from legacy.model_readout.forward import JevModel
 from model.packer import Branch, PackedRequest
 
 QUICKSTART_STATE = (
@@ -362,9 +364,18 @@ def run_example(model: JevModel, ex: dict) -> list[float]:
 
 
 def run_severity_table(model: JevModel, ex: dict) -> list[float]:
-    """Scoreドキュメントの5-state表: 同じscore questionをstateごとに1回ずつforwardする。"""
+    """Scoreドキュメントの5-state表: 同じscore questionをstateごとに1回ずつforwardする。
+
+    argmax一致率だけだと定数予測器（常に同じレベルを返す）が公式の多数派レベルと
+    偶然一致して高得点に見えることがある（2026-09-22の誤読を参照:
+    `results/2026-09-22_score_diagnosis.md`）。Kendall tauと定数予測器フラグを必ず
+    併記する。
+    """
     print(f"\n=== {ex['name']}  (source: {ex['source']}) ===")
     all_probs: list[float] = []
+    official_scores: list[float] = []
+    our_positions: list[float] = []
+    argmaxes: list[int] = []
     for state, official in ex["per_state"]:
         result = model.forward(PackedRequest(state=state, branches=[ex["score_branch"]]))[0]
         position = result["score"] - 1
@@ -373,6 +384,15 @@ def run_severity_table(model: JevModel, ex: dict) -> list[float]:
         print(f"    official: score={official['score']}  {_fmt_probs_official(official, [])}{_fmt_conf(official)}")
         print(f"    ours    : score={position:.3f}  " + " ".join(f"L{i}={p:.3f}" for i, p in enumerate(ps)))
         all_probs.extend(ps)
+        official_scores.append(official["score"])
+        our_positions.append(position)
+        argmaxes.append(max(range(len(ps)), key=lambda i: ps[i]))
+
+    tau, p_value = kendalltau(official_scores, our_positions)
+    is_constant = len(set(argmaxes)) == 1
+    tau_str = "n/a" if tau != tau else f"{tau:+.3f} (p={p_value:.3f})"  # tau!=tau はNaN判定
+    print(f"  Kendall tau（公式score vs ours）: {tau_str}  "
+          f"定数予測器: {'YES（argmaxが全state同一 — 順位情報なし）' if is_constant else 'no'}")
     return all_probs
 
 

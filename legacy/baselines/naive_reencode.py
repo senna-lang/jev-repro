@@ -8,9 +8,9 @@ from __future__ import annotations
 
 import torch
 
-from model.forward import JevModel
+from legacy.model_readout.forward import JevModel
 from model.packer import PackedRequest, pack
-from model.readout import score_expectation
+from legacy.model_readout.readout import score_expectation
 
 
 def naive_reencode_forward(model: JevModel, request: PackedRequest) -> list[dict]:

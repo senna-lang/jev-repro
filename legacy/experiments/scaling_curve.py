@@ -11,9 +11,9 @@ import time
 import torch
 
 from data.ag_news import TRAIN_SUBSET_SIZES, eval_split, train_subset
-from model.forward import JevModel
-from model.readout import PointerReadout
-from experiments.train import _build_examples, evaluate, train_readout
+from legacy.model_readout.forward import JevModel
+from legacy.model_readout.readout import PointerReadout
+from legacy.experiments.train import _build_examples, evaluate, train_readout
 
 EVAL_SIZE = 500
 SEED = 0

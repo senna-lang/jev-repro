@@ -13,11 +13,11 @@ import time
 
 import torch
 
-from baselines.independent_scorer import IndependentScorer
-from baselines.naive_reencode import naive_reencode_forward
+from legacy.baselines.independent_scorer import IndependentScorer
+from legacy.baselines.naive_reencode import naive_reencode_forward
 from data.ag_news import eval_split, to_packed_example, train_subset
-from experiments.train import _build_examples, train_readout
-from model.forward import JevModel
+from legacy.experiments.train import _build_examples, train_readout
+from legacy.model_readout.forward import JevModel
 from model.packer import Branch, PackedRequest
 
 STATE = "Oil prices surged 5% today after OPEC announced production cuts."
