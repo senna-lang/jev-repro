@@ -1,0 +1,143 @@
+{
+  "version": 1,
+  "created": "2026-09-24",
+  "generator": "omp -p --no-session --no-tools --model openai-codex/gpt-5.6-terra",
+  "model": "openai-codex/gpt-5.6-terra",
+  "usage": "unavailable: omp -p does not expose completion().usage(); token counts not recorded",
+  "n_per_label_target": 100,
+  "n_batches": 10,
+  "workers": 6,
+  "rows": 4900,
+  "dropped_exact_duplicates": 0,
+  "gold_v1_used_as_input": false,
+  "gold_v1_8gram_overlap_rows": 0,
+  "sha256": "8545c1c0e44c0d19ecb18d8f11db44c802ba900db0b1e73613b1b9e51b167998",
+  "min_per_label": 100,
+  "top_artifacts": [
+    [
+      "#73194",
+      1
+    ],
+    [
+      "#84627",
+      1
+    ],
+    [
+      "#91508",
+      1
+    ],
+    [
+      "#66402",
+      1
+    ],
+    [
+      "#50376",
+      1
+    ]
+  ],
+  "tasks": {
+    "team_routing": {
+      "kind": "choice",
+      "question": "Which team should own resolving this message?",
+      "labels": [
+        "Accounts and billing — charges, refunds, invoices, payment methods",
+        "Engineering support — bugs, errors, outages, login or access failures",
+        "Sales — pricing, plan comparisons, and upgrades before buying",
+        "Logistics — shipment tracking, delivery, and couriers",
+        "Returns desk — sending products back and exchanges",
+        "Account security — suspicious activity, hacked accounts, 2FA"
+      ]
+    },
+    "return_cause": {
+      "kind": "choice",
+      "question": "What is the main reason the customer wants to send the product back?",
+      "labels": [
+        "it matches the order but the size or fit is wrong",
+        "a different product, size, or color was delivered than ordered",
+        "it arrived broken or stopped working",
+        "they simply changed their mind",
+        "it does not match the description or photos",
+        "it arrived too late to be useful"
+      ]
+    },
+    "delivery_problem": {
+      "kind": "choice",
+      "question": "Which delivery problem is the customer describing?",
+      "labels": [
+        "the package is delayed but still in transit",
+        "tracking says delivered but nothing was received",
+        "the package went to the wrong address",
+        "the package was damaged during shipping",
+        "items are missing from an otherwise delivered package",
+        "the tracking number does not work or shows no updates"
+      ]
+    },
+    "desired_outcome": {
+      "kind": "choice",
+      "question": "What outcome does the customer most want?",
+      "labels": [
+        "a replacement of the correct product",
+        "a refund of their money",
+        "the same item sent again",
+        "only an answer or information, no action",
+        "a discount or store credit",
+        "cancellation of the order or subscription",
+        "to talk to a supervisor or manager"
+      ]
+    },
+    "customer_tone": {
+      "kind": "choice",
+      "question": "How would you describe the customer's tone?",
+      "labels": [
+        "neutral and matter-of-fact",
+        "friendly and appreciative",
+        "annoyed but still polite",
+        "angry, hostile, or threatening",
+        "anxious or worried",
+        "confused and unsure what to do"
+      ]
+    },
+    "info_topic": {
+      "kind": "choice",
+      "question": "What information is the customer asking for?",
+      "labels": [
+        "whether a product is eligible to be returned",
+        "the progress of a return they already shipped",
+        "how to swap an item for a different size or model",
+        "who pays for return shipping",
+        "when a refund will arrive",
+        "what the warranty covers"
+      ]
+    },
+    "issue_severity": {
+      "kind": "score",
+      "question": "How serious is the problem the customer reports?",
+      "labels": [
+        "cosmetic only; everything still works",
+        "something is broken but an easy workaround exists",
+        "broken, and the only workaround is slow or painful",
+        "completely blocked with no workaround"
+      ]
+    },
+    "report_detail": {
+      "kind": "score",
+      "question": "How much does this report give an engineer to act on?",
+      "labels": [
+        "only says something does not work",
+        "names the affected feature or page",
+        "gives concrete steps to reproduce",
+        "gives steps to reproduce plus exact environment details such as app version, OS, or device"
+      ]
+    },
+    "anger_level": {
+      "kind": "score",
+      "question": "How upset is the customer?",
+      "labels": [
+        "calm, no sign of frustration",
+        "mildly irritated",
+        "clearly upset but still civil",
+        "furious, insulting, or threatening"
+      ]
+    }
+  }
+}

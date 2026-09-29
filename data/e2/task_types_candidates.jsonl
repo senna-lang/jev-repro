@@ -1,0 +1,500 @@
+{"type_id": "crop_production_action_routing", "domain": "crop production", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "crop_production_case_status", "domain": "crop production", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "crop_production_priority_level", "domain": "crop production", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "crop_production_operational_risk", "domain": "crop production", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "crop_production_required_condition_present", "domain": "crop production", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "crop_production_procedure_followed", "domain": "crop production", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "crop_production_followup_urgency", "domain": "crop production", "kind": "score", "judgment": "Rate the urgency of the follow-up indicated by the record."}
+{"type_id": "animal_production_action_routing", "domain": "animal production", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "animal_production_case_status", "domain": "animal production", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "animal_production_priority_level", "domain": "animal production", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "animal_production_operational_risk", "domain": "animal production", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "animal_production_required_condition_present", "domain": "animal production", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "animal_production_procedure_followed", "domain": "animal production", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "animal_production_followup_urgency", "domain": "animal production", "kind": "score", "judgment": "Rate the urgency of the follow-up indicated by the record."}
+{"type_id": "forestry_operations_action_routing", "domain": "forestry operations", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "forestry_operations_case_status", "domain": "forestry operations", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "forestry_operations_priority_level", "domain": "forestry operations", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "forestry_operations_operational_risk", "domain": "forestry operations", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "forestry_operations_required_condition_present", "domain": "forestry operations", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "forestry_operations_procedure_followed", "domain": "forestry operations", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "forestry_operations_followup_required", "domain": "forestry operations", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "oil_and_gas_extraction_action_routing", "domain": "oil and gas extraction", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "oil_and_gas_extraction_case_status", "domain": "oil and gas extraction", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "oil_and_gas_extraction_priority_level", "domain": "oil and gas extraction", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "oil_and_gas_extraction_operational_risk", "domain": "oil and gas extraction", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "oil_and_gas_extraction_required_condition_present", "domain": "oil and gas extraction", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "oil_and_gas_extraction_procedure_followed", "domain": "oil and gas extraction", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "oil_and_gas_extraction_followup_required", "domain": "oil and gas extraction", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "mineral_mining_action_routing", "domain": "mineral mining", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "mineral_mining_case_status", "domain": "mineral mining", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "mineral_mining_priority_level", "domain": "mineral mining", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "mineral_mining_operational_risk", "domain": "mineral mining", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "mineral_mining_required_condition_present", "domain": "mineral mining", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "mineral_mining_procedure_followed", "domain": "mineral mining", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "mineral_mining_followup_required", "domain": "mineral mining", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "electric_power_utilities_action_routing", "domain": "electric power utilities", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "electric_power_utilities_case_status", "domain": "electric power utilities", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "electric_power_utilities_priority_level", "domain": "electric power utilities", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "electric_power_utilities_operational_risk", "domain": "electric power utilities", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "electric_power_utilities_required_condition_present", "domain": "electric power utilities", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "electric_power_utilities_procedure_followed", "domain": "electric power utilities", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "electric_power_utilities_followup_required", "domain": "electric power utilities", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "water_and_wastewater_utilities_action_routing", "domain": "water and wastewater utilities", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "water_and_wastewater_utilities_case_status", "domain": "water and wastewater utilities", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "water_and_wastewater_utilities_priority_level", "domain": "water and wastewater utilities", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "water_and_wastewater_utilities_operational_risk", "domain": "water and wastewater utilities", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "water_and_wastewater_utilities_required_condition_present", "domain": "water and wastewater utilities", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "water_and_wastewater_utilities_procedure_followed", "domain": "water and wastewater utilities", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "water_and_wastewater_utilities_followup_required", "domain": "water and wastewater utilities", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "building_construction_action_routing", "domain": "building construction", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "building_construction_case_status", "domain": "building construction", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "building_construction_priority_level", "domain": "building construction", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "building_construction_operational_risk", "domain": "building construction", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "building_construction_required_condition_present", "domain": "building construction", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "building_construction_procedure_followed", "domain": "building construction", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "building_construction_followup_urgency", "domain": "building construction", "kind": "score", "judgment": "Rate the urgency of the follow-up indicated by the record."}
+{"type_id": "heavy_civil_construction_action_routing", "domain": "heavy civil construction", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "heavy_civil_construction_case_status", "domain": "heavy civil construction", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "heavy_civil_construction_priority_level", "domain": "heavy civil construction", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "heavy_civil_construction_operational_risk", "domain": "heavy civil construction", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "heavy_civil_construction_required_condition_present", "domain": "heavy civil construction", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "heavy_civil_construction_procedure_followed", "domain": "heavy civil construction", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "heavy_civil_construction_followup_urgency", "domain": "heavy civil construction", "kind": "score", "judgment": "Rate the urgency of the follow-up indicated by the record."}
+{"type_id": "specialty_trade_construction_action_routing", "domain": "specialty trade construction", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "specialty_trade_construction_case_status", "domain": "specialty trade construction", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "specialty_trade_construction_priority_level", "domain": "specialty trade construction", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "specialty_trade_construction_operational_risk", "domain": "specialty trade construction", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "specialty_trade_construction_required_condition_present", "domain": "specialty trade construction", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "specialty_trade_construction_procedure_followed", "domain": "specialty trade construction", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "specialty_trade_construction_followup_required", "domain": "specialty trade construction", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "food_manufacturing_action_routing", "domain": "food manufacturing", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "food_manufacturing_case_status", "domain": "food manufacturing", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "food_manufacturing_priority_level", "domain": "food manufacturing", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "food_manufacturing_operational_risk", "domain": "food manufacturing", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "food_manufacturing_required_condition_present", "domain": "food manufacturing", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "food_manufacturing_procedure_followed", "domain": "food manufacturing", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "food_manufacturing_followup_urgency", "domain": "food manufacturing", "kind": "score", "judgment": "Rate the urgency of the follow-up indicated by the record."}
+{"type_id": "chemical_manufacturing_action_routing", "domain": "chemical manufacturing", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "chemical_manufacturing_case_status", "domain": "chemical manufacturing", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "chemical_manufacturing_priority_level", "domain": "chemical manufacturing", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "chemical_manufacturing_operational_risk", "domain": "chemical manufacturing", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "chemical_manufacturing_required_condition_present", "domain": "chemical manufacturing", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "chemical_manufacturing_procedure_followed", "domain": "chemical manufacturing", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "chemical_manufacturing_followup_required", "domain": "chemical manufacturing", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "metal_fabrication_action_routing", "domain": "metal fabrication", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "metal_fabrication_case_status", "domain": "metal fabrication", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "metal_fabrication_priority_level", "domain": "metal fabrication", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "metal_fabrication_operational_risk", "domain": "metal fabrication", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "metal_fabrication_required_condition_present", "domain": "metal fabrication", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "metal_fabrication_procedure_followed", "domain": "metal fabrication", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "metal_fabrication_followup_required", "domain": "metal fabrication", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "computer_electronics_manufacturing_action_routing", "domain": "computer and electronics manufacturing", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "computer_electronics_manufacturing_case_status", "domain": "computer and electronics manufacturing", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "computer_electronics_manufacturing_priority_level", "domain": "computer and electronics manufacturing", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "computer_electronics_manufacturing_operational_risk", "domain": "computer and electronics manufacturing", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "computer_electronics_manufacturing_required_condition_present", "domain": "computer and electronics manufacturing", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "computer_electronics_manufacturing_procedure_followed", "domain": "computer and electronics manufacturing", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "computer_electronics_manufacturing_followup_required", "domain": "computer and electronics manufacturing", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "transport_equipment_manufacturing_action_routing", "domain": "transport equipment manufacturing", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "transport_equipment_manufacturing_case_status", "domain": "transport equipment manufacturing", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "transport_equipment_manufacturing_priority_level", "domain": "transport equipment manufacturing", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "transport_equipment_manufacturing_operational_risk", "domain": "transport equipment manufacturing", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "transport_equipment_manufacturing_required_condition_present", "domain": "transport equipment manufacturing", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "transport_equipment_manufacturing_procedure_followed", "domain": "transport equipment manufacturing", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "transport_equipment_manufacturing_followup_required", "domain": "transport equipment manufacturing", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "warehousing_action_routing", "domain": "warehousing", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "warehousing_case_status", "domain": "warehousing", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "warehousing_priority_level", "domain": "warehousing", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "warehousing_operational_risk", "domain": "warehousing", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "warehousing_required_condition_present", "domain": "warehousing", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "warehousing_procedure_followed", "domain": "warehousing", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "warehousing_followup_urgency", "domain": "warehousing", "kind": "score", "judgment": "Rate the urgency of the follow-up indicated by the record."}
+{"type_id": "air_transportation_action_routing", "domain": "air transportation", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "air_transportation_case_status", "domain": "air transportation", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "air_transportation_priority_level", "domain": "air transportation", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "air_transportation_operational_risk", "domain": "air transportation", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "air_transportation_required_condition_present", "domain": "air transportation", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "air_transportation_procedure_followed", "domain": "air transportation", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "air_transportation_followup_urgency", "domain": "air transportation", "kind": "score", "judgment": "Rate the urgency of the follow-up indicated by the record."}
+{"type_id": "rail_transportation_action_routing", "domain": "rail transportation", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "rail_transportation_case_status", "domain": "rail transportation", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "rail_transportation_priority_level", "domain": "rail transportation", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "rail_transportation_operational_risk", "domain": "rail transportation", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "rail_transportation_required_condition_present", "domain": "rail transportation", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "rail_transportation_procedure_followed", "domain": "rail transportation", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "rail_transportation_followup_required", "domain": "rail transportation", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "water_transportation_action_routing", "domain": "water transportation", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "water_transportation_case_status", "domain": "water transportation", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "water_transportation_priority_level", "domain": "water transportation", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "water_transportation_operational_risk", "domain": "water transportation", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "water_transportation_required_condition_present", "domain": "water transportation", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "water_transportation_procedure_followed", "domain": "water transportation", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "water_transportation_followup_required", "domain": "water transportation", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "truck_transportation_action_routing", "domain": "truck transportation", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "truck_transportation_case_status", "domain": "truck transportation", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "truck_transportation_priority_level", "domain": "truck transportation", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "truck_transportation_operational_risk", "domain": "truck transportation", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "truck_transportation_required_condition_present", "domain": "truck transportation", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "truck_transportation_procedure_followed", "domain": "truck transportation", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "truck_transportation_followup_required", "domain": "truck transportation", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "transit_and_ground_transportation_action_routing", "domain": "transit and ground transportation", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "transit_and_ground_transportation_case_status", "domain": "transit and ground transportation", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "transit_and_ground_transportation_priority_level", "domain": "transit and ground transportation", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "transit_and_ground_transportation_operational_risk", "domain": "transit and ground transportation", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "transit_and_ground_transportation_required_condition_present", "domain": "transit and ground transportation", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "transit_and_ground_transportation_procedure_followed", "domain": "transit and ground transportation", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "transit_and_ground_transportation_followup_required", "domain": "transit and ground transportation", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "courier_delivery_action_routing", "domain": "courier delivery", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "courier_delivery_case_status", "domain": "courier delivery", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "courier_delivery_priority_level", "domain": "courier delivery", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "courier_delivery_operational_risk", "domain": "courier delivery", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "courier_delivery_required_condition_present", "domain": "courier delivery", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "courier_delivery_procedure_followed", "domain": "courier delivery", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "courier_delivery_followup_required", "domain": "courier delivery", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "wholesale_trade_action_routing", "domain": "wholesale trade", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "wholesale_trade_case_status", "domain": "wholesale trade", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "wholesale_trade_priority_level", "domain": "wholesale trade", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "wholesale_trade_operational_risk", "domain": "wholesale trade", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "wholesale_trade_required_condition_present", "domain": "wholesale trade", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "wholesale_trade_procedure_followed", "domain": "wholesale trade", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "wholesale_trade_followup_required", "domain": "wholesale trade", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "grocery_retail_action_routing", "domain": "grocery retail", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "grocery_retail_case_status", "domain": "grocery retail", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "grocery_retail_priority_level", "domain": "grocery retail", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "grocery_retail_operational_risk", "domain": "grocery retail", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "grocery_retail_required_condition_present", "domain": "grocery retail", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "grocery_retail_procedure_followed", "domain": "grocery retail", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "grocery_retail_followup_required", "domain": "grocery retail", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "motor_vehicle_retail_action_routing", "domain": "motor vehicle retail", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "motor_vehicle_retail_case_status", "domain": "motor vehicle retail", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "motor_vehicle_retail_priority_level", "domain": "motor vehicle retail", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "motor_vehicle_retail_operational_risk", "domain": "motor vehicle retail", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "motor_vehicle_retail_required_condition_present", "domain": "motor vehicle retail", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "motor_vehicle_retail_procedure_followed", "domain": "motor vehicle retail", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "motor_vehicle_retail_followup_required", "domain": "motor vehicle retail", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "accommodation_action_routing", "domain": "accommodation", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "accommodation_case_status", "domain": "accommodation", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "accommodation_priority_level", "domain": "accommodation", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "accommodation_operational_risk", "domain": "accommodation", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "accommodation_required_condition_present", "domain": "accommodation", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "accommodation_procedure_followed", "domain": "accommodation", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "accommodation_followup_required", "domain": "accommodation", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "food_service_action_routing", "domain": "food service", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "food_service_case_status", "domain": "food service", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "food_service_priority_level", "domain": "food service", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "food_service_operational_risk", "domain": "food service", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "food_service_required_condition_present", "domain": "food service", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "food_service_procedure_followed", "domain": "food service", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "food_service_followup_required", "domain": "food service", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "publishing_action_routing", "domain": "publishing", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "publishing_case_status", "domain": "publishing", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "publishing_priority_level", "domain": "publishing", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "publishing_operational_risk", "domain": "publishing", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "publishing_required_condition_present", "domain": "publishing", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "publishing_procedure_followed", "domain": "publishing", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "publishing_followup_required", "domain": "publishing", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "telecommunications_action_routing", "domain": "telecommunications", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "telecommunications_case_status", "domain": "telecommunications", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "telecommunications_priority_level", "domain": "telecommunications", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "telecommunications_operational_risk", "domain": "telecommunications", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "telecommunications_required_condition_present", "domain": "telecommunications", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "telecommunications_procedure_followed", "domain": "telecommunications", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "telecommunications_followup_required", "domain": "telecommunications", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "software_services_action_routing", "domain": "software services", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "software_services_case_status", "domain": "software services", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "software_services_priority_level", "domain": "software services", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "software_services_operational_risk", "domain": "software services", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "software_services_required_condition_present", "domain": "software services", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "software_services_procedure_followed", "domain": "software services", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "software_services_followup_required", "domain": "software services", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "banking_case_disposition", "domain": "banking", "kind": "choice", "judgment": "Choose the record-supported disposition of the banking case."}
+{"type_id": "banking_case_status", "domain": "banking", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "banking_priority_level", "domain": "banking", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "banking_operational_risk", "domain": "banking", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "banking_required_condition_present", "domain": "banking", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "banking_procedure_followed", "domain": "banking", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "banking_followup_required", "domain": "banking", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "insurance_claim_resolution", "domain": "insurance", "kind": "choice", "judgment": "Choose the record-supported resolution of the insurance claim."}
+{"type_id": "insurance_case_status", "domain": "insurance", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "insurance_priority_level", "domain": "insurance", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "insurance_operational_risk", "domain": "insurance", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "insurance_evidence_strength", "domain": "insurance", "kind": "score", "judgment": "Rate how strongly the record supports the proposed conclusion."}
+{"type_id": "insurance_required_condition_present", "domain": "insurance", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "insurance_procedure_followed", "domain": "insurance", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "insurance_followup_required", "domain": "insurance", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "real_estate_action_routing", "domain": "real estate", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "real_estate_case_status", "domain": "real estate", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "real_estate_priority_level", "domain": "real estate", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "real_estate_operational_risk", "domain": "real estate", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "real_estate_required_condition_present", "domain": "real estate", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "real_estate_procedure_followed", "domain": "real estate", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "real_estate_followup_required", "domain": "real estate", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "legal_services_action_routing", "domain": "legal services", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "legal_services_case_status", "domain": "legal services", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "legal_services_priority_level", "domain": "legal services", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "legal_services_operational_risk", "domain": "legal services", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "legal_services_evidence_strength", "domain": "legal services", "kind": "score", "judgment": "Rate how strongly the record supports the proposed conclusion."}
+{"type_id": "legal_services_required_condition_present", "domain": "legal services", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "legal_services_procedure_followed", "domain": "legal services", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "legal_services_followup_required", "domain": "legal services", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "accounting_entry_disposition", "domain": "accounting services", "kind": "choice", "judgment": "Choose the record-supported disposition of the accounting item."}
+{"type_id": "accounting_services_case_status", "domain": "accounting services", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "accounting_services_priority_level", "domain": "accounting services", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "accounting_services_operational_risk", "domain": "accounting services", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "accounting_services_required_condition_present", "domain": "accounting services", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "accounting_services_procedure_followed", "domain": "accounting services", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "accounting_services_followup_required", "domain": "accounting services", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "engineering_services_action_routing", "domain": "engineering services", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "engineering_services_case_status", "domain": "engineering services", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "engineering_services_priority_level", "domain": "engineering services", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "engineering_services_operational_risk", "domain": "engineering services", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "engineering_services_required_condition_present", "domain": "engineering services", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "engineering_services_procedure_followed", "domain": "engineering services", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "engineering_services_followup_required", "domain": "engineering services", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "scientific_research_action_routing", "domain": "scientific research", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "scientific_research_case_status", "domain": "scientific research", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "scientific_research_priority_level", "domain": "scientific research", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "scientific_research_operational_risk", "domain": "scientific research", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "scientific_research_evidence_strength", "domain": "scientific research", "kind": "score", "judgment": "Rate how strongly the record supports the proposed conclusion."}
+{"type_id": "scientific_research_required_condition_present", "domain": "scientific research", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "scientific_research_procedure_followed", "domain": "scientific research", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "scientific_research_followup_required", "domain": "scientific research", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "waste_remediation_action_routing", "domain": "waste remediation", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "waste_remediation_case_status", "domain": "waste remediation", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "waste_remediation_priority_level", "domain": "waste remediation", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "waste_remediation_operational_risk", "domain": "waste remediation", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "waste_remediation_required_condition_present", "domain": "waste remediation", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "waste_remediation_procedure_followed", "domain": "waste remediation", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "waste_remediation_followup_required", "domain": "waste remediation", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "elementary_education_action_routing", "domain": "elementary education", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "elementary_education_case_status", "domain": "elementary education", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "elementary_education_priority_level", "domain": "elementary education", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "elementary_education_operational_risk", "domain": "elementary education", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "elementary_education_required_condition_present", "domain": "elementary education", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "elementary_education_procedure_followed", "domain": "elementary education", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "elementary_education_followup_required", "domain": "elementary education", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "higher_education_action_routing", "domain": "higher education", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "higher_education_case_status", "domain": "higher education", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "higher_education_priority_level", "domain": "higher education", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "higher_education_operational_risk", "domain": "higher education", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "higher_education_required_condition_present", "domain": "higher education", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "higher_education_procedure_followed", "domain": "higher education", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "higher_education_followup_required", "domain": "higher education", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "outpatient_healthcare_action_routing", "domain": "outpatient healthcare", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "outpatient_healthcare_case_status", "domain": "outpatient healthcare", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "outpatient_healthcare_priority_level", "domain": "outpatient healthcare", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "outpatient_healthcare_operational_risk", "domain": "outpatient healthcare", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "outpatient_healthcare_required_condition_present", "domain": "outpatient healthcare", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "outpatient_healthcare_procedure_followed", "domain": "outpatient healthcare", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "outpatient_healthcare_followup_required", "domain": "outpatient healthcare", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "hospital_care_action_routing", "domain": "hospital care", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "hospital_care_case_status", "domain": "hospital care", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "hospital_care_priority_level", "domain": "hospital care", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "hospital_care_operational_risk", "domain": "hospital care", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "hospital_care_required_condition_present", "domain": "hospital care", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "hospital_care_procedure_followed", "domain": "hospital care", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "hospital_care_followup_urgency", "domain": "hospital care", "kind": "score", "judgment": "Rate the urgency of the follow-up indicated by the record."}
+{"type_id": "residential_care_action_routing", "domain": "residential care", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "residential_care_case_status", "domain": "residential care", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "residential_care_priority_level", "domain": "residential care", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "residential_care_operational_risk", "domain": "residential care", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "residential_care_required_condition_present", "domain": "residential care", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "residential_care_procedure_followed", "domain": "residential care", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "residential_care_followup_required", "domain": "residential care", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "social_assistance_action_routing", "domain": "social assistance", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "social_assistance_case_status", "domain": "social assistance", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "social_assistance_priority_level", "domain": "social assistance", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "social_assistance_operational_risk", "domain": "social assistance", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "social_assistance_required_condition_present", "domain": "social assistance", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "social_assistance_procedure_followed", "domain": "social assistance", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "social_assistance_followup_required", "domain": "social assistance", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "performing_arts_action_routing", "domain": "performing arts", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "performing_arts_case_status", "domain": "performing arts", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "performing_arts_priority_level", "domain": "performing arts", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "performing_arts_operational_risk", "domain": "performing arts", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "performing_arts_required_condition_present", "domain": "performing arts", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "performing_arts_procedure_followed", "domain": "performing arts", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "performing_arts_followup_required", "domain": "performing arts", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "museums_and_parks_action_routing", "domain": "museums and parks", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "museums_and_parks_case_status", "domain": "museums and parks", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "museums_and_parks_priority_level", "domain": "museums and parks", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "museums_and_parks_operational_risk", "domain": "museums and parks", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "museums_and_parks_required_condition_present", "domain": "museums and parks", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "museums_and_parks_procedure_followed", "domain": "museums and parks", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "museums_and_parks_followup_required", "domain": "museums and parks", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "fitness_and_recreation_action_routing", "domain": "fitness and recreation", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "fitness_and_recreation_case_status", "domain": "fitness and recreation", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "fitness_and_recreation_priority_level", "domain": "fitness and recreation", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "fitness_and_recreation_operational_risk", "domain": "fitness and recreation", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "fitness_and_recreation_required_condition_present", "domain": "fitness and recreation", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "fitness_and_recreation_procedure_followed", "domain": "fitness and recreation", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "fitness_and_recreation_followup_required", "domain": "fitness and recreation", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "repair_and_maintenance_action_routing", "domain": "repair and maintenance", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "repair_and_maintenance_case_status", "domain": "repair and maintenance", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "repair_and_maintenance_priority_level", "domain": "repair and maintenance", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "repair_and_maintenance_operational_risk", "domain": "repair and maintenance", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "repair_and_maintenance_required_condition_present", "domain": "repair and maintenance", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "repair_and_maintenance_procedure_followed", "domain": "repair and maintenance", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "repair_and_maintenance_followup_required", "domain": "repair and maintenance", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "personal_care_services_action_routing", "domain": "personal care services", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "personal_care_services_case_status", "domain": "personal care services", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "personal_care_services_priority_level", "domain": "personal care services", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "personal_care_services_operational_risk", "domain": "personal care services", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "personal_care_services_required_condition_present", "domain": "personal care services", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "personal_care_services_procedure_followed", "domain": "personal care services", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "personal_care_services_followup_required", "domain": "personal care services", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "religious_organizations_action_routing", "domain": "religious organizations", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "religious_organizations_case_status", "domain": "religious organizations", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "religious_organizations_priority_level", "domain": "religious organizations", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "religious_organizations_required_condition_present", "domain": "religious organizations", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "religious_organizations_procedure_followed", "domain": "religious organizations", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "religious_organizations_followup_required", "domain": "religious organizations", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "public_administration_action_routing", "domain": "public administration", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "public_administration_case_status", "domain": "public administration", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "public_administration_priority_level", "domain": "public administration", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "public_administration_operational_risk", "domain": "public administration", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "public_administration_required_condition_present", "domain": "public administration", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "public_administration_procedure_followed", "domain": "public administration", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "public_administration_followup_required", "domain": "public administration", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "emergency_management_action_routing", "domain": "emergency management", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "emergency_management_case_status", "domain": "emergency management", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "emergency_management_priority_level", "domain": "emergency management", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "emergency_management_operational_risk", "domain": "emergency management", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "emergency_management_required_condition_present", "domain": "emergency management", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "emergency_management_procedure_followed", "domain": "emergency management", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "emergency_management_followup_urgency", "domain": "emergency management", "kind": "score", "judgment": "Rate the urgency of the follow-up indicated by the record."}
+{"type_id": "law_enforcement_action_routing", "domain": "law enforcement", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "law_enforcement_case_status", "domain": "law enforcement", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "law_enforcement_priority_level", "domain": "law enforcement", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "law_enforcement_operational_risk", "domain": "law enforcement", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "law_enforcement_evidence_strength", "domain": "law enforcement", "kind": "score", "judgment": "Rate how strongly the record supports the proposed conclusion."}
+{"type_id": "law_enforcement_required_condition_present", "domain": "law enforcement", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "law_enforcement_procedure_followed", "domain": "law enforcement", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "law_enforcement_followup_required", "domain": "law enforcement", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "fire_and_rescue_action_routing", "domain": "fire and rescue", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "fire_and_rescue_case_status", "domain": "fire and rescue", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "fire_and_rescue_priority_level", "domain": "fire and rescue", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "fire_and_rescue_operational_risk", "domain": "fire and rescue", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "fire_and_rescue_required_condition_present", "domain": "fire and rescue", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "fire_and_rescue_procedure_followed", "domain": "fire and rescue", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "fire_and_rescue_followup_urgency", "domain": "fire and rescue", "kind": "score", "judgment": "Rate the urgency of the follow-up indicated by the record."}
+{"type_id": "human_resources_action_routing", "domain": "human resources", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "human_resources_case_status", "domain": "human resources", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "human_resources_priority_level", "domain": "human resources", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "human_resources_operational_risk", "domain": "human resources", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "human_resources_required_condition_present", "domain": "human resources", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "human_resources_procedure_followed", "domain": "human resources", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "human_resources_followup_required", "domain": "human resources", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "procurement_action_routing", "domain": "procurement", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "procurement_case_status", "domain": "procurement", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "procurement_priority_level", "domain": "procurement", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "procurement_operational_risk", "domain": "procurement", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "procurement_required_condition_present", "domain": "procurement", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "procurement_procedure_followed", "domain": "procurement", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "procurement_followup_required", "domain": "procurement", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "quality_assurance_action_routing", "domain": "quality assurance", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "quality_assurance_case_status", "domain": "quality assurance", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "quality_assurance_priority_level", "domain": "quality assurance", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "quality_assurance_operational_risk", "domain": "quality assurance", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "quality_assurance_evidence_strength", "domain": "quality assurance", "kind": "score", "judgment": "Rate how strongly the record supports the proposed conclusion."}
+{"type_id": "quality_assurance_required_condition_present", "domain": "quality assurance", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "quality_assurance_procedure_followed", "domain": "quality assurance", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "quality_assurance_followup_required", "domain": "quality assurance", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "cybersecurity_operations_action_routing", "domain": "cybersecurity operations", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "cybersecurity_operations_case_status", "domain": "cybersecurity operations", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "cybersecurity_operations_priority_level", "domain": "cybersecurity operations", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "cybersecurity_operations_operational_risk", "domain": "cybersecurity operations", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "cybersecurity_operations_evidence_strength", "domain": "cybersecurity operations", "kind": "score", "judgment": "Rate how strongly the record supports the proposed conclusion."}
+{"type_id": "cybersecurity_operations_required_condition_present", "domain": "cybersecurity operations", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "cybersecurity_operations_procedure_followed", "domain": "cybersecurity operations", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "cybersecurity_operations_followup_urgency", "domain": "cybersecurity operations", "kind": "score", "judgment": "Rate the urgency of the follow-up indicated by the record."}
+{"type_id": "environmental_compliance_action_routing", "domain": "environmental compliance", "kind": "choice", "judgment": "Choose the next operational action that the record supports."}
+{"type_id": "environmental_compliance_case_status", "domain": "environmental compliance", "kind": "choice", "judgment": "Classify the current work status described in the record."}
+{"type_id": "environmental_compliance_priority_level", "domain": "environmental compliance", "kind": "score", "judgment": "Rate the urgency of action indicated by the record."}
+{"type_id": "environmental_compliance_operational_risk", "domain": "environmental compliance", "kind": "score", "judgment": "Rate the operational risk indicated by the record."}
+{"type_id": "environmental_compliance_required_condition_present", "domain": "environmental compliance", "kind": "noul", "judgment": "Decide whether the record states that a required condition is present."}
+{"type_id": "environmental_compliance_procedure_followed", "domain": "environmental compliance", "kind": "noul", "judgment": "Decide whether the record states that the relevant procedure was followed."}
+{"type_id": "environmental_compliance_followup_required", "domain": "environmental compliance", "kind": "noul", "judgment": "Decide whether the record indicates that follow-up action is required."}
+{"type_id": "oil_and_gas_extraction_compliance_disposition", "domain": "oil and gas extraction", "kind": "choice", "judgment": "Classify the compliance disposition supported by the record."}
+{"type_id": "mineral_mining_compliance_disposition", "domain": "mineral mining", "kind": "choice", "judgment": "Classify the compliance disposition supported by the record."}
+{"type_id": "electric_power_utilities_compliance_disposition", "domain": "electric power utilities", "kind": "choice", "judgment": "Classify the compliance disposition supported by the record."}
+{"type_id": "water_and_wastewater_utilities_compliance_disposition", "domain": "water and wastewater utilities", "kind": "choice", "judgment": "Classify the compliance disposition supported by the record."}
+{"type_id": "building_construction_compliance_disposition", "domain": "building construction", "kind": "choice", "judgment": "Classify the compliance disposition supported by the record."}
+{"type_id": "heavy_civil_construction_compliance_disposition", "domain": "heavy civil construction", "kind": "choice", "judgment": "Classify the compliance disposition supported by the record."}
+{"type_id": "specialty_trade_construction_compliance_disposition", "domain": "specialty trade construction", "kind": "choice", "judgment": "Classify the compliance disposition supported by the record."}
+{"type_id": "food_manufacturing_compliance_disposition", "domain": "food manufacturing", "kind": "choice", "judgment": "Classify the compliance disposition supported by the record."}
+{"type_id": "chemical_manufacturing_compliance_disposition", "domain": "chemical manufacturing", "kind": "choice", "judgment": "Classify the compliance disposition supported by the record."}
+{"type_id": "metal_fabrication_compliance_disposition", "domain": "metal fabrication", "kind": "choice", "judgment": "Classify the compliance disposition supported by the record."}
+{"type_id": "computer_electronics_manufacturing_compliance_disposition", "domain": "computer and electronics manufacturing", "kind": "choice", "judgment": "Classify the compliance disposition supported by the record."}
+{"type_id": "transport_equipment_manufacturing_compliance_disposition", "domain": "transport equipment manufacturing", "kind": "choice", "judgment": "Classify the compliance disposition supported by the record."}
+{"type_id": "air_transportation_compliance_disposition", "domain": "air transportation", "kind": "choice", "judgment": "Classify the compliance disposition supported by the record."}
+{"type_id": "rail_transportation_compliance_disposition", "domain": "rail transportation", "kind": "choice", "judgment": "Classify the compliance disposition supported by the record."}
+{"type_id": "water_transportation_compliance_disposition", "domain": "water transportation", "kind": "choice", "judgment": "Classify the compliance disposition supported by the record."}
+{"type_id": "truck_transportation_compliance_disposition", "domain": "truck transportation", "kind": "choice", "judgment": "Classify the compliance disposition supported by the record."}
+{"type_id": "transit_and_ground_transportation_compliance_disposition", "domain": "transit and ground transportation", "kind": "choice", "judgment": "Classify the compliance disposition supported by the record."}
+{"type_id": "courier_delivery_compliance_disposition", "domain": "courier delivery", "kind": "choice", "judgment": "Classify the compliance disposition supported by the record."}
+{"type_id": "banking_compliance_disposition", "domain": "banking", "kind": "choice", "judgment": "Classify the compliance disposition supported by the record."}
+{"type_id": "insurance_compliance_disposition", "domain": "insurance", "kind": "choice", "judgment": "Classify the compliance disposition supported by the record."}
+{"type_id": "outpatient_healthcare_compliance_disposition", "domain": "outpatient healthcare", "kind": "choice", "judgment": "Classify the compliance disposition supported by the record."}
+{"type_id": "hospital_care_compliance_exposure", "domain": "hospital care", "kind": "score", "judgment": "Rate the compliance exposure indicated by the record."}
+{"type_id": "residential_care_compliance_exposure", "domain": "residential care", "kind": "score", "judgment": "Rate the compliance exposure indicated by the record."}
+{"type_id": "waste_remediation_compliance_exposure", "domain": "waste remediation", "kind": "score", "judgment": "Rate the compliance exposure indicated by the record."}
+{"type_id": "legal_services_compliance_exposure", "domain": "legal services", "kind": "score", "judgment": "Rate the compliance exposure indicated by the record."}
+{"type_id": "cybersecurity_operations_compliance_exposure", "domain": "cybersecurity operations", "kind": "score", "judgment": "Rate the compliance exposure indicated by the record."}
+{"type_id": "environmental_compliance_compliance_exposure", "domain": "environmental compliance", "kind": "score", "judgment": "Rate the compliance exposure indicated by the record."}
+{"type_id": "public_administration_compliance_exposure", "domain": "public administration", "kind": "score", "judgment": "Rate the compliance exposure indicated by the record."}
+{"type_id": "animal_production_incident_response_category", "domain": "animal production", "kind": "choice", "judgment": "Classify the response category required by the incident described in the record."}
+{"type_id": "forestry_operations_incident_response_category", "domain": "forestry operations", "kind": "choice", "judgment": "Classify the response category required by the incident described in the record."}
+{"type_id": "building_construction_incident_response_category", "domain": "building construction", "kind": "choice", "judgment": "Classify the response category required by the incident described in the record."}
+{"type_id": "heavy_civil_construction_incident_response_category", "domain": "heavy civil construction", "kind": "choice", "judgment": "Classify the response category required by the incident described in the record."}
+{"type_id": "specialty_trade_construction_incident_response_category", "domain": "specialty trade construction", "kind": "choice", "judgment": "Classify the response category required by the incident described in the record."}
+{"type_id": "food_manufacturing_incident_response_category", "domain": "food manufacturing", "kind": "choice", "judgment": "Classify the response category required by the incident described in the record."}
+{"type_id": "chemical_manufacturing_incident_response_category", "domain": "chemical manufacturing", "kind": "choice", "judgment": "Classify the response category required by the incident described in the record."}
+{"type_id": "metal_fabrication_incident_response_category", "domain": "metal fabrication", "kind": "choice", "judgment": "Classify the response category required by the incident described in the record."}
+{"type_id": "transport_equipment_manufacturing_incident_response_category", "domain": "transport equipment manufacturing", "kind": "choice", "judgment": "Classify the response category required by the incident described in the record."}
+{"type_id": "warehousing_incident_response_category", "domain": "warehousing", "kind": "choice", "judgment": "Classify the response category required by the incident described in the record."}
+{"type_id": "air_transportation_incident_response_category", "domain": "air transportation", "kind": "choice", "judgment": "Classify the response category required by the incident described in the record."}
+{"type_id": "rail_transportation_incident_response_category", "domain": "rail transportation", "kind": "choice", "judgment": "Classify the response category required by the incident described in the record."}
+{"type_id": "water_transportation_incident_response_category", "domain": "water transportation", "kind": "choice", "judgment": "Classify the response category required by the incident described in the record."}
+{"type_id": "truck_transportation_incident_response_category", "domain": "truck transportation", "kind": "choice", "judgment": "Classify the response category required by the incident described in the record."}
+{"type_id": "transit_and_ground_transportation_incident_response_category", "domain": "transit and ground transportation", "kind": "choice", "judgment": "Classify the response category required by the incident described in the record."}
+{"type_id": "courier_delivery_incident_response_category", "domain": "courier delivery", "kind": "choice", "judgment": "Classify the response category required by the incident described in the record."}
+{"type_id": "hospital_care_incident_response_category", "domain": "hospital care", "kind": "choice", "judgment": "Classify the response category required by the incident described in the record."}
+{"type_id": "residential_care_incident_response_category", "domain": "residential care", "kind": "choice", "judgment": "Classify the response category required by the incident described in the record."}
+{"type_id": "social_assistance_incident_response_category", "domain": "social assistance", "kind": "choice", "judgment": "Classify the response category required by the incident described in the record."}
+{"type_id": "emergency_management_incident_response_category", "domain": "emergency management", "kind": "choice", "judgment": "Classify the response category required by the incident described in the record."}
+{"type_id": "law_enforcement_incident_response_category", "domain": "law enforcement", "kind": "choice", "judgment": "Classify the response category required by the incident described in the record."}
+{"type_id": "fire_and_rescue_incident_response_category", "domain": "fire and rescue", "kind": "choice", "judgment": "Classify the response category required by the incident described in the record."}
+{"type_id": "repair_and_maintenance_incident_response_category", "domain": "repair and maintenance", "kind": "choice", "judgment": "Classify the response category required by the incident described in the record."}
+{"type_id": "cybersecurity_operations_incident_response_category", "domain": "cybersecurity operations", "kind": "choice", "judgment": "Classify the response category required by the incident described in the record."}
+{"type_id": "quality_assurance_incident_response_category", "domain": "quality assurance", "kind": "choice", "judgment": "Classify the response category required by the incident described in the record."}
+{"type_id": "waste_remediation_incident_response_category", "domain": "waste remediation", "kind": "choice", "judgment": "Classify the response category required by the incident described in the record."}
+{"type_id": "oil_and_gas_extraction_incident_response_category", "domain": "oil and gas extraction", "kind": "choice", "judgment": "Classify the response category required by the incident described in the record."}
+{"type_id": "mineral_mining_incident_response_category", "domain": "mineral mining", "kind": "choice", "judgment": "Classify the response category required by the incident described in the record."}
+{"type_id": "crop_production_service_continuity_impact", "domain": "crop production", "kind": "score", "judgment": "Rate the impact on continued service or operations indicated by the record."}
+{"type_id": "animal_production_service_continuity_impact", "domain": "animal production", "kind": "score", "judgment": "Rate the impact on continued service or operations indicated by the record."}
+{"type_id": "electric_power_utilities_service_continuity_impact", "domain": "electric power utilities", "kind": "score", "judgment": "Rate the impact on continued service or operations indicated by the record."}
+{"type_id": "water_and_wastewater_utilities_service_continuity_impact", "domain": "water and wastewater utilities", "kind": "score", "judgment": "Rate the impact on continued service or operations indicated by the record."}
+{"type_id": "building_construction_service_continuity_impact", "domain": "building construction", "kind": "score", "judgment": "Rate the impact on continued service or operations indicated by the record."}
+{"type_id": "food_manufacturing_service_continuity_impact", "domain": "food manufacturing", "kind": "score", "judgment": "Rate the impact on continued service or operations indicated by the record."}
+{"type_id": "computer_electronics_manufacturing_service_continuity_impact", "domain": "computer and electronics manufacturing", "kind": "score", "judgment": "Rate the impact on continued service or operations indicated by the record."}
+{"type_id": "transport_equipment_manufacturing_service_continuity_impact", "domain": "transport equipment manufacturing", "kind": "score", "judgment": "Rate the impact on continued service or operations indicated by the record."}
+{"type_id": "warehousing_service_continuity_impact", "domain": "warehousing", "kind": "score", "judgment": "Rate the impact on continued service or operations indicated by the record."}
+{"type_id": "air_transportation_service_continuity_impact", "domain": "air transportation", "kind": "score", "judgment": "Rate the impact on continued service or operations indicated by the record."}
+{"type_id": "rail_transportation_service_continuity_impact", "domain": "rail transportation", "kind": "score", "judgment": "Rate the impact on continued service or operations indicated by the record."}
+{"type_id": "truck_transportation_service_continuity_impact", "domain": "truck transportation", "kind": "score", "judgment": "Rate the impact on continued service or operations indicated by the record."}
+{"type_id": "telecommunications_service_continuity_impact", "domain": "telecommunications", "kind": "score", "judgment": "Rate the impact on continued service or operations indicated by the record."}
+{"type_id": "software_services_service_continuity_impact", "domain": "software services", "kind": "score", "judgment": "Rate the impact on continued service or operations indicated by the record."}
+{"type_id": "banking_service_continuity_impact", "domain": "banking", "kind": "score", "judgment": "Rate the impact on continued service or operations indicated by the record."}
+{"type_id": "insurance_service_continuity_impact", "domain": "insurance", "kind": "score", "judgment": "Rate the impact on continued service or operations indicated by the record."}
+{"type_id": "higher_education_service_continuity_impact", "domain": "higher education", "kind": "score", "judgment": "Rate the impact on continued service or operations indicated by the record."}
+{"type_id": "outpatient_healthcare_service_continuity_impact", "domain": "outpatient healthcare", "kind": "score", "judgment": "Rate the impact on continued service or operations indicated by the record."}
+{"type_id": "hospital_care_service_continuity_impact", "domain": "hospital care", "kind": "score", "judgment": "Rate the impact on continued service or operations indicated by the record."}
+{"type_id": "residential_care_service_continuity_impact", "domain": "residential care", "kind": "score", "judgment": "Rate the impact on continued service or operations indicated by the record."}
+{"type_id": "social_assistance_service_continuity_impact", "domain": "social assistance", "kind": "score", "judgment": "Rate the impact on continued service or operations indicated by the record."}
+{"type_id": "performing_arts_service_continuity_impact", "domain": "performing arts", "kind": "score", "judgment": "Rate the impact on continued service or operations indicated by the record."}
+{"type_id": "museums_and_parks_service_continuity_impact", "domain": "museums and parks", "kind": "score", "judgment": "Rate the impact on continued service or operations indicated by the record."}
+{"type_id": "public_administration_service_continuity_impact", "domain": "public administration", "kind": "score", "judgment": "Rate the impact on continued service or operations indicated by the record."}
+{"type_id": "emergency_management_service_continuity_impact", "domain": "emergency management", "kind": "score", "judgment": "Rate the impact on continued service or operations indicated by the record."}
+{"type_id": "fire_and_rescue_service_continuity_impact", "domain": "fire and rescue", "kind": "score", "judgment": "Rate the impact on continued service or operations indicated by the record."}

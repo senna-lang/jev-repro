@@ -1,0 +1,32 @@
+{
+  "seed": 20260926,
+  "source_file": "data/e2/task_types_candidates.jsonl",
+  "source_sha256": "a526aa92638375b30236dd9eaa8ab2a9c132504c8720a17783b6f83a20f08322",
+  "method": "Stratified shuffle by kind: 100 eval per kind, then 7/7/6 val, then train.",
+  "counts": {
+    "train": {
+      "total": 180,
+      "by_kind": {
+        "choice": 60,
+        "noul": 60,
+        "score": 60
+      }
+    },
+    "val": {
+      "total": 20,
+      "by_kind": {
+        "choice": 7,
+        "noul": 6,
+        "score": 7
+      }
+    },
+    "eval": {
+      "total": 300,
+      "by_kind": {
+        "choice": 100,
+        "noul": 100,
+        "score": 100
+      }
+    }
+  }
+}

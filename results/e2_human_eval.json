@@ -1,0 +1,139 @@
+{
+  "cases": 400,
+  "x_per_case": {
+    "0": 312,
+    "1": 62,
+    "2": 17,
+    "3": 9
+  },
+  "all_x_free_unanimous": 281,
+  "rater_pairwise_agreement": {
+    "R1-R2": 0.9614243323442137,
+    "R1-R3": 0.9201277955271565,
+    "R2-R3": 0.896551724137931
+  },
+  "excluded_no_majority": 38,
+  "excluded_lt2_valid_votes": 26,
+  "predictors": {
+    "teacher": {
+      "all": {
+        "agreement": 0.9392265193370166,
+        "n_majority": 362,
+        "brier": 0.03088948511788102,
+        "nll": 0.4830190282279112,
+        "n_empirical": 374
+      },
+      "choice": {
+        "agreement": 0.9782608695652174,
+        "n_majority": 138,
+        "brier": 0.006604125553174996,
+        "nll": 0.16340022897539033,
+        "n_empirical": 138
+      },
+      "score": {
+        "agreement": 0.8660714285714286,
+        "n_majority": 112,
+        "brier": 0.054405620104407616,
+        "nll": 1.0256223776304099,
+        "n_empirical": 121
+      },
+      "noul": {
+        "agreement": 0.9642857142857143,
+        "n_majority": 112,
+        "brier": 0.03528885282709592,
+        "nll": 0.295648497959611,
+        "n_empirical": 115
+      }
+    },
+    "jev": {
+      "all": {
+        "agreement": 0.9281767955801105,
+        "n_majority": 362,
+        "brier": 0.02440353535353536,
+        "nll": 0.37203652948683846,
+        "n_empirical": 374
+      },
+      "choice": {
+        "agreement": 0.9855072463768116,
+        "n_majority": 138,
+        "brier": 0.0036113123993558784,
+        "nll": 0.11900396707021334,
+        "n_empirical": 138
+      },
+      "score": {
+        "agreement": 0.8125,
+        "n_majority": 112,
+        "brier": 0.04757819100091826,
+        "nll": 0.8693210508552811,
+        "n_empirical": 121
+      },
+      "noul": {
+        "agreement": 0.9732142857142857,
+        "n_majority": 112,
+        "brier": 0.024970434782608682,
+        "nll": 0.15244580364260105,
+        "n_empirical": 115
+      }
+    },
+    "baseline": {
+      "all": {
+        "agreement": 0.8895027624309392,
+        "n_majority": 362,
+        "brier": 0.05258018010469572,
+        "nll": 1.148451108788301,
+        "n_empirical": 374
+      },
+      "choice": {
+        "agreement": 0.9492753623188406,
+        "n_majority": 138,
+        "brier": 0.012980234884243286,
+        "nll": 0.24157551562876745,
+        "n_empirical": 138
+      },
+      "score": {
+        "agreement": 0.7678571428571429,
+        "n_majority": 112,
+        "brier": 0.08096633075577478,
+        "nll": 1.9271461034931707,
+        "n_empirical": 121
+      },
+      "noul": {
+        "agreement": 0.9375,
+        "n_majority": 112,
+        "brier": 0.07023294716245103,
+        "nll": 1.417379260933749,
+        "n_empirical": 115
+      }
+    },
+    "selected": {
+      "all": {
+        "agreement": 0.9033149171270718,
+        "n_majority": 362,
+        "brier": 0.0348042405181715,
+        "nll": 0.29936702996787734,
+        "n_empirical": 374
+      },
+      "choice": {
+        "agreement": 0.9565217391304348,
+        "n_majority": 138,
+        "brier": 0.009046108050850718,
+        "nll": 0.1051904575100538,
+        "n_empirical": 138
+      },
+      "score": {
+        "agreement": 0.7857142857142857,
+        "n_majority": 112,
+        "brier": 0.05680928924432751,
+        "nll": 0.5974481367864147,
+        "n_empirical": 121
+      },
+      "noul": {
+        "agreement": 0.9553571428571429,
+        "n_majority": 112,
+        "brier": 0.04256086125404442,
+        "nll": 0.2187457523516736,
+        "n_empirical": 115
+      }
+    }
+  }
+}

@@ -1,0 +1,198 @@
+{"case_id": "invoice_exception_disposition__0", "kind": "choice", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0, 0.0]}
+{"case_id": "invoice_exception_disposition__1", "kind": "choice", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0, 0.0]}
+{"case_id": "invoice_exception_disposition__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [0.0, 0.0, 1.0]}
+{"case_id": "customer_churn_risk__0", "kind": "score", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0, 0.0, 0.0]}
+{"case_id": "customer_churn_risk__1", "kind": "score", "label": 1, "prediction": 1, "probabilities": [0.0053863525390625, 0.99462890625, 8.106231689453125e-06, 0.0]}
+{"case_id": "customer_churn_risk__2", "kind": "score", "label": 2, "prediction": 2, "probabilities": [0.0, 0.0, 1.0, 2.0802021026611328e-05]}
+{"case_id": "customer_churn_risk__3", "kind": "score", "label": 3, "prediction": 0, "probabilities": [1.0, 0.0, 0.0, 0.0]}
+{"case_id": "workplace_injury_reported__0", "kind": "noul", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0]}
+{"case_id": "workplace_injury_reported__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "shipment_delay_resolution__0", "kind": "choice", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0, 0.0]}
+{"case_id": "shipment_delay_resolution__1", "kind": "choice", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0, 0.0]}
+{"case_id": "shipment_delay_resolution__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [0.0, 0.0, 1.0]}
+{"case_id": "software_release_readiness__0", "kind": "score", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0, 0.0, 0.0]}
+{"case_id": "software_release_readiness__1", "kind": "score", "label": 1, "prediction": 1, "probabilities": [0.00885009765625, 0.9912109375, 0.0, 0.0]}
+{"case_id": "software_release_readiness__2", "kind": "score", "label": 2, "prediction": 3, "probabilities": [0.0, 0.0, 1.6689300537109375e-06, 1.0]}
+{"case_id": "software_release_readiness__3", "kind": "score", "label": 3, "prediction": 3, "probabilities": [0.0, 0.0, 0.0, 1.0]}
+{"case_id": "regulated_data_exposed__0", "kind": "noul", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0]}
+{"case_id": "regulated_data_exposed__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "loan_application_outcome__0", "kind": "choice", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0, 0.0]}
+{"case_id": "loan_application_outcome__1", "kind": "choice", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0, 0.0]}
+{"case_id": "loan_application_outcome__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [0.0, 0.0, 1.0]}
+{"case_id": "machine_maintenance_urgency__0", "kind": "score", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0, 0.0, 0.0]}
+{"case_id": "machine_maintenance_urgency__1", "kind": "score", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0, 0.0, 0.0]}
+{"case_id": "machine_maintenance_urgency__2", "kind": "score", "label": 2, "prediction": 2, "probabilities": [0.0, 0.0, 0.99951171875, 0.00036835670471191406]}
+{"case_id": "machine_maintenance_urgency__3", "kind": "score", "label": 3, "prediction": 2, "probabilities": [0.0, 0.0, 1.0, 2.980232238769531e-07]}
+{"case_id": "supplier_contract_signed__0", "kind": "noul", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0]}
+{"case_id": "supplier_contract_signed__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "candidate_interview_next_step__0", "kind": "choice", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0, 0.0]}
+{"case_id": "candidate_interview_next_step__1", "kind": "choice", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0, 0.0]}
+{"case_id": "candidate_interview_next_step__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [0.0, 0.0, 1.0]}
+{"case_id": "clinical_triage_priority__0", "kind": "score", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0, 0.0, 0.0]}
+{"case_id": "clinical_triage_priority__1", "kind": "score", "label": 1, "prediction": 2, "probabilities": [0.056427001953125, 0.0038394927978515625, 0.93994140625, 5.960464477539063e-08]}
+{"case_id": "clinical_triage_priority__2", "kind": "score", "label": 2, "prediction": 2, "probabilities": [0.0, 0.0, 0.99462890625, 0.0053863525390625]}
+{"case_id": "clinical_triage_priority__3", "kind": "score", "label": 3, "prediction": 3, "probabilities": [0.0, 0.0, 0.32080078125, 0.67919921875]}
+{"case_id": "patient_consent_documented__0", "kind": "noul", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0]}
+{"case_id": "patient_consent_documented__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "marketing_campaign_action__0", "kind": "choice", "label": 0, "prediction": 1, "probabilities": [0.00012731552124023438, 1.0, 0.0]}
+{"case_id": "marketing_campaign_action__1", "kind": "choice", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0, 0.0]}
+{"case_id": "marketing_campaign_action__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [0.0, 0.0, 1.0]}
+{"case_id": "construction_site_hazard_severity__0", "kind": "score", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0, 0.0, 0.0]}
+{"case_id": "construction_site_hazard_severity__1", "kind": "score", "label": 1, "prediction": 0, "probabilities": [1.0, 1.7881393432617188e-07, 0.0, 0.0]}
+{"case_id": "construction_site_hazard_severity__2", "kind": "score", "label": 2, "prediction": 2, "probabilities": [0.0, 9.834766387939453e-06, 1.0, 5.960464477539063e-08]}
+{"case_id": "construction_site_hazard_severity__3", "kind": "score", "label": 3, "prediction": 2, "probabilities": [0.0, 0.0, 1.0, 1.1920928955078125e-07]}
+{"case_id": "lease_renewal_notice_received__0", "kind": "noul", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0]}
+{"case_id": "lease_renewal_notice_received__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "insurance_claim_disposition__0", "kind": "choice", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0, 0.0]}
+{"case_id": "insurance_claim_disposition__1", "kind": "choice", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0, 0.0]}
+{"case_id": "insurance_claim_disposition__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [0.0, 0.0, 1.0]}
+{"case_id": "restaurant_health_inspection_rating__0", "kind": "score", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0, 0.0, 0.0]}
+{"case_id": "restaurant_health_inspection_rating__1", "kind": "score", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0, 0.0, 0.0]}
+{"case_id": "restaurant_health_inspection_rating__2", "kind": "score", "label": 2, "prediction": 2, "probabilities": [0.0, 0.0, 1.0, 2.9206275939941406e-06]}
+{"case_id": "restaurant_health_inspection_rating__3", "kind": "score", "label": 3, "prediction": 3, "probabilities": [0.0, 0.0, 1.7881393432617188e-07, 1.0]}
+{"case_id": "travel_expense_receipt_attached__0", "kind": "noul", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0]}
+{"case_id": "travel_expense_receipt_attached__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "legal_matter_response_strategy__0", "kind": "choice", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0, 0.0]}
+{"case_id": "legal_matter_response_strategy__1", "kind": "choice", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0, 0.0]}
+{"case_id": "legal_matter_response_strategy__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [0.0, 0.0, 1.0]}
+{"case_id": "cybersecurity_alert_confidence__0", "kind": "score", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0, 0.0, 0.0]}
+{"case_id": "cybersecurity_alert_confidence__1", "kind": "score", "label": 1, "prediction": 1, "probabilities": [0.0003249645233154297, 0.99951171875, 0.0, 0.0]}
+{"case_id": "cybersecurity_alert_confidence__2", "kind": "score", "label": 2, "prediction": 2, "probabilities": [0.0, 0.0, 1.0, 0.0]}
+{"case_id": "cybersecurity_alert_confidence__3", "kind": "score", "label": 3, "prediction": 2, "probabilities": [0.0, 0.0, 1.0, 0.0]}
+{"case_id": "quality_control_defect_found__0", "kind": "noul", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0]}
+{"case_id": "quality_control_defect_found__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "employee_leave_request_decision__0", "kind": "choice", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0, 0.0]}
+{"case_id": "employee_leave_request_decision__1", "kind": "choice", "label": 1, "prediction": 1, "probabilities": [0.3271484375, 0.67138671875, 0.0015630722045898438]}
+{"case_id": "employee_leave_request_decision__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [0.0, 0.0, 1.0]}
+{"case_id": "warehouse_inventory_accuracy__0", "kind": "score", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0, 0.0, 0.0]}
+{"case_id": "warehouse_inventory_accuracy__1", "kind": "score", "label": 1, "prediction": 2, "probabilities": [0.0, 0.0191192626953125, 0.98095703125, 0.0]}
+{"case_id": "warehouse_inventory_accuracy__2", "kind": "score", "label": 2, "prediction": 2, "probabilities": [0.0, 2.384185791015625e-06, 1.0, 0.0]}
+{"case_id": "warehouse_inventory_accuracy__3", "kind": "score", "label": 3, "prediction": 2, "probabilities": [0.0, 0.0, 0.9990234375, 0.0011339187622070312]}
+{"case_id": "vendor_onboarding_tax_form_complete__0", "kind": "noul", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0]}
+{"case_id": "vendor_onboarding_tax_form_complete__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "research_grant_application_status__0", "kind": "choice", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0, 0.0]}
+{"case_id": "research_grant_application_status__1", "kind": "choice", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0, 0.0]}
+{"case_id": "research_grant_application_status__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [0.0, 0.0, 1.0]}
+{"case_id": "hotel_guest_recovery_level__0", "kind": "score", "label": 0, "prediction": 1, "probabilities": [0.0001398324966430664, 1.0, 0.0, 4.172325134277344e-07]}
+{"case_id": "hotel_guest_recovery_level__1", "kind": "score", "label": 1, "prediction": 1, "probabilities": [0.0005035400390625, 0.99951171875, 0.0, 0.0]}
+{"case_id": "hotel_guest_recovery_level__2", "kind": "score", "label": 2, "prediction": 2, "probabilities": [0.0, 5.602836608886719e-06, 0.99609375, 0.0037078857421875]}
+{"case_id": "hotel_guest_recovery_level__3", "kind": "score", "label": 3, "prediction": 3, "probabilities": [0.0, 0.0, 0.0, 1.0]}
+{"case_id": "equipment_calibration_current__0", "kind": "noul", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0]}
+{"case_id": "equipment_calibration_current__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "public_records_request_routing__0", "kind": "choice", "label": 0, "prediction": 0, "probabilities": [1.0, 3.218650817871094e-05, 1.1920928955078125e-07]}
+{"case_id": "public_records_request_routing__1", "kind": "choice", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0, 0.0]}
+{"case_id": "public_records_request_routing__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [0.0, 0.0, 1.0]}
+{"case_id": "sales_lead_quality__0", "kind": "score", "label": 0, "prediction": 0, "probabilities": [0.99951171875, 0.0002532005310058594, 0.0, 0.0]}
+{"case_id": "sales_lead_quality__1", "kind": "score", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0, 2.980232238769531e-07, 8.940696716308594e-07]}
+{"case_id": "sales_lead_quality__2", "kind": "score", "label": 2, "prediction": 3, "probabilities": [0.0, 0.0, 0.26904296875, 0.73095703125]}
+{"case_id": "sales_lead_quality__3", "kind": "score", "label": 3, "prediction": 3, "probabilities": [0.0, 0.0, 6.204843521118164e-05, 1.0]}
+{"case_id": "environmental_permit_required__0", "kind": "noul", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0]}
+{"case_id": "environmental_permit_required__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "product_return_disposition__0", "kind": "choice", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0, 0.0]}
+{"case_id": "product_return_disposition__1", "kind": "choice", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0, 0.0]}
+{"case_id": "product_return_disposition__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [0.0, 0.0, 1.0]}
+{"case_id": "network_outage_business_impact__0", "kind": "score", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0, 0.0, 0.0]}
+{"case_id": "network_outage_business_impact__1", "kind": "score", "label": 1, "prediction": 1, "probabilities": [0.0012063980102539062, 0.99853515625, 1.8894672393798828e-05, 0.0]}
+{"case_id": "network_outage_business_impact__2", "kind": "score", "label": 2, "prediction": 2, "probabilities": [0.0, 5.960464477539063e-08, 1.0, 5.960464477539063e-08]}
+{"case_id": "network_outage_business_impact__3", "kind": "score", "label": 3, "prediction": 3, "probabilities": [0.0, 0.0, 1.7285346984863281e-06, 1.0]}
+{"case_id": "employee_policy_acknowledgment_present__0", "kind": "noul", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0]}
+{"case_id": "employee_policy_acknowledgment_present__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "pharmacy_prescription_resolution__0", "kind": "choice", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0, 0.0]}
+{"case_id": "pharmacy_prescription_resolution__1", "kind": "choice", "label": 1, "prediction": 2, "probabilities": [0.0, 0.00394439697265625, 0.99609375]}
+{"case_id": "pharmacy_prescription_resolution__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [0.0, 0.0, 1.0]}
+{"case_id": "manufacturing_batch_release_confidence__0", "kind": "score", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0, 0.0, 0.0]}
+{"case_id": "manufacturing_batch_release_confidence__1", "kind": "score", "label": 1, "prediction": 2, "probabilities": [0.0, 0.09808349609375, 0.90185546875, 4.887580871582031e-06]}
+{"case_id": "manufacturing_batch_release_confidence__2", "kind": "score", "label": 2, "prediction": 2, "probabilities": [0.0, 0.0, 1.0, 6.318092346191406e-06]}
+{"case_id": "manufacturing_batch_release_confidence__3", "kind": "score", "label": 3, "prediction": 3, "probabilities": [0.0, 0.0, 6.401538848876953e-05, 1.0]}
+{"case_id": "education_accommodation_requested__0", "kind": "noul", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0]}
+{"case_id": "education_accommodation_requested__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "fleet_vehicle_assignment__0", "kind": "choice", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0, 0.0]}
+{"case_id": "fleet_vehicle_assignment__1", "kind": "choice", "label": 1, "prediction": 0, "probabilities": [1.0, 0.0, 0.0]}
+{"case_id": "fleet_vehicle_assignment__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [0.0, 5.960464477539063e-08, 1.0]}
+{"case_id": "audit_finding_materiality__0", "kind": "score", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0, 0.0, 0.0]}
+{"case_id": "audit_finding_materiality__1", "kind": "score", "label": 1, "prediction": 0, "probabilities": [1.0, 0.0, 0.0, 0.0]}
+{"case_id": "audit_finding_materiality__2", "kind": "score", "label": 2, "prediction": 2, "probabilities": [0.0, 0.0, 1.0, 0.0]}
+{"case_id": "audit_finding_materiality__3", "kind": "score", "label": 3, "prediction": 2, "probabilities": [0.0, 0.0, 1.0, 0.00022339820861816406]}
+{"case_id": "supplier_conflict_disclosed__0", "kind": "noul", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0]}
+{"case_id": "supplier_conflict_disclosed__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "media_inquiry_response_owner__0", "kind": "choice", "label": 0, "prediction": 0, "probabilities": [1.0, 5.960464477539063e-08, 0.0]}
+{"case_id": "media_inquiry_response_owner__1", "kind": "choice", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0, 0.0]}
+{"case_id": "media_inquiry_response_owner__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [0.0, 0.0, 1.0]}
+{"case_id": "student_assignment_proficiency__0", "kind": "score", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0, 0.0, 0.0]}
+{"case_id": "student_assignment_proficiency__1", "kind": "score", "label": 1, "prediction": 2, "probabilities": [0.0, 0.03515625, 0.96484375, 0.0]}
+{"case_id": "student_assignment_proficiency__2", "kind": "score", "label": 2, "prediction": 2, "probabilities": [0.0, 0.0, 1.0, 0.0001634359359741211]}
+{"case_id": "student_assignment_proficiency__3", "kind": "score", "label": 3, "prediction": 3, "probabilities": [0.0, 0.0, 0.0, 1.0]}
+{"case_id": "loan_payment_past_due__0", "kind": "noul", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0]}
+{"case_id": "loan_payment_past_due__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "patent_submission_action__0", "kind": "choice", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0, 0.0]}
+{"case_id": "patent_submission_action__1", "kind": "choice", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0, 0.0]}
+{"case_id": "patent_submission_action__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [0.0, 0.0, 1.0]}
+{"case_id": "project_schedule_health__0", "kind": "score", "label": 0, "prediction": 0, "probabilities": [0.90966796875, 0.090087890625, 5.960464477539062e-07, 0.0]}
+{"case_id": "project_schedule_health__1", "kind": "score", "label": 1, "prediction": 2, "probabilities": [0.0, 1.2993812561035156e-05, 1.0, 0.0]}
+{"case_id": "project_schedule_health__2", "kind": "score", "label": 2, "prediction": 2, "probabilities": [0.0, 0.0, 0.99609375, 0.0037078857421875]}
+{"case_id": "project_schedule_health__3", "kind": "score", "label": 3, "prediction": 3, "probabilities": [0.0, 0.0, 0.0, 1.0]}
+{"case_id": "food_allergen_present__0", "kind": "noul", "label": 0, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "food_allergen_present__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "utility_service_restoration_action__0", "kind": "choice", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0, 0.0]}
+{"case_id": "utility_service_restoration_action__1", "kind": "choice", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0, 0.0]}
+{"case_id": "utility_service_restoration_action__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [0.0, 0.0, 1.0]}
+{"case_id": "financial_forecast_reliability__0", "kind": "score", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0, 0.0, 0.0]}
+{"case_id": "financial_forecast_reliability__1", "kind": "score", "label": 1, "prediction": 2, "probabilities": [0.0, 0.00327301025390625, 0.99658203125, 0.0]}
+{"case_id": "financial_forecast_reliability__2", "kind": "score", "label": 2, "prediction": 2, "probabilities": [0.0, 0.0, 0.9970703125, 0.00307464599609375]}
+{"case_id": "financial_forecast_reliability__3", "kind": "score", "label": 3, "prediction": 2, "probabilities": [0.0, 0.0, 1.0, 1.150369644165039e-05]}
+{"case_id": "export_control_review_needed__0", "kind": "noul", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0]}
+{"case_id": "export_control_review_needed__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "community_grant_award_type__0", "kind": "choice", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0, 0.0]}
+{"case_id": "community_grant_award_type__1", "kind": "choice", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0, 0.0]}
+{"case_id": "community_grant_award_type__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [0.0, 0.0, 1.0]}
+{"case_id": "call_center_escalation_severity__0", "kind": "score", "label": 0, "prediction": 1, "probabilities": [0.0188446044921875, 0.966796875, 0.01422882080078125, 5.960464477539063e-08]}
+{"case_id": "call_center_escalation_severity__1", "kind": "score", "label": 1, "prediction": 2, "probabilities": [0.0, 0.0005526542663574219, 0.99951171875, 0.0]}
+{"case_id": "call_center_escalation_severity__2", "kind": "score", "label": 2, "prediction": 2, "probabilities": [0.0, 0.0, 1.0, 0.0]}
+{"case_id": "call_center_escalation_severity__3", "kind": "score", "label": 3, "prediction": 2, "probabilities": [0.0, 0.0, 0.955078125, 0.044677734375]}
+{"case_id": "building_code_violation_present__0", "kind": "noul", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0]}
+{"case_id": "building_code_violation_present__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "news_article_publication_decision__0", "kind": "choice", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0, 0.0]}
+{"case_id": "news_article_publication_decision__1", "kind": "choice", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0, 0.00015842914581298828]}
+{"case_id": "news_article_publication_decision__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [0.0, 0.0, 1.0]}
+{"case_id": "data_migration_quality__0", "kind": "score", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0, 0.0, 0.0]}
+{"case_id": "data_migration_quality__1", "kind": "score", "label": 1, "prediction": 2, "probabilities": [0.0, 0.0, 1.0, 0.0]}
+{"case_id": "data_migration_quality__2", "kind": "score", "label": 2, "prediction": 3, "probabilities": [0.0, 0.0, 8.344650268554688e-07, 1.0]}
+{"case_id": "data_migration_quality__3", "kind": "score", "label": 3, "prediction": 3, "probabilities": [0.0, 0.0, 0.0, 1.0]}
+{"case_id": "union_grievance_filed__0", "kind": "noul", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0]}
+{"case_id": "union_grievance_filed__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "airline_passenger_rebooking_action__0", "kind": "choice", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0, 0.0]}
+{"case_id": "airline_passenger_rebooking_action__1", "kind": "choice", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0, 0.0]}
+{"case_id": "airline_passenger_rebooking_action__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [0.0, 1.7881393432617188e-06, 1.0]}
+{"case_id": "real_estate_offer_strength__0", "kind": "score", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0, 0.0, 0.0]}
+{"case_id": "real_estate_offer_strength__1", "kind": "score", "label": 1, "prediction": 1, "probabilities": [0.0, 0.998046875, 0.001926422119140625, 0.0]}
+{"case_id": "real_estate_offer_strength__2", "kind": "score", "label": 2, "prediction": 1, "probabilities": [0.0, 0.615234375, 0.385009765625, 5.960464477539063e-08]}
+{"case_id": "real_estate_offer_strength__3", "kind": "score", "label": 3, "prediction": 2, "probabilities": [0.0, 5.960464477539063e-08, 1.0, 4.172325134277344e-07]}
+{"case_id": "incident_root_cause_identified__0", "kind": "noul", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0]}
+{"case_id": "incident_root_cause_identified__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "collection_account_next_action__0", "kind": "choice", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0, 0.0]}
+{"case_id": "collection_account_next_action__1", "kind": "choice", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0, 0.0]}
+{"case_id": "collection_account_next_action__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [0.0, 0.0, 1.0]}
+{"case_id": "clinical_trial_protocol_deviation_severity__0", "kind": "score", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0, 0.0, 0.0]}
+{"case_id": "clinical_trial_protocol_deviation_severity__1", "kind": "score", "label": 1, "prediction": 0, "probabilities": [1.0, 0.0, 0.0, 0.0]}
+{"case_id": "clinical_trial_protocol_deviation_severity__2", "kind": "score", "label": 2, "prediction": 0, "probabilities": [1.0, 5.602836608886719e-06, 5.960464477539063e-08, 0.0]}
+{"case_id": "clinical_trial_protocol_deviation_severity__3", "kind": "score", "label": 3, "prediction": 2, "probabilities": [0.0, 0.0, 1.0, 0.0]}
+{"case_id": "emergency_contact_updated__0", "kind": "noul", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0]}
+{"case_id": "emergency_contact_updated__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "museum_object_acquisition_decision__0", "kind": "choice", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0, 0.0]}
+{"case_id": "museum_object_acquisition_decision__1", "kind": "choice", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0, 5.960464477539063e-08]}
+{"case_id": "museum_object_acquisition_decision__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [0.0, 0.0, 1.0]}
+{"case_id": "maintenance_work_order_completion__0", "kind": "score", "label": 0, "prediction": 1, "probabilities": [0.0, 1.0, 0.0, 5.960464477539063e-08]}
+{"case_id": "maintenance_work_order_completion__1", "kind": "score", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0, 0.0, 0.0]}
+{"case_id": "maintenance_work_order_completion__2", "kind": "score", "label": 2, "prediction": 2, "probabilities": [0.0, 0.0006070137023925781, 0.99951171875, 2.8371810913085938e-05]}
+{"case_id": "maintenance_work_order_completion__3", "kind": "score", "label": 3, "prediction": 3, "probabilities": [0.0, 0.0, 0.0, 1.0]}
+{"case_id": "parking_violation_contested__0", "kind": "noul", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0]}
+{"case_id": "parking_violation_contested__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "product_feature_request_disposition__0", "kind": "choice", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0, 0.0]}
+{"case_id": "product_feature_request_disposition__1", "kind": "choice", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0, 0.0]}
+{"case_id": "product_feature_request_disposition__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [0.0, 0.0, 1.0]}
+{"case_id": "merchant_fraud_risk__0", "kind": "score", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0, 0.0, 0.0]}
+{"case_id": "merchant_fraud_risk__1", "kind": "score", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0, 0.0, 0.0]}
+{"case_id": "merchant_fraud_risk__2", "kind": "score", "label": 2, "prediction": 2, "probabilities": [0.0, 0.4609375, 0.5390625, 2.205371856689453e-06]}
+{"case_id": "merchant_fraud_risk__3", "kind": "score", "label": 3, "prediction": 2, "probabilities": [0.0, 0.003482818603515625, 0.99658203125, 5.459785461425781e-05]}
+{"case_id": "hazardous_materials_label_present__0", "kind": "noul", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0]}
+{"case_id": "hazardous_materials_label_present__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0]}

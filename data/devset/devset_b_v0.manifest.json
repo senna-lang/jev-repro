@@ -1,0 +1,19 @@
+{
+  "version": 0,
+  "created": "2026-09-25",
+  "role": "backbone-selection dev set B; never training data",
+  "generator": "omp -p --no-session --no-tools --model openai-codex/gpt-5.6-terra",
+  "types_file": "internal-docs/devset_task_types_v0.json",
+  "labels_from": "generator target (one record per option)",
+  "rows": 198,
+  "types": 66,
+  "by_kind": {
+    "choice": 66,
+    "score": 88,
+    "noul": 44
+  },
+  "gold_v1_used_as_input": false,
+  "gold_v1_8gram_overlap_rows": 0,
+  "rows_containing_label_text": 1,
+  "sha256": "845e7e6efad387e1a05d8ab2920aae4d5a89787ae21337b5765346909400f9a8"
+}

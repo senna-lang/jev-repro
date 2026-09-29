@@ -1,0 +1,692 @@
+{
+  "quality": {
+    "choice": {
+      "n": 40,
+      "brier": 0.07742673569776305,
+      "nll": 0.4999340559128405,
+      "top1_accuracy": 0.975
+    },
+    "noul": {
+      "n": 20,
+      "brier": 0.09963527568425093,
+      "nll": 2.6857553232732108,
+      "threshold_accuracy": 0.85
+    },
+    "score": {
+      "n": 30,
+      "brier": 0.48115856604186324,
+      "nll": 4.099826612181949,
+      "top1_accuracy": 0.7333333333333333,
+      "expected_score_mae": 0.24616574290868132,
+      "normalised_emd": 0.12368869840110391
+    }
+  },
+  "outputs": {
+    "c01/department": {
+      "kind": "choice",
+      "probabilities": [
+        4.882830907691012e-13,
+        1.0,
+        2.526257697973186e-13
+      ]
+    },
+    "c02/department": {
+      "kind": "choice",
+      "probabilities": [
+        0.9999161660671234,
+        7.012370738299198e-13,
+        8.383757435459255e-05
+      ]
+    },
+    "c03/department": {
+      "kind": "choice",
+      "probabilities": [
+        4.738051119320048e-14,
+        1.0,
+        3.0876752572874157e-13
+      ]
+    },
+    "c04/department": {
+      "kind": "choice",
+      "probabilities": [
+        0.00037529704291894755,
+        2.1191019994532337e-12,
+        0.9996246993541718
+      ]
+    },
+    "c05/department": {
+      "kind": "choice",
+      "probabilities": [
+        1.0,
+        2.399725619476623e-12,
+        5.808764630933706e-14
+      ]
+    },
+    "c06/department": {
+      "kind": "choice",
+      "probabilities": [
+        1.0256759274338814e-12,
+        1.0,
+        1.0894488457032391e-13
+      ]
+    },
+    "c07/return_reason": {
+      "kind": "choice",
+      "probabilities": [
+        0.0036120529969810022,
+        0.9963879436254501,
+        1.9082451309039474e-10,
+        5.413398037939967e-11
+      ]
+    },
+    "c08/return_reason": {
+      "kind": "choice",
+      "probabilities": [
+        4.798208627431822e-13,
+        1.0,
+        5.954660684215308e-12,
+        1.549148083177673e-13
+      ]
+    },
+    "c09/return_reason": {
+      "kind": "choice",
+      "probabilities": [
+        1.3430246769297743e-13,
+        3.709359683019657e-13,
+        1.0,
+        1.596111781527749e-13
+      ]
+    },
+    "c10/return_reason": {
+      "kind": "choice",
+      "probabilities": [
+        8.316399814047232e-13,
+        5.087252111234152e-13,
+        8.509585612588989e-13,
+        1.0
+      ]
+    },
+    "c11/shipping_issue": {
+      "kind": "choice",
+      "probabilities": [
+        1.0,
+        1.4098288176385437e-13,
+        2.1985408624387338e-13,
+        1.9751135757536812e-14
+      ]
+    },
+    "c12/shipping_issue": {
+      "kind": "choice",
+      "probabilities": [
+        8.069524784498158e-14,
+        1.0,
+        1.1206556732090212e-13,
+        2.5325687302931276e-14
+      ]
+    },
+    "c13/shipping_issue": {
+      "kind": "choice",
+      "probabilities": [
+        5.177439579839849e-08,
+        4.5693231576909854e-10,
+        0.9999999403953552,
+        1.6556654864382375e-11
+      ]
+    },
+    "c14/requested_resolution": {
+      "kind": "choice",
+      "probabilities": [
+        1.0,
+        9.723996891510965e-15,
+        9.482939234480448e-13,
+        3.697025794870297e-14
+      ]
+    },
+    "c15/requested_resolution": {
+      "kind": "choice",
+      "probabilities": [
+        1.1390561174704325e-14,
+        1.0,
+        4.3284382627116475e-14,
+        3.030690089792225e-14
+      ]
+    },
+    "c16/requested_resolution": {
+      "kind": "choice",
+      "probabilities": [
+        2.4816130715354076e-10,
+        2.2708260442936938e-13,
+        1.0,
+        1.6856509366386109e-13
+      ]
+    },
+    "c17/tone": {
+      "kind": "choice",
+      "probabilities": [
+        0.9906682670116425,
+        0.009331721285945841,
+        7.040865754619538e-14
+      ]
+    },
+    "c18/tone": {
+      "kind": "choice",
+      "probabilities": [
+        4.056193954000826e-09,
+        1.1670669918805056e-10,
+        1.0
+      ]
+    },
+    "c19/tone": {
+      "kind": "choice",
+      "probabilities": [
+        4.5128877814348736e-14,
+        1.0,
+        8.206443743953226e-13
+      ]
+    },
+    "c20/return_topic": {
+      "kind": "choice",
+      "probabilities": [
+        3.4285544137102348e-12,
+        1.0,
+        1.4556566640763514e-12
+      ]
+    },
+    "s01/severity": {
+      "kind": "score",
+      "probabilities": [
+        1.0,
+        7.586307958511087e-12,
+        1.1779529035238479e-12
+      ]
+    },
+    "s02/severity": {
+      "kind": "score",
+      "probabilities": [
+        1.466902902417372e-14,
+        1.0,
+        1.7202290392895456e-12
+      ]
+    },
+    "s03/severity": {
+      "kind": "score",
+      "probabilities": [
+        1.7772952175663828e-11,
+        4.604278358317365e-10,
+        1.0
+      ]
+    },
+    "s04/report_quality": {
+      "kind": "score",
+      "probabilities": [
+        1.0,
+        1.784940893549171e-11,
+        1.1612579127462386e-10,
+        2.953796871674316e-11
+      ]
+    },
+    "s05/report_quality": {
+      "kind": "score",
+      "probabilities": [
+        0.5183287458494306,
+        0.1916226297117964,
+        0.29004858223288466,
+        2.5939507302535914e-08
+      ]
+    },
+    "s06/report_quality": {
+      "kind": "score",
+      "probabilities": [
+        1.3619984709500876e-08,
+        9.868220685049778e-10,
+        0.9998617321252823,
+        0.00013821711769568257
+      ]
+    },
+    "s07/report_quality": {
+      "kind": "score",
+      "probabilities": [
+        4.165792568484785e-13,
+        1.1101953740816264e-12,
+        8.243443208317928e-11,
+        1.0
+      ]
+    },
+    "s08/frustration": {
+      "kind": "score",
+      "probabilities": [
+        0.9999759495258331,
+        2.405375433821943e-05,
+        1.5772417081602434e-12
+      ]
+    },
+    "s09/frustration": {
+      "kind": "score",
+      "probabilities": [
+        4.5836053983778656e-10,
+        0.9999999105930328,
+        6.848010909721314e-08
+      ]
+    },
+    "s10/frustration": {
+      "kind": "score",
+      "probabilities": [
+        1.477443827443113e-10,
+        9.532369696103188e-11,
+        1.0
+      ]
+    },
+    "cn01/department": {
+      "kind": "choice",
+      "probabilities": [
+        4.916310078901783e-12,
+        9.91289809840288e-12,
+        1.0798465160419366e-12,
+        1.0
+      ]
+    },
+    "cn01/human_escalation": {
+      "kind": "noul",
+      "p_true": 1.0
+    },
+    "cn02/department": {
+      "kind": "choice",
+      "probabilities": [
+        1.0,
+        5.149684017158752e-13,
+        8.023884012910048e-13
+      ]
+    },
+    "cn02/is_urgent": {
+      "kind": "noul",
+      "p_true": 1.0
+    },
+    "cn03/shipping_issue": {
+      "kind": "choice",
+      "probabilities": [
+        1.0,
+        6.8976738383519365e-12,
+        2.6723387775553023e-12,
+        2.930311929452592e-13
+      ]
+    },
+    "cn03/repeat_contact": {
+      "kind": "noul",
+      "p_true": 1.0
+    },
+    "cn04/department": {
+      "kind": "choice",
+      "probabilities": [
+        1.0,
+        7.370325778136088e-12,
+        2.010248642632094e-11
+      ]
+    },
+    "cn04/payment_problem": {
+      "kind": "noul",
+      "p_true": 1.0
+    },
+    "cn05/department": {
+      "kind": "choice",
+      "probabilities": [
+        5.7813399518544155e-11,
+        1.0,
+        3.7832461425449187e-13
+      ]
+    },
+    "cn05/human_escalation": {
+      "kind": "noul",
+      "p_true": 6.344309597461416e-15
+    },
+    "cn06/return_topic": {
+      "kind": "choice",
+      "probabilities": [
+        0.500003108983833,
+        0.2499989803977266,
+        0.249997922153385
+      ]
+    },
+    "cn06/is_urgent": {
+      "kind": "noul",
+      "p_true": 3.7612258143096544e-12
+    },
+    "cn07/shipping_issue": {
+      "kind": "choice",
+      "probabilities": [
+        5.2860547705376094e-15,
+        1.0,
+        2.451046078695351e-14,
+        8.11048634491531e-15
+      ]
+    },
+    "cn07/repeat_contact": {
+      "kind": "noul",
+      "p_true": 1.0
+    },
+    "cn08/department": {
+      "kind": "choice",
+      "probabilities": [
+        1.0,
+        2.7241347493180368e-12,
+        1.262592663070234e-11
+      ]
+    },
+    "cn08/is_urgent": {
+      "kind": "noul",
+      "p_true": 1.0
+    },
+    "cn09/return_topic": {
+      "kind": "choice",
+      "probabilities": [
+        8.742230822143414e-13,
+        1.0,
+        2.1473001029852326e-12
+      ]
+    },
+    "cn09/payment_problem": {
+      "kind": "noul",
+      "p_true": 1.799167368907173e-10
+    },
+    "cn10/department": {
+      "kind": "choice",
+      "probabilities": [
+        2.086421652309524e-12,
+        5.4819271073957e-11,
+        1.0
+      ]
+    },
+    "cn10/is_urgent": {
+      "kind": "noul",
+      "p_true": 2.9276332639898654e-14
+    },
+    "cs01/return_reason": {
+      "kind": "choice",
+      "probabilities": [
+        1.2398639307726982e-13,
+        1.4999982483772706e-13,
+        1.0,
+        6.176299966510903e-14
+      ]
+    },
+    "cs01/frustration": {
+      "kind": "score",
+      "probabilities": [
+        4.8893790281980015e-09,
+        1.0,
+        2.0317657134838788e-11
+      ]
+    },
+    "cs02/department": {
+      "kind": "choice",
+      "probabilities": [
+        1.8544922406526707e-14,
+        1.0,
+        1.2851850194210202e-13
+      ]
+    },
+    "cs02/severity": {
+      "kind": "score",
+      "probabilities": [
+        3.721860144433259e-14,
+        2.415433228525831e-13,
+        1.0
+      ]
+    },
+    "cs03/shipping_issue": {
+      "kind": "choice",
+      "probabilities": [
+        1.0,
+        6.645990805425242e-14,
+        4.3309290530902994e-14,
+        1.880228119145131e-14
+      ]
+    },
+    "cs03/severity": {
+      "kind": "score",
+      "probabilities": [
+        4.4008729129711797e-07,
+        0.9999995529651642,
+        1.8042457916833373e-09
+      ]
+    },
+    "cs04/requested_resolution": {
+      "kind": "choice",
+      "probabilities": [
+        1.0,
+        3.392327752009883e-14,
+        4.2793197529895796e-11,
+        6.094205289741044e-14
+      ]
+    },
+    "cs04/frustration": {
+      "kind": "score",
+      "probabilities": [
+        5.935845927604972e-12,
+        1.0,
+        4.611577546087954e-11
+      ]
+    },
+    "cs05/department": {
+      "kind": "choice",
+      "probabilities": [
+        0.0007490559375962214,
+        0.9992509484291077,
+        3.2684784766261145e-12
+      ]
+    },
+    "cs05/severity": {
+      "kind": "score",
+      "probabilities": [
+        4.932426690392247e-09,
+        1.0,
+        3.335728759185086e-10
+      ]
+    },
+    "cs06/return_topic": {
+      "kind": "choice",
+      "probabilities": [
+        1.0,
+        1.2287992230695704e-11,
+        1.5693670571489558e-13
+      ]
+    },
+    "cs06/frustration": {
+      "kind": "score",
+      "probabilities": [
+        1.0,
+        3.199284691987562e-09,
+        1.4917518582164765e-12
+      ]
+    },
+    "cs07/department": {
+      "kind": "choice",
+      "probabilities": [
+        1.5332413073540496e-13,
+        1.0,
+        2.1081569677223224e-13
+      ]
+    },
+    "cs07/report_quality": {
+      "kind": "score",
+      "probabilities": [
+        1.0290021564343665e-07,
+        9.389799763490081e-07,
+        0.9924901127815247,
+        0.007508850109132936
+      ]
+    },
+    "cs08/shipping_issue": {
+      "kind": "choice",
+      "probabilities": [
+        4.239779747003739e-11,
+        1.104478316733804e-12,
+        1.0,
+        3.890909889491353e-14
+      ]
+    },
+    "cs08/frustration": {
+      "kind": "score",
+      "probabilities": [
+        1.5384129532741535e-06,
+        0.9999984502792358,
+        1.594186116229855e-10
+      ]
+    },
+    "cs09/department": {
+      "kind": "choice",
+      "probabilities": [
+        1.0,
+        2.7026346210733728e-14,
+        2.33624700984575e-13
+      ]
+    },
+    "cs09/frustration": {
+      "kind": "score",
+      "probabilities": [
+        3.811098289731952e-09,
+        1.0,
+        2.470883346357617e-10
+      ]
+    },
+    "cs10/requested_resolution": {
+      "kind": "choice",
+      "probabilities": [
+        4.796711110992627e-10,
+        7.801072084861506e-12,
+        0.4999927588946646,
+        0.5000072266624045
+      ]
+    },
+    "cs10/severity": {
+      "kind": "score",
+      "probabilities": [
+        1.5206217735723795e-10,
+        0.9999999403953552,
+        5.9439294472062726e-08
+      ]
+    },
+    "sn01/severity": {
+      "kind": "score",
+      "probabilities": [
+        6.120146116325422e-13,
+        1.8980957132647483e-11,
+        1.0
+      ]
+    },
+    "sn01/is_urgent": {
+      "kind": "noul",
+      "p_true": 0.005493498443538414
+    },
+    "sn02/severity": {
+      "kind": "score",
+      "probabilities": [
+        1.0,
+        9.500376635897451e-14,
+        2.1072889855327002e-14
+      ]
+    },
+    "sn02/is_urgent": {
+      "kind": "noul",
+      "p_true": 5.3205070151040104e-15
+    },
+    "sn03/severity": {
+      "kind": "score",
+      "probabilities": [
+        4.104733245569893e-14,
+        1.0,
+        3.3661431686132846e-12
+      ]
+    },
+    "sn03/repeat_contact": {
+      "kind": "noul",
+      "p_true": 1.0
+    },
+    "sn04/report_quality": {
+      "kind": "score",
+      "probabilities": [
+        0.9999983906745911,
+        2.4502013062384755e-09,
+        1.5905585360326269e-06,
+        6.071114720977364e-12
+      ]
+    },
+    "sn04/human_escalation": {
+      "kind": "noul",
+      "p_true": 4.6002969433800445e-08
+    },
+    "sn05/report_quality": {
+      "kind": "score",
+      "probabilities": [
+        1.7388939740166018e-10,
+        5.622954363411481e-10,
+        0.7499980777627968,
+        0.25000193848521235
+      ]
+    },
+    "sn05/is_urgent": {
+      "kind": "noul",
+      "p_true": 1.0
+    },
+    "sn06/frustration": {
+      "kind": "score",
+      "probabilities": [
+        2.4435463851987804e-10,
+        0.9999603927135468,
+        3.960925920393904e-05
+      ]
+    },
+    "sn06/human_escalation": {
+      "kind": "noul",
+      "p_true": 1.0
+    },
+    "sn07/severity": {
+      "kind": "score",
+      "probabilities": [
+        5.252541326891485e-12,
+        1.0,
+        3.431053081622351e-11
+      ]
+    },
+    "sn07/repeat_contact": {
+      "kind": "noul",
+      "p_true": 2.0046569655998714e-12
+    },
+    "sn08/severity": {
+      "kind": "score",
+      "probabilities": [
+        3.3325152690048875e-13,
+        3.3904354848526396e-12,
+        1.0
+      ]
+    },
+    "sn08/is_urgent": {
+      "kind": "noul",
+      "p_true": 1.0
+    },
+    "sn09/severity": {
+      "kind": "score",
+      "probabilities": [
+        9.213951216585636e-14,
+        1.0,
+        3.5123457262725645e-12
+      ]
+    },
+    "sn09/is_urgent": {
+      "kind": "noul",
+      "p_true": 3.3174427391073884e-14
+    },
+    "sn10/report_quality": {
+      "kind": "score",
+      "probabilities": [
+        0.25010769064254346,
+        0.25218128079359303,
+        0.497710962128167,
+        7.823087151692665e-08
+      ]
+    },
+    "sn10/human_escalation": {
+      "kind": "noul",
+      "p_true": 1.0
+    }
+  }
+}

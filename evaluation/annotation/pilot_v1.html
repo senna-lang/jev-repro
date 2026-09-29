@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Jev風評価 — Pilotアノテーション</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,500;6..72,650&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --paper: oklch(0.975 0.012 85);
+      --paper-deep: oklch(0.94 0.022 85);
+      --ink: oklch(0.23 0.025 45);
+      --muted: oklch(0.49 0.025 55);
+      --rule: oklch(0.76 0.035 75);
+      --accent: oklch(0.54 0.17 32);
+      --accent-deep: oklch(0.42 0.14 29);
+      --focus: oklch(0.65 0.14 75);
+      --choice: oklch(0.48 0.12 252);
+      --score: oklch(0.51 0.13 147);
+      --noul: oklch(0.55 0.16 32);
+      --max: 76rem;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 20rem;
+      color: var(--ink);
+      background:
+        linear-gradient(to right, transparent 0, transparent calc(50% - var(--max) / 2), color-mix(in oklch, var(--rule), transparent 58%) calc(50% - var(--max) / 2), color-mix(in oklch, var(--rule), transparent 58%) calc(50% - var(--max) / 2 + 1px), transparent calc(50% - var(--max) / 2 + 1px)),
+        var(--paper);
+      font-family: "Source Sans 3", sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .page { width: min(calc(100% - 2.5rem), var(--max)); margin: 0 auto; }
+    .masthead {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 2rem;
+      align-items: end;
+      padding: 3.5rem 0 1.6rem;
+      border-bottom: 3px solid var(--ink);
+    }
+    .eyebrow, .meta, .kind, .case-number, .progress-copy, .footer-note {
+      font-family: "DM Mono", monospace;
+      font-size: 0.73rem;
+      letter-spacing: 0.055em;
+      text-transform: uppercase;
+    }
+    .eyebrow { margin: 0 0 0.6rem; color: var(--accent-deep); font-weight: 500; }
+    h1 { margin: 0; font-family: "Newsreader", Georgia, serif; font-size: clamp(2.3rem, 6vw, 4.6rem); line-height: 0.9; font-weight: 650; letter-spacing: -0.045em; }
+    .meta { color: var(--muted); text-align: right; line-height: 1.65; }
+
+    .protocol {
+      display: grid;
+      grid-template-columns: minmax(15rem, 1fr) minmax(24rem, 2fr);
+      gap: clamp(2rem, 7vw, 6rem);
+      padding: 2.2rem 0 2.8rem;
+      border-bottom: 1px solid var(--rule);
+    }
+    .protocol h2 { margin: 0; font: 600 1rem/1.2 "DM Mono", monospace; text-transform: uppercase; letter-spacing: 0.055em; color: var(--accent-deep); }
+    .protocol ol { margin: 0; padding-left: 1.2rem; }
+    .protocol li + li { margin-top: 0.5rem; }
+    .protocol strong { font-weight: 700; }
+    .protocol-note { margin: 1.15rem 0 0; padding-top: 1rem; border-top: 1px solid var(--rule); color: var(--muted); }
+
+    .identity {
+      display: flex;
+      gap: 0.8rem;
+      align-items: end;
+      padding: 1.4rem 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .identity label { display: grid; gap: 0.35rem; flex: 1; max-width: 26rem; font-weight: 600; }
+    input[type="text"], textarea {
+      width: 100%; border: 1px solid var(--ink); border-radius: 0; padding: 0.65rem 0.75rem;
+      color: var(--ink); background: color-mix(in oklch, var(--paper), white 45%); font: inherit;
+    }
+    input[type="text"]:focus, textarea:focus { outline: 3px solid color-mix(in oklch, var(--focus), transparent 55%); outline-offset: 2px; }
+
+    .progress-zone { position: sticky; top: 0; z-index: 2; padding: 0.9rem 0; background: color-mix(in oklch, var(--paper), transparent 4%); border-bottom: 1px solid var(--rule); }
+    .progress-line { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 0.85rem; }
+    .progress-track { height: 0.45rem; background: var(--paper-deep); overflow: hidden; }
+    .progress-bar { width: 0; height: 100%; background: var(--accent); transition: width 280ms cubic-bezier(.16, 1, .3, 1); }
+    .progress-copy { color: var(--muted); }
+
+    form { padding-bottom: 3rem; }
+    .case { padding: clamp(2rem, 5vw, 4rem) 0; border-bottom: 1px solid var(--rule); scroll-margin-top: 4rem; }
+    .case-head { display: grid; grid-template-columns: 4.2rem minmax(0, 1fr); gap: 1rem; align-items: start; }
+    .case-number { color: var(--accent-deep); padding-top: 0.3rem; }
+    .case h2 { margin: 0; font-family: "Newsreader", Georgia, serif; font-size: clamp(1.55rem, 3vw, 2.35rem); line-height: 1; letter-spacing: -0.025em; font-weight: 650; }
+    .state { margin: 1.15rem 0 0 5.2rem; padding: 1rem 1.2rem 1.05rem; border-left: 3px solid var(--ink); background: color-mix(in oklch, var(--paper-deep), transparent 35%); font: 500 clamp(1.05rem, 2vw, 1.25rem)/1.42 "Newsreader", Georgia, serif; }
+
+    .branch { margin: 2rem 0 0 5.2rem; padding: 0; border: 0; min-width: 0; }
+    .branch + .branch { padding-top: 2rem; border-top: 1px dashed var(--rule); }
+    .branch legend { display: flex; align-items: center; gap: 0.6rem; padding: 0; font-size: 1.08rem; font-weight: 700; }
+    .kind { display: inline-block; padding: 0.18rem 0.38rem; color: var(--paper); line-height: 1; }
+    .kind-choice { background: var(--choice); }
+    .kind-score { background: var(--score); }
+    .kind-noul { background: var(--noul); }
+    .instructions { margin: 0.5rem 0 1rem; color: var(--muted); }
+    .answers { display: grid; gap: 0.45rem; }
+    .answer {
+      display: grid; grid-template-columns: 1.35rem minmax(0, 1fr); gap: 0.65rem; align-items: start;
+      padding: 0.65rem 0.75rem; border: 1px solid var(--rule); background: color-mix(in oklch, var(--paper), white 36%); cursor: pointer;
+      transition: background 160ms ease-out, border-color 160ms ease-out, transform 160ms ease-out;
+    }
+    .answer:hover { border-color: var(--ink); transform: translateX(3px); }
+    .answer:has(input:checked) { border-color: var(--accent); background: color-mix(in oklch, var(--accent), var(--paper) 93%); }
+    .answer input { margin: 0.27rem 0 0; accent-color: var(--accent); }
+    .answer:focus-within { outline: 3px solid color-mix(in oklch, var(--focus), transparent 55%); outline-offset: 2px; }
+    .branch-support { display: grid; grid-template-columns: auto minmax(14rem, 1fr); gap: 0.65rem 1rem; align-items: center; margin-top: 0.85rem; color: var(--muted); font-size: 0.92rem; }
+    .branch-support label { display: flex; gap: 0.45rem; align-items: center; cursor: pointer; }
+    .branch-support input { accent-color: var(--accent); }
+    .branch-support input[type="text"] { min-width: 0; padding: 0.38rem 0.5rem; font-size: 0.92rem; }
+
+    .export-zone { display: grid; grid-template-columns: 1fr auto; gap: 1rem; align-items: center; padding: 2rem 0 5rem; }
+    .export-zone h2 { margin: 0 0 0.25rem; font: 650 1.25rem/1.1 "Newsreader", Georgia, serif; }
+    .export-zone p { margin: 0; color: var(--muted); }
+    button { border: 0; border-radius: 0; padding: 0.82rem 1.2rem; color: var(--paper); background: var(--accent); cursor: pointer; font: 600 0.88rem/1 "DM Mono", monospace; letter-spacing: 0.035em; text-transform: uppercase; }
+    button:hover { background: var(--accent-deep); }
+    button:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+    #status { min-height: 1.5rem; margin: 0; color: var(--accent-deep); font-weight: 600; }
+    .footer-note { padding: 1rem 0 2rem; color: var(--muted); border-top: 1px solid var(--rule); }
+
+    @media (max-width: 44rem) {
+      .page { width: min(calc(100% - 1.5rem), var(--max)); }
+      .masthead, .protocol, .export-zone { grid-template-columns: 1fr; }
+      .meta { text-align: left; }
+      .case-head { grid-template-columns: 1fr; gap: 0.3rem; }
+      .state, .branch { margin-left: 0; }
+      .identity, .branch-support { align-items: stretch; grid-template-columns: 1fr; flex-direction: column; }
+      .export-zone { align-items: start; }
+    }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; } }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="masthead">
+      <div>
+        <p class="eyebrow">ブラインド人手アノテーション · pilot v1</p>
+        <h1>サポート<br>判断シート</h1>
+      </div>
+      <div class="meta">15リクエスト<br><span id="branch-total">—</span> 個の独立した判断<br>ローカルブラウザのみで動作</div>
+    </header>
+
+    <section class="protocol" aria-labelledby="protocol-title">
+      <h2 id="protocol-title">回答前のお願い</h2>
+      <div>
+        <ol>
+          <li>判断材料は、<strong>メッセージ・質問文・提示された選択肢</strong>だけです。</li>
+          <li>モデル、検索、他の回答者、先に答えた設問を参照しないでください。</li>
+          <li>各設問では最も適切な答えを1つ選んでください。判断が難しい場合も最善の答えを選び、そのうえで「曖昧」をチェックしてください。</li>
+          <li>同じメッセージに複数の設問がある場合、それぞれは独立した質問です。質問文の違いを意識してください。</li>
+          <li>すべての設問に回答したらJSONファイルをダウンロードし、調査担当者へ送ってください。</li>
+        </ol>
+        <p class="protocol-note">下書きはこのブラウザ内だけに保存され、外部へ送信されません。このフォームにモデル出力や想定解は含まれていません。</p>
+      </div>
+    </section>
+
+    <section class="identity" aria-label="回答者情報">
+      <label for="annotator-id">回答者IDまたはイニシャル
+        <input id="annotator-id" type="text" autocomplete="off" placeholder="例: evaluator-01" required>
+      </label>
+    </section>
+
+    <section class="progress-zone" aria-label="回答進捗">
+      <div class="progress-line">
+        <span class="progress-copy">進捗</span>
+        <div class="progress-track" aria-hidden="true"><div class="progress-bar" id="progress-bar"></div></div>
+        <span class="progress-copy" id="progress-text">0 / 0</span>
+      </div>
+    </section>
+
+    <form id="annotation-form" novalidate></form>
+
+    <section class="export-zone" aria-labelledby="export-title">
+      <div>
+        <h2 id="export-title">回答を出力する</h2>
+        <p id="status" role="status" aria-live="polite">すべての設問に回答すると出力できます。</p>
+      </div>
+      <button id="export-button" type="button">回答JSONをダウンロード</button>
+    </section>
+
+    <footer class="footer-note">インストゥルメント: gold-annotation-pilot · フォーム版: pilot_v1 · 回答は送信されません</footer>
+  </main>
+
+  <script>
+    "use strict";
+
+    const FORM_VERSION = "pilot_v1";
+    const STORAGE_KEY = "jev-gold-annotation-pilot-v1";
+    const CASES = [
+      { id: "pilot-01", state: "年間プランの更新は明日です。解約したいのですが、アカウント設定に解約の項目が見当たりません。", branches: [
+        { id: "department", kind: "choice", instructions: "このメッセージはどの担当チームが扱うべきですか？", options: ["請求担当 — サブスクリプション、請求書、支払い", "技術担当 — 不具合、障害、製品へのアクセス", "営業担当 — プラン選択や購入前の質問"] },
+        { id: "is_urgent", kind: "noul", instructions: "このメッセージには緊急性または期限の切迫が表れていますか？" }
+      ] },
+      { id: "pilot-02", state: "昨日デスクチェアを1脚注文したのに、クレジットカードに同じ請求が2件あります。余分な請求を取り消してください。", branches: [
+        { id: "department", kind: "choice", instructions: "このメッセージはどの担当チームが扱うべきですか？", options: ["請求担当 — サブスクリプション、請求書、支払い", "技術担当 — 不具合、障害、製品へのアクセス", "営業担当 — プラン選択や購入前の質問"] },
+        { id: "payment_problem", kind: "noul", instructions: "顧客は支払いまたは請求の問題を報告していますか？" }
+      ] },
+      { id: "pilot-03", state: "配送業者は3日前に荷物を配達済みにしましたが、玄関にも管理人のところにもありません。追跡情報もそれ以降変わっていません。", branches: [
+        { id: "shipping_issue", kind: "choice", instructions: "どの配送トラブルが説明されていますか？", options: ["荷物は遅れているが配送中である", "配達済みになっているが受け取っていない", "荷物が誤った住所へ送られた", "荷物が配送中に破損した"] }
+      ] },
+      { id: "pilot-04", state: "箱にはワイヤレスヘッドホンと書いてありますが、中身はスマホケースでした。返金ではなく、代金を払ったヘッドホンが欲しいです。", branches: [
+        { id: "return_reason", kind: "choice", instructions: "顧客が注文について助けを必要としている理由は何ですか？", options: ["サイズやフィット感が合わない", "別の商品が届いた", "商品が破損している、または不良品である", "顧客の気が変わった"] },
+        { id: "requested_resolution", kind: "choice", instructions: "顧客が最も望んでいる対応は何ですか？", options: ["正しい商品への交換", "返金", "同じ商品の再送", "情報だけが欲しく、対応は不要"] }
+      ] },
+      { id: "pilot-05", state: "チーム全員がサインイン後に真っ白な画面になります。今朝からChromeでもSafariでも発生し、誰もレポートにアクセスできません。", branches: [
+        { id: "severity", kind: "score", instructions: "報告された問題の深刻度はどの程度ですか？", options: ["見た目だけの問題で、機能への影響はない", "機能は壊れているが、現実的な回避策がある", "回避策がなく、業務を止める問題である"] },
+        { id: "human_escalation", kind: "noul", instructions: "顧客は人間の担当者と話したいと求めていますか？" }
+      ] },
+      { id: "pilot-06", state: "プロフィールページは動作しますが、4KモニターではSaveボタンの文字の下端が少し切れています。", branches: [
+        { id: "severity", kind: "score", instructions: "報告された問題の深刻度はどの程度ですか？", options: ["見た目だけの問題で、機能への影響はない", "機能は壊れているが、現実的な回避策がある", "回避策がなく、業務を止める問題である"] }
+      ] },
+      { id: "pilot-07", state: "PDFエクスポートが動かなくなりました。CSVなら出力して手作業で変換できますが、チームの作業時間がかなり増えています。", branches: [
+        { id: "severity", kind: "score", instructions: "報告された問題の深刻度はどの程度ですか？", options: ["見た目だけの問題で、機能への影響はない", "機能は壊れているが、現実的な回避策がある", "回避策がなく、業務を止める問題である"] },
+        { id: "report_quality", kind: "score", instructions: "この報告は、問題を調査するエンジニアにとってどの程度役立ちますか？", options: ["壊れているとしか書かれていない", "機能名はあるが、手順も環境もない", "再現手順または実行環境のどちらかがある", "再現手順と実行環境の両方がある"] }
+      ] },
+      { id: "pilot-08", state: "同じ不具合のある交換品が届くのはこれで3回目です。あなたたちのサポートは時間の無駄で、もう我慢できません。", branches: [
+        { id: "tone", kind: "choice", instructions: "顧客の口調はどれですか？", options: ["冷静で事実中心", "不満はあるが礼儀を保っている", "怒っている、攻撃的、または脅しがある"] },
+        { id: "frustration", kind: "score", instructions: "顧客はどの程度フラストレーションを感じているように見えますか？", options: ["冷静で、事実を述べているだけ", "不満はあるが礼儀を保っている", "非常に怒っている、攻撃的、または脅しがある"] }
+      ] },
+      { id: "pilot-09", state: "Teamプランに監査ログが含まれるか確認してもらえますか？新しいプロジェクト向けにいくつかの選択肢を比較しています。", branches: [
+        { id: "tone", kind: "choice", instructions: "顧客の口調はどれですか？", options: ["冷静で事実中心", "不満はあるが礼儀を保っている", "怒っている、攻撃的、または脅しがある"] },
+        { id: "is_urgent", kind: "noul", instructions: "このメッセージには緊急性または期限の切迫が表れていますか？" }
+      ] },
+      { id: "pilot-10", state: "前のチャットでもう2回説明しました。この問題を最後まで担当できる人間の担当者につないでください。", branches: [
+        { id: "human_escalation", kind: "noul", instructions: "顧客は人間の担当者と話したいと求めていますか？" },
+        { id: "repeat_contact", kind: "noul", instructions: "顧客はこの問題について、以前にも問い合わせたと述べていますか？" }
+      ] },
+      { id: "pilot-11", state: "追跡ページでは9日間ずっと同じ都市にあります。当初の配達予定日は先週金曜でしたが、配送業者はまだ輸送中だと言っています。", branches: [
+        { id: "shipping_issue", kind: "choice", instructions: "どの配送トラブルが説明されていますか？", options: ["荷物は遅れているが配送中である", "配達済みになっているが受け取っていない", "荷物が誤った住所へ送られた", "荷物が配送中に破損した"] },
+        { id: "severity", kind: "score", instructions: "この顧客にとって、問題の深刻度はどの程度ですか？", options: ["対応を要しない軽微な不便", "回避策または解決待ちという見込みがある顧客問題", "現実的な回避策がなく、業務を止める問題"] }
+      ] },
+      { id: "pilot-12", state: "先週ブーツを返送し、配送業者によると月曜にそちらへ届いています。返金はいつ受け取れますか？", branches: [
+        { id: "return_topic", kind: "choice", instructions: "顧客が求めている情報は何ですか？", options: ["商品を返品できるかどうか", "すでに送った返品の進捗", "別のサイズへ交換する方法"] }
+      ] },
+      { id: "pilot-13", state: "明日の朝に給与計算を実行する必要がありますが、会計連携が正午からずっと失敗しています。9時までに動く必要があります。", branches: [
+        { id: "is_urgent", kind: "noul", instructions: "このメッセージには緊急性または期限の切迫が表れていますか？" },
+        { id: "severity", kind: "score", instructions: "報告された問題の深刻度はどの程度ですか？", options: ["見た目だけの問題で、機能への影響はない", "機能は壊れているが、現実的な回避策がある", "回避策がなく、業務を止める問題である"] }
+      ] },
+      { id: "pilot-14", state: "Connect Stripeをクリックすると、ページが一瞬点滅して設定画面へ戻ります。2つのブラウザで試しました。来月の製品ローンチ前に動作させる必要があります。", branches: [
+        { id: "department", kind: "choice", instructions: "このメッセージはどの担当チームが扱うべきですか？", options: ["請求担当 — サブスクリプション、請求書、支払い", "技術担当 — 不具合、障害、製品へのアクセス", "営業担当 — プラン選択や購入前の質問"] },
+        { id: "report_quality", kind: "score", instructions: "この報告は、問題を調査するエンジニアにとってどの程度役立ちますか？", options: ["壊れているとしか書かれていない", "機能名はあるが、手順も環境もない", "再現手順または実行環境のどちらかがある", "再現手順と実行環境の両方がある"] }
+      ] },
+      { id: "pilot-15", state: "注文品は6日遅れて届き、靴のサイズも違いました。さらに身に覚えのない請求があります。どう対応してくれるのですか？", branches: [
+        { id: "department", kind: "choice", instructions: "このメッセージを最初に扱うべき担当チームはどこですか？", options: ["返品担当 — 交換、返金、誤配送、破損品", "配送担当 — 配達状況、遅延、紛失", "請求担当 — 請求書、支払い、カード請求"] },
+        { id: "tone", kind: "choice", instructions: "顧客の口調はどれですか？", options: ["冷静で事実中心", "不満はあるが礼儀を保っている", "怒っている、攻撃的、または脅しがある"] }
+      ] }
+    ];
+
+    const form = document.querySelector("#annotation-form");
+    const annotatorInput = document.querySelector("#annotator-id");
+    const progressBar = document.querySelector("#progress-bar");
+    const progressText = document.querySelector("#progress-text");
+    const status = document.querySelector("#status");
+    const storage = loadDraft();
+    let draft = storage ?? { annotator_id: "", answers: {} };
+
+    function loadDraft() {
+      try { return JSON.parse(window.localStorage.getItem(STORAGE_KEY)); }
+      catch { return null; }
+    }
+
+    function saveDraft() {
+      window.localStorage.setItem(STORAGE_KEY, JSON.stringify(draft));
+    }
+
+    function keyFor(caseId, branchId) { return caseId + "::" + branchId; }
+    function kindClass(kind) { return "kind kind-" + kind; }
+    function kindLabel(kind) { return kind === "noul" ? "はい / いいえ" : kind === "choice" ? "選択" : "段階評価"; }
+
+    function answerOptions(branch) {
+      if (branch.kind === "noul") return [{ value: true, label: "はい" }, { value: false, label: "いいえ" }];
+      return branch.options.map((option, index) => ({ value: index, label: option }));
+    }
+
+    function render() {
+      annotatorInput.value = draft.annotator_id || "";
+      const branchTotal = CASES.reduce((sum, item) => sum + item.branches.length, 0);
+      document.querySelector("#branch-total").textContent = branchTotal;
+      const fragment = document.createDocumentFragment();
+
+      CASES.forEach((item, caseIndex) => {
+        const section = document.createElement("section");
+        section.className = "case";
+        section.id = item.id;
+        section.dataset.caseId = item.id;
+
+        const head = document.createElement("div");
+        head.className = "case-head";
+        const number = document.createElement("div");
+        number.className = "case-number";
+        number.textContent = String(caseIndex + 1).padStart(2, "0");
+        const title = document.createElement("h2");
+        title.textContent = "顧客メッセージ";
+        head.append(number, title);
+
+        const state = document.createElement("blockquote");
+        state.className = "state";
+        state.textContent = item.state;
+        section.append(head, state);
+
+        item.branches.forEach((branch, branchIndex) => {
+          const id = keyFor(item.id, branch.id);
+          const answer = draft.answers[id] || { selection: null, flagged: false, note: "" };
+          const fieldset = document.createElement("fieldset");
+          fieldset.className = "branch";
+          fieldset.dataset.branchKey = id;
+          const legend = document.createElement("legend");
+          const badge = document.createElement("span");
+          badge.className = kindClass(branch.kind);
+          badge.textContent = kindLabel(branch.kind);
+          const text = document.createElement("span");
+          text.textContent = "設問 " + (branchIndex + 1);
+          legend.append(badge, text);
+          const instructions = document.createElement("p");
+          instructions.className = "instructions";
+          instructions.textContent = branch.instructions;
+          const answers = document.createElement("div");
+          answers.className = "answers";
+
+          answerOptions(branch).forEach((option, optionIndex) => {
+            const label = document.createElement("label");
+            label.className = "answer";
+            const input = document.createElement("input");
+            input.type = "radio";
+            input.name = id;
+            input.value = String(optionIndex);
+            input.checked = answer.selection === option.value;
+            input.addEventListener("change", () => {
+              const current = draft.answers[id] || { flagged: false, note: "" };
+              draft.answers[id] = { ...current, selection: option.value };
+              saveDraft();
+              updateProgress();
+            });
+            const answerText = document.createElement("span");
+            answerText.textContent = option.label;
+            label.append(input, answerText);
+            answers.append(label);
+          });
+
+          const support = document.createElement("div");
+          support.className = "branch-support";
+          const flagLabel = document.createElement("label");
+          const flag = document.createElement("input");
+          flag.type = "checkbox";
+          flag.checked = Boolean(answer.flagged);
+          flag.addEventListener("change", () => {
+            const current = draft.answers[id] || { selection: null, note: "" };
+            draft.answers[id] = { ...current, flagged: flag.checked };
+            saveDraft();
+          });
+          flagLabel.append(flag, document.createTextNode("判断が難しい・曖昧である"));
+          const note = document.createElement("input");
+          note.type = "text";
+          note.placeholder = "調査担当者への任意メモ";
+          note.value = answer.note || "";
+          note.setAttribute("aria-label", "任意のアノテーションメモ");
+          note.addEventListener("input", () => {
+            const current = draft.answers[id] || { selection: null, flagged: false };
+            draft.answers[id] = { ...current, note: note.value };
+            saveDraft();
+          });
+          support.append(flagLabel, note);
+          fieldset.append(legend, instructions, answers, support);
+          section.append(fieldset);
+        });
+        fragment.append(section);
+      });
+      form.replaceChildren(fragment);
+      updateProgress();
+    }
+
+    function allBranches() {
+      return CASES.flatMap(item => item.branches.map(branch => ({ caseId: item.id, branch })));
+    }
+
+    function updateProgress() {
+      const branches = allBranches();
+      const complete = branches.filter(({ caseId, branch }) => {
+        const value = draft.answers[keyFor(caseId, branch.id)]?.selection;
+        return value !== null && value !== undefined;
+      }).length;
+      const percent = (complete / branches.length) * 100;
+      progressBar.style.width = percent + "%";
+      progressText.textContent = complete + " / " + branches.length;
+      document.title = "(" + complete + "/" + branches.length + ") Jev風評価 — Pilotアノテーション";
+    }
+
+    function buildExport() {
+      return {
+        schema_version: 1,
+        instrument: "gold-annotation-pilot",
+        form_version: FORM_VERSION,
+        annotator_id: draft.annotator_id.trim(),
+        submitted_at: new Date().toISOString(),
+        answers: allBranches().map(({ caseId, branch }) => {
+          const answer = draft.answers[keyFor(caseId, branch.id)];
+          return {
+            case_id: caseId,
+            branch_id: branch.id,
+            kind: branch.kind,
+            selection: answer.selection,
+            flagged: Boolean(answer.flagged),
+            note: answer.note.trim()
+          };
+        })
+      };
+    }
+
+    document.querySelector("#export-button").addEventListener("click", () => {
+      draft.annotator_id = annotatorInput.value.trim();
+      saveDraft();
+      const missingName = !draft.annotator_id;
+      const incomplete = allBranches().filter(({ caseId, branch }) => {
+        const selection = draft.answers[keyFor(caseId, branch.id)]?.selection;
+        return selection === null || selection === undefined;
+      });
+      if (missingName || incomplete.length) {
+        status.textContent = missingName
+          ? "出力前に回答者IDを入力してください。"
+          : "未回答の設問が " + incomplete.length + " 件あります。";
+        (missingName ? annotatorInput : document.querySelector('[data-branch-key="' + keyFor(incomplete[0].caseId, incomplete[0].branch.id) + '"] input')).focus();
+        return;
+      }
+      const payload = buildExport();
+      const blob = new Blob([JSON.stringify(payload, null, 2) + "\n"], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const anchor = document.createElement("a");
+      anchor.href = url;
+      anchor.download = "gold-annotation-" + FORM_VERSION + "-" + payload.annotator_id.replace(/[^a-z0-9_-]/gi, "_") + ".json";
+      anchor.click();
+      URL.revokeObjectURL(url);
+      status.textContent = "回答JSONをダウンロードしました。調査担当者へ送ってください。";
+    });
+
+    annotatorInput.addEventListener("input", () => { draft.annotator_id = annotatorInput.value; saveDraft(); });
+    render();
+  </script>
+</body>
+</html>

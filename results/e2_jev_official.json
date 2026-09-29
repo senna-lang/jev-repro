@@ -1,0 +1,681 @@
+{
+  "model": "jev-1.13.0",
+  "input_tokens": 4579,
+  "rows": [
+    {
+      "case_id": "quickstart_ticket/department",
+      "kind": "choice",
+      "official": [
+        0.84,
+        0.159,
+        0.001
+      ],
+      "official_raw": {
+        "choice": "billing",
+        "probabilities": {
+          "billing": 0.84,
+          "technical": 0.159,
+          "sales": 0.001
+        },
+        "confidence": 0.596
+      },
+      "jev_now": [
+        0.61,
+        0.39,
+        0.0
+      ],
+      "jev_now_raw": {
+        "type": "choice",
+        "choice": "billing",
+        "confidence": 0.41,
+        "probabilities": {
+          "technical": 0.39,
+          "billing": 0.61,
+          "sales": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "quickstart_ticket/frustration",
+      "kind": "score",
+      "official": null,
+      "official_raw": {
+        "score": 1.035,
+        "confidence": 0.842
+      },
+      "jev_now": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "jev_now_raw": {
+        "type": "score",
+        "score": 1.0,
+        "confidence": 1.0,
+        "legend": {
+          "0": "Calm, just stating facts",
+          "1": "Frustrated but civil",
+          "2": "Very angry, strong language"
+        },
+        "probabilities": {
+          "0": 0.0,
+          "1": 1.0,
+          "2": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "quickstart_ticket/is_urgent",
+      "kind": "noul",
+      "official": [
+        0.0010000000000000009,
+        0.999
+      ],
+      "official_raw": {
+        "noul": 0.999
+      },
+      "jev_now": [
+        0.0,
+        1.0
+      ],
+      "jev_now_raw": {
+        "type": "noul",
+        "noul": 1.0
+      }
+    },
+    {
+      "case_id": "easy_ticket/department",
+      "kind": "choice",
+      "official": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "official_raw": {
+        "choice": "returns",
+        "probabilities": {
+          "returns": 1.0,
+          "shipping": 0.0,
+          "billing": 0.0
+        },
+        "confidence": 1.0
+      },
+      "jev_now": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "jev_now_raw": {
+        "type": "choice",
+        "choice": "returns",
+        "confidence": 1.0,
+        "probabilities": {
+          "billing": 0.0,
+          "shipping": 0.0,
+          "returns": 1.0
+        }
+      }
+    },
+    {
+      "case_id": "ambiguous_ticket (5 questions in 1 call)/department",
+      "kind": "choice",
+      "official": [
+        0.6,
+        0.02,
+        0.38
+      ],
+      "official_raw": {
+        "choice": "returns",
+        "probabilities": {
+          "returns": 0.6,
+          "billing": 0.38,
+          "shipping": 0.02
+        },
+        "confidence": 0.39
+      },
+      "jev_now": [
+        0.92,
+        0.02,
+        0.06
+      ],
+      "jev_now_raw": {
+        "type": "choice",
+        "choice": "returns",
+        "confidence": 0.88,
+        "probabilities": {
+          "shipping": 0.02,
+          "returns": 0.92,
+          "billing": 0.06
+        }
+      }
+    },
+    {
+      "case_id": "ambiguous_ticket (5 questions in 1 call)/return_reason",
+      "kind": "choice",
+      "official": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "official_raw": {
+        "choice": "wrong_size",
+        "probabilities": {
+          "wrong_size": 1.0,
+          "wrong_item": 0.0,
+          "damaged": 0.0,
+          "changed_mind": 0.0,
+          "other": 0.0
+        },
+        "confidence": 1.0
+      },
+      "jev_now": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "jev_now_raw": {
+        "type": "choice",
+        "choice": "wrong_size",
+        "confidence": 1.0,
+        "probabilities": {
+          "other": 0.0,
+          "changed_mind": 0.0,
+          "damaged": 0.0,
+          "wrong_item": 0.0,
+          "wrong_size": 1.0
+        }
+      }
+    },
+    {
+      "case_id": "ambiguous_ticket (5 questions in 1 call)/shipping_issue",
+      "kind": "choice",
+      "official": [
+        0.0,
+        0.63,
+        0.0,
+        0.0,
+        0.37
+      ],
+      "official_raw": {
+        "choice": "delayed",
+        "probabilities": {
+          "delayed": 0.63,
+          "other": 0.37,
+          "not_delivered": 0.0,
+          "wrong_address": 0.0,
+          "damaged_in_transit": 0.0
+        },
+        "confidence": 0.53
+      },
+      "jev_now": [
+        0.0,
+        0.72,
+        0.0,
+        0.0,
+        0.28
+      ],
+      "jev_now_raw": {
+        "type": "choice",
+        "choice": "delayed",
+        "confidence": 0.65,
+        "probabilities": {
+          "delayed": 0.72,
+          "damaged_in_transit": 0.0,
+          "other": 0.28,
+          "wrong_address": 0.0,
+          "not_delivered": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "ambiguous_ticket (5 questions in 1 call)/requested_resolution",
+      "kind": "choice",
+      "official": [
+        0.37,
+        0.29,
+        0.24,
+        0.1
+      ],
+      "official_raw": {
+        "choice": "exchange",
+        "probabilities": {
+          "exchange": 0.37,
+          "refund": 0.29,
+          "replacement": 0.24,
+          "information": 0.1
+        },
+        "confidence": 0.16
+      },
+      "jev_now": [
+        0.33,
+        0.31,
+        0.34,
+        0.02
+      ],
+      "jev_now_raw": {
+        "type": "choice",
+        "choice": "replacement",
+        "confidence": 0.12,
+        "probabilities": {
+          "refund": 0.31,
+          "replacement": 0.34,
+          "information": 0.02,
+          "exchange": 0.33
+        }
+      }
+    },
+    {
+      "case_id": "ambiguous_ticket (5 questions in 1 call)/tone",
+      "kind": "choice",
+      "official": [
+        0.0,
+        0.92,
+        0.08
+      ],
+      "official_raw": {
+        "choice": "frustrated",
+        "probabilities": {
+          "frustrated": 0.92,
+          "angry": 0.08,
+          "calm": 0.0
+        },
+        "confidence": 0.88
+      },
+      "jev_now": [
+        0.0,
+        0.88,
+        0.12
+      ],
+      "jev_now_raw": {
+        "type": "choice",
+        "choice": "frustrated",
+        "confidence": 0.81,
+        "probabilities": {
+          "angry": 0.12,
+          "frustrated": 0.88,
+          "calm": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "noul_ticket/is_human_escalation",
+      "kind": "noul",
+      "official": [
+        0.010000000000000009,
+        0.99
+      ],
+      "official_raw": {
+        "noul": 0.99
+      },
+      "jev_now": [
+        0.010000000000000009,
+        0.99
+      ],
+      "jev_now_raw": {
+        "type": "noul",
+        "noul": 0.99
+      }
+    },
+    {
+      "case_id": "noul_ticket/is_repeat_contact",
+      "kind": "noul",
+      "official": [
+        0.06999999999999995,
+        0.93
+      ],
+      "official_raw": {
+        "noul": 0.93
+      },
+      "jev_now": [
+        0.040000000000000036,
+        0.96
+      ],
+      "jev_now_raw": {
+        "type": "noul",
+        "noul": 0.96
+      }
+    },
+    {
+      "case_id": "return_topic (structured criteria)/return_topic",
+      "kind": "choice",
+      "official": [
+        0.0,
+        1.0
+      ],
+      "official_raw": {
+        "choice": "return_status",
+        "probabilities": {
+          "return_policy": 0.0,
+          "return_status": 1.0
+        },
+        "confidence": 1.0
+      },
+      "jev_now": [
+        0.0,
+        1.0
+      ],
+      "jev_now_raw": {
+        "type": "choice",
+        "choice": "return_status",
+        "confidence": 1.0,
+        "probabilities": {
+          "return_policy": 0.0,
+          "return_status": 1.0
+        }
+      }
+    },
+    {
+      "case_id": "severity_table/0",
+      "kind": "score",
+      "official": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "official_raw": {
+        "score": 0.0,
+        "probabilities": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "confidence": 1.0
+      },
+      "jev_now": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "jev_now_raw": {
+        "type": "score",
+        "score": 0.0,
+        "confidence": 1.0,
+        "legend": {
+          "0": "Cosmetic; no impact to functionality",
+          "1": "Broken or degraded feature, but workaround exists",
+          "2": "Blocking issue; no workaround exists"
+        },
+        "probabilities": {
+          "0": 1.0,
+          "1": 0.0,
+          "2": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "severity_table/1",
+      "kind": "score",
+      "official": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "official_raw": {
+        "score": 1.0,
+        "probabilities": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "confidence": 1.0
+      },
+      "jev_now": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "jev_now_raw": {
+        "type": "score",
+        "score": 1.0,
+        "confidence": 1.0,
+        "legend": {
+          "0": "Cosmetic; no impact to functionality",
+          "1": "Broken or degraded feature, but workaround exists",
+          "2": "Blocking issue; no workaround exists"
+        },
+        "probabilities": {
+          "0": 0.0,
+          "1": 1.0,
+          "2": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "severity_table/2",
+      "kind": "score",
+      "official": [
+        0.0,
+        0.88,
+        0.12
+      ],
+      "official_raw": {
+        "score": 1.12,
+        "probabilities": [
+          0.0,
+          0.88,
+          0.12
+        ],
+        "confidence": 0.81
+      },
+      "jev_now": [
+        0.0,
+        0.89,
+        0.11
+      ],
+      "jev_now_raw": {
+        "type": "score",
+        "score": 1.11,
+        "confidence": 0.83,
+        "legend": {
+          "0": "Cosmetic; no impact to functionality",
+          "1": "Broken or degraded feature, but workaround exists",
+          "2": "Blocking issue; no workaround exists"
+        },
+        "probabilities": {
+          "0": 0.0,
+          "1": 0.89,
+          "2": 0.11
+        }
+      }
+    },
+    {
+      "case_id": "severity_table/3",
+      "kind": "score",
+      "official": [
+        0.0,
+        0.7,
+        0.3
+      ],
+      "official_raw": {
+        "score": 1.3,
+        "probabilities": [
+          0.0,
+          0.7,
+          0.3
+        ],
+        "confidence": 0.54
+      },
+      "jev_now": [
+        0.0,
+        0.54,
+        0.46
+      ],
+      "jev_now_raw": {
+        "type": "score",
+        "score": 1.46,
+        "confidence": 0.31,
+        "legend": {
+          "0": "Cosmetic; no impact to functionality",
+          "1": "Broken or degraded feature, but workaround exists",
+          "2": "Blocking issue; no workaround exists"
+        },
+        "probabilities": {
+          "0": 0.0,
+          "1": 0.54,
+          "2": 0.46
+        }
+      }
+    },
+    {
+      "case_id": "severity_table/4",
+      "kind": "score",
+      "official": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "official_raw": {
+        "score": 2.0,
+        "probabilities": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "confidence": 1.0
+      },
+      "jev_now": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "jev_now_raw": {
+        "type": "score",
+        "score": 2.0,
+        "confidence": 1.0,
+        "legend": {
+          "0": "Cosmetic; no impact to functionality",
+          "1": "Broken or degraded feature, but workaround exists",
+          "2": "Blocking issue; no workaround exists"
+        },
+        "probabilities": {
+          "0": 0.0,
+          "1": 0.0,
+          "2": 1.0
+        }
+      }
+    },
+    {
+      "case_id": "spinner_ticket (3 Score questions in 1 call)/severity",
+      "kind": "score",
+      "official": [
+        0.0,
+        0.76,
+        0.24
+      ],
+      "official_raw": {
+        "score": 1.24,
+        "probabilities": [
+          0.0,
+          0.76,
+          0.24
+        ],
+        "confidence": 0.63
+      },
+      "jev_now": [
+        0.0,
+        0.74,
+        0.26
+      ],
+      "jev_now_raw": {
+        "type": "score",
+        "score": 1.26,
+        "confidence": 0.6,
+        "legend": {
+          "0": "Cosmetic; no impact to functionality",
+          "1": "Broken or degraded feature, but workaround exists",
+          "2": "Blocking issue; no workaround exists"
+        },
+        "probabilities": {
+          "0": 0.0,
+          "1": 0.74,
+          "2": 0.26
+        }
+      }
+    },
+    {
+      "case_id": "spinner_ticket (3 Score questions in 1 call)/frustration",
+      "kind": "score",
+      "official": [
+        0.0,
+        0.55,
+        0.45
+      ],
+      "official_raw": {
+        "score": 1.45,
+        "probabilities": [
+          0.0,
+          0.55,
+          0.45
+        ],
+        "confidence": 0.33
+      },
+      "jev_now": [
+        0.0,
+        0.75,
+        0.25
+      ],
+      "jev_now_raw": {
+        "type": "score",
+        "score": 1.25,
+        "confidence": 0.63,
+        "legend": {
+          "0": "Calm, just stating facts",
+          "1": "Frustrated but civil",
+          "2": "Very angry, strong language or threatening to leave"
+        },
+        "probabilities": {
+          "0": 0.0,
+          "1": 0.75,
+          "2": 0.25
+        }
+      }
+    },
+    {
+      "case_id": "spinner_ticket (3 Score questions in 1 call)/report_quality",
+      "kind": "score",
+      "official": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "official_raw": {
+        "score": 3.0,
+        "probabilities": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "confidence": 1.0
+      },
+      "jev_now": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "jev_now_raw": {
+        "type": "score",
+        "score": 3.0,
+        "confidence": 1.0,
+        "legend": {
+          "0": "No detail; just says something is broken",
+          "1": "Names the feature but no steps or environment",
+          "2": "Steps to reproduce or environment, but not both",
+          "3": "Steps to reproduce and environment"
+        },
+        "probabilities": {
+          "0": 0.0,
+          "1": 0.0,
+          "2": 0.0,
+          "3": 1.0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{"case_id": "invoice_exception_disposition__0", "answer": {"type": "choice", "choice": "pay as submitted", "probabilities": {"pay as submitted": 1, "hold for vendor correction": 0, "reject as invalid": 0}, "confidence": 1}}
+{"case_id": "invoice_exception_disposition__2", "answer": {"type": "choice", "choice": "reject as invalid", "probabilities": {"pay as submitted": 0, "hold for vendor correction": 0, "reject as invalid": 1}, "confidence": 1}}
+{"case_id": "invoice_exception_disposition__1", "answer": {"type": "choice", "choice": "hold for vendor correction", "probabilities": {"pay as submitted": 0, "hold for vendor correction": 1, "reject as invalid": 0}, "confidence": 1}}
+{"case_id": "customer_churn_risk__0", "answer": {"type": "score", "score": 0, "probabilities": {"0": 1, "1": 0, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "customer_churn_risk__3", "answer": {"type": "score", "score": 3, "probabilities": {"0": 0, "1": 0, "2": 0, "3": 1}, "confidence": 1}}
+{"case_id": "customer_churn_risk__2", "answer": {"type": "score", "score": 3, "probabilities": {"0": 0, "1": 0, "2": 0, "3": 1}, "confidence": 1}}
+{"case_id": "customer_churn_risk__1", "answer": {"type": "score", "score": 2, "probabilities": {"0": 0, "1": 0, "2": 1, "3": 0}, "confidence": 1}}
+{"case_id": "workplace_injury_reported__1", "answer": {"type": "bool", "bool": 1}}
+{"case_id": "workplace_injury_reported__0", "answer": {"type": "bool", "bool": 0}}
+{"case_id": "shipment_delay_resolution__2", "answer": {"type": "choice", "choice": "cancel and return shipment", "probabilities": {"continue normal delivery": 0, "expedite with replacement carrier": 0, "cancel and return shipment": 1}, "confidence": 1}}
+{"case_id": "shipment_delay_resolution__0", "answer": {"type": "choice", "choice": "continue normal delivery", "probabilities": {"continue normal delivery": 1, "expedite with replacement carrier": 0, "cancel and return shipment": 0}, "confidence": 1}}
+{"case_id": "shipment_delay_resolution__1", "answer": {"type": "choice", "choice": "expedite with replacement carrier", "probabilities": {"continue normal delivery": 0, "expedite with replacement carrier": 1, "cancel and return shipment": 0}, "confidence": 1}}
+{"case_id": "software_release_readiness__0", "answer": {"type": "score", "score": 0, "probabilities": {"0": 1, "1": 0, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "software_release_readiness__2", "answer": {"type": "score", "score": 2, "probabilities": {"0": 0, "1": 0, "2": 1, "3": 0}, "confidence": 1}}
+{"case_id": "software_release_readiness__3", "answer": {"type": "score", "score": 3, "probabilities": {"0": 0, "1": 0, "2": 0, "3": 1}, "confidence": 1}}
+{"case_id": "software_release_readiness__1", "answer": {"type": "score", "score": 1, "probabilities": {"0": 0, "1": 1, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "regulated_data_exposed__0", "answer": {"type": "bool", "bool": 0}}
+{"case_id": "regulated_data_exposed__1", "answer": {"type": "bool", "bool": 1}}
+{"case_id": "loan_application_outcome__2", "answer": {"type": "choice", "choice": "decline", "probabilities": {"approve": 0, "approve with conditions": 0, "decline": 1}, "confidence": 1}}
+{"case_id": "loan_application_outcome__0", "answer": {"type": "choice", "choice": "approve", "probabilities": {"approve": 1, "approve with conditions": 0, "decline": 0}, "confidence": 1}}
+{"case_id": "loan_application_outcome__1", "answer": {"type": "choice", "choice": "approve with conditions", "probabilities": {"approve": 0, "approve with conditions": 1, "decline": 0}, "confidence": 1}}
+{"case_id": "machine_maintenance_urgency__0", "answer": {"type": "score", "score": 0, "probabilities": {"0": 1, "1": 0, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "machine_maintenance_urgency__1", "answer": {"type": "score", "score": 1, "probabilities": {"0": 0, "1": 1, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "machine_maintenance_urgency__3", "answer": {"type": "score", "score": 3, "probabilities": {"0": 0, "1": 0, "2": 0, "3": 1}, "confidence": 1}}
+{"case_id": "machine_maintenance_urgency__2", "answer": {"type": "score", "score": 2, "probabilities": {"0": 0, "1": 0, "2": 1, "3": 0}, "confidence": 1}}
+{"case_id": "supplier_contract_signed__0", "answer": {"type": "bool", "bool": 0}}
+{"case_id": "supplier_contract_signed__1", "answer": {"type": "bool", "bool": 1}}
+{"case_id": "candidate_interview_next_step__0", "answer": {"type": "choice", "choice": "advance to next interview", "probabilities": {"advance to next interview": 1, "place on hold": 0, "reject application": 0}, "confidence": 1}}
+{"case_id": "candidate_interview_next_step__1", "answer": {"type": "choice", "choice": "place on hold", "probabilities": {"advance to next interview": 0, "place on hold": 1, "reject application": 0}, "confidence": 1}}
+{"case_id": "candidate_interview_next_step__2", "answer": {"type": "choice", "choice": "reject application", "probabilities": {"advance to next interview": 0, "place on hold": 0, "reject application": 1}, "confidence": 1}}
+{"case_id": "clinical_triage_priority__0", "answer": {"type": "score", "score": 0, "probabilities": {"0": 1, "1": 0, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "clinical_triage_priority__3", "answer": {"type": "score", "score": 3, "probabilities": {"0": 0, "1": 0, "2": 0, "3": 1}, "confidence": 1}}
+{"case_id": "clinical_triage_priority__2", "answer": {"type": "score", "score": 3, "probabilities": {"0": 0, "1": 0, "2": 0, "3": 1}, "confidence": 1}}
+{"case_id": "clinical_triage_priority__1", "answer": {"type": "score", "score": 1, "probabilities": {"0": 0, "1": 1, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "patient_consent_documented__0", "answer": {"type": "bool", "bool": 0}}
+{"case_id": "patient_consent_documented__1", "answer": {"type": "bool", "bool": 1}}
+{"case_id": "marketing_campaign_action__2", "answer": {"type": "choice", "choice": "pause campaign", "probabilities": {"increase budget": 0, "keep budget unchanged": 0, "pause campaign": 1}, "confidence": 1}}
+{"case_id": "marketing_campaign_action__1", "answer": {"type": "choice", "choice": "keep budget unchanged", "probabilities": {"increase budget": 0, "keep budget unchanged": 1, "pause campaign": 0}, "confidence": 1}}
+{"case_id": "marketing_campaign_action__0", "answer": {"type": "choice", "choice": "increase budget", "probabilities": {"increase budget": 1, "keep budget unchanged": 0, "pause campaign": 0}, "confidence": 1}}
+{"case_id": "construction_site_hazard_severity__0", "answer": {"type": "score", "score": 0, "probabilities": {"0": 1, "1": 0, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "construction_site_hazard_severity__3", "answer": {"type": "score", "score": 3, "probabilities": {"0": 0, "1": 0, "2": 0, "3": 1}, "confidence": 1}}
+{"case_id": "construction_site_hazard_severity__2", "answer": {"type": "score", "score": 3, "probabilities": {"0": 0, "1": 0, "2": 0, "3": 1}, "confidence": 1}}
+{"case_id": "construction_site_hazard_severity__1", "answer": {"type": "score", "score": 1, "probabilities": {"0": 0, "1": 1, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "lease_renewal_notice_received__0", "answer": {"type": "bool", "bool": 0}}
+{"case_id": "lease_renewal_notice_received__1", "answer": {"type": "bool", "bool": 1}}
+{"case_id": "insurance_claim_disposition__1", "answer": {"type": "choice", "choice": "request additional evidence", "probabilities": {"approve claim": 0, "request additional evidence": 1, "deny claim": 0}, "confidence": 1}}
+{"case_id": "insurance_claim_disposition__0", "answer": {"type": "choice", "choice": "approve claim", "probabilities": {"approve claim": 1, "request additional evidence": 0, "deny claim": 0}, "confidence": 1}}
+{"case_id": "insurance_claim_disposition__2", "answer": {"type": "choice", "choice": "deny claim", "probabilities": {"approve claim": 0, "request additional evidence": 0, "deny claim": 1}, "confidence": 1}}
+{"case_id": "restaurant_health_inspection_rating__0", "answer": {"type": "score", "score": 0, "probabilities": {"0": 1, "1": 0, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "restaurant_health_inspection_rating__1", "answer": {"type": "score", "score": 1, "probabilities": {"0": 0, "1": 1, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "restaurant_health_inspection_rating__3", "answer": {"type": "score", "score": 3, "probabilities": {"0": 0, "1": 0, "2": 0, "3": 1}, "confidence": 1}}
+{"case_id": "restaurant_health_inspection_rating__2", "answer": {"type": "score", "score": 3, "probabilities": {"0": 0, "1": 0, "2": 0, "3": 1}, "confidence": 1}}
+{"case_id": "travel_expense_receipt_attached__0", "answer": {"type": "bool", "bool": 0}}
+{"case_id": "travel_expense_receipt_attached__1", "answer": {"type": "bool", "bool": 1}}
+{"case_id": "legal_matter_response_strategy__2", "answer": {"type": "choice", "choice": "contest the demand", "probabilities": {"accept the demand": 0, "offer settlement": 0, "contest the demand": 1}, "confidence": 1}}
+{"case_id": "legal_matter_response_strategy__0", "answer": {"type": "choice", "choice": "accept the demand", "probabilities": {"accept the demand": 1, "offer settlement": 0, "contest the demand": 0}, "confidence": 1}}
+{"case_id": "legal_matter_response_strategy__1", "answer": {"type": "choice", "choice": "offer settlement", "probabilities": {"accept the demand": 0, "offer settlement": 1, "contest the demand": 0}, "confidence": 1}}
+{"case_id": "cybersecurity_alert_confidence__0", "answer": {"type": "score", "score": 0, "probabilities": {"0": 1, "1": 0, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "cybersecurity_alert_confidence__3", "answer": {"type": "score", "score": 3, "probabilities": {"0": 0, "1": 0, "2": 0, "3": 1}, "confidence": 1}}
+{"case_id": "cybersecurity_alert_confidence__2", "answer": {"type": "score", "score": 3, "probabilities": {"0": 0, "1": 0, "2": 0, "3": 1}, "confidence": 1}}
+{"case_id": "cybersecurity_alert_confidence__1", "answer": {"type": "score", "score": 1, "probabilities": {"0": 0, "1": 1, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "quality_control_defect_found__1", "answer": {"type": "bool", "bool": 1}}
+{"case_id": "quality_control_defect_found__0", "answer": {"type": "bool", "bool": 0}}
+{"case_id": "employee_leave_request_decision__2", "answer": {"type": "choice", "choice": "deny", "probabilities": {"approve": 0, "approve partially": 0, "deny": 1}, "confidence": 1}}
+{"case_id": "employee_leave_request_decision__1", "answer": {"type": "choice", "choice": "approve partially", "probabilities": {"approve": 0, "approve partially": 1, "deny": 0}, "confidence": 1}}
+{"case_id": "employee_leave_request_decision__0", "answer": {"type": "choice", "choice": "approve", "probabilities": {"approve": 1, "approve partially": 0, "deny": 0}, "confidence": 1}}
+{"case_id": "warehouse_inventory_accuracy__0", "answer": {"type": "score", "score": 0, "probabilities": {"0": 1, "1": 0, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "warehouse_inventory_accuracy__3", "answer": {"type": "score", "score": 3, "probabilities": {"0": 0, "1": 0, "2": 0, "3": 1}, "confidence": 1}}
+{"case_id": "warehouse_inventory_accuracy__1", "answer": {"type": "score", "score": 1, "probabilities": {"0": 0, "1": 1, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "warehouse_inventory_accuracy__2", "answer": {"type": "score", "score": 3, "probabilities": {"0": 0, "1": 0, "2": 0, "3": 1}, "confidence": 1}}
+{"case_id": "vendor_onboarding_tax_form_complete__0", "answer": {"type": "bool", "bool": 0}}
+{"case_id": "vendor_onboarding_tax_form_complete__1", "answer": {"type": "bool", "bool": 1}}
+{"case_id": "research_grant_application_status__0", "answer": {"type": "choice", "choice": "fund", "probabilities": {"fund": 1, "request revision": 0, "do not fund": 0}, "confidence": 1}}
+{"case_id": "research_grant_application_status__2", "answer": {"type": "choice", "choice": "do not fund", "probabilities": {"fund": 0, "request revision": 0, "do not fund": 1}, "confidence": 1}}
+{"case_id": "research_grant_application_status__1", "answer": {"type": "choice", "choice": "request revision", "probabilities": {"fund": 0, "request revision": 1, "do not fund": 0}, "confidence": 1}}
+{"case_id": "hotel_guest_recovery_level__3", "answer": {"type": "score", "score": 3, "probabilities": {"0": 0, "1": 0, "2": 0, "3": 1}, "confidence": 1}}
+{"case_id": "hotel_guest_recovery_level__0", "answer": {"type": "score", "score": 0, "probabilities": {"0": 1, "1": 0, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "hotel_guest_recovery_level__1", "answer": {"type": "score", "score": 1, "probabilities": {"0": 0, "1": 1, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "hotel_guest_recovery_level__2", "answer": {"type": "score", "score": 2, "probabilities": {"0": 0, "1": 0, "2": 1, "3": 0}, "confidence": 1}}
+{"case_id": "equipment_calibration_current__0", "answer": {"type": "bool", "bool": 0}}
+{"case_id": "equipment_calibration_current__1", "answer": {"type": "bool", "bool": 1}}
+{"case_id": "public_records_request_routing__2", "answer": {"type": "choice", "choice": "send for legal review", "probabilities": {"release records": 0, "refer to another department": 0, "send for legal review": 1}, "confidence": 1}}
+{"case_id": "public_records_request_routing__1", "answer": {"type": "choice", "choice": "refer to another department", "probabilities": {"release records": 0, "refer to another department": 1, "send for legal review": 0}, "confidence": 1}}
+{"case_id": "public_records_request_routing__0", "answer": {"type": "choice", "choice": "release records", "probabilities": {"release records": 1, "refer to another department": 0, "send for legal review": 0}, "confidence": 1}}
+{"case_id": "sales_lead_quality__0", "answer": {"type": "score", "score": 0, "probabilities": {"0": 1, "1": 0, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "sales_lead_quality__3", "answer": {"type": "score", "score": 3, "probabilities": {"0": 0, "1": 0, "2": 0, "3": 1}, "confidence": 1}}
+{"case_id": "sales_lead_quality__2", "answer": {"type": "score", "score": 3, "probabilities": {"0": 0, "1": 0, "2": 0, "3": 1}, "confidence": 1}}
+{"case_id": "sales_lead_quality__1", "answer": {"type": "score", "score": 1, "probabilities": {"0": 0, "1": 1, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "environmental_permit_required__1", "answer": {"type": "bool", "bool": 1}}
+{"case_id": "environmental_permit_required__0", "answer": {"type": "bool", "bool": 0}}
+{"case_id": "product_return_disposition__2", "answer": {"type": "choice", "choice": "dispose of item", "probabilities": {"return to sellable inventory": 0, "send for refurbishment": 0, "dispose of item": 1}, "confidence": 1}}
+{"case_id": "product_return_disposition__1", "answer": {"type": "choice", "choice": "send for refurbishment", "probabilities": {"return to sellable inventory": 0, "send for refurbishment": 1, "dispose of item": 0}, "confidence": 1}}
+{"case_id": "product_return_disposition__0", "answer": {"type": "choice", "choice": "return to sellable inventory", "probabilities": {"return to sellable inventory": 1, "send for refurbishment": 0, "dispose of item": 0}, "confidence": 1}}
+{"case_id": "network_outage_business_impact__3", "answer": {"type": "score", "score": 3, "probabilities": {"0": 0, "1": 0, "2": 0, "3": 1}, "confidence": 1}}
+{"case_id": "network_outage_business_impact__1", "answer": {"type": "score", "score": 1, "probabilities": {"0": 0, "1": 1, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "network_outage_business_impact__0", "answer": {"type": "score", "score": 0, "probabilities": {"0": 1, "1": 0, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "network_outage_business_impact__2", "answer": {"type": "score", "score": 2, "probabilities": {"0": 0, "1": 0, "2": 1, "3": 0}, "confidence": 1}}
+{"case_id": "employee_policy_acknowledgment_present__0", "answer": {"type": "bool", "bool": 0}}
+{"case_id": "employee_policy_acknowledgment_present__1", "answer": {"type": "bool", "bool": 1}}
+{"case_id": "pharmacy_prescription_resolution__0", "answer": {"type": "choice", "choice": "dispense as written", "probabilities": {"dispense as written": 1, "contact prescriber": 0, "do not dispense": 0}, "confidence": 1}}
+{"case_id": "pharmacy_prescription_resolution__2", "answer": {"type": "choice", "choice": "do not dispense", "probabilities": {"dispense as written": 0, "contact prescriber": 0, "do not dispense": 1}, "confidence": 1}}
+{"case_id": "pharmacy_prescription_resolution__1", "answer": {"type": "choice", "choice": "contact prescriber", "probabilities": {"dispense as written": 0, "contact prescriber": 1, "do not dispense": 0}, "confidence": 1}}
+{"case_id": "manufacturing_batch_release_confidence__0", "answer": {"type": "score", "score": 0, "probabilities": {"0": 1, "1": 0, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "manufacturing_batch_release_confidence__3", "answer": {"type": "score", "score": 3, "probabilities": {"0": 0, "1": 0, "2": 0, "3": 1}, "confidence": 1}}
+{"case_id": "manufacturing_batch_release_confidence__1", "answer": {"type": "score", "score": 1, "probabilities": {"0": 0, "1": 1, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "manufacturing_batch_release_confidence__2", "answer": {"type": "score", "score": 2, "probabilities": {"0": 0, "1": 0, "2": 1, "3": 0}, "confidence": 1}}
+{"case_id": "education_accommodation_requested__0", "answer": {"type": "bool", "bool": 0}}
+{"case_id": "education_accommodation_requested__1", "answer": {"type": "bool", "bool": 1}}
+{"case_id": "fleet_vehicle_assignment__0", "answer": {"type": "choice", "choice": "assign vehicle to route", "probabilities": {"assign vehicle to route": 1, "assign after repair": 0, "remove vehicle from service": 0}, "confidence": 1}}
+{"case_id": "fleet_vehicle_assignment__2", "answer": {"type": "choice", "choice": "remove vehicle from service", "probabilities": {"assign vehicle to route": 0, "assign after repair": 0, "remove vehicle from service": 1}, "confidence": 1}}
+{"case_id": "fleet_vehicle_assignment__1", "answer": {"type": "choice", "choice": "assign vehicle to route", "probabilities": {"assign vehicle to route": 1, "assign after repair": 0, "remove vehicle from service": 0}, "confidence": 1}}
+{"case_id": "audit_finding_materiality__0", "answer": {"type": "score", "score": 0, "probabilities": {"0": 1, "1": 0, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "audit_finding_materiality__3", "answer": {"type": "score", "score": 3, "probabilities": {"0": 0, "1": 0, "2": 0, "3": 1}, "confidence": 1}}
+{"case_id": "audit_finding_materiality__2", "answer": {"type": "score", "score": 2, "probabilities": {"0": 0, "1": 0, "2": 1, "3": 0}, "confidence": 1}}
+{"case_id": "audit_finding_materiality__1", "answer": {"type": "score", "score": 0, "probabilities": {"0": 1, "1": 0, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "supplier_conflict_disclosed__0", "answer": {"type": "bool", "bool": 0}}
+{"case_id": "supplier_conflict_disclosed__1", "answer": {"type": "bool", "bool": 1}}
+{"case_id": "media_inquiry_response_owner__0", "answer": {"type": "choice", "choice": "communications team", "probabilities": {"communications team": 1, "subject-matter department": 0, "legal and executive team": 0}, "confidence": 1}}
+{"case_id": "media_inquiry_response_owner__1", "answer": {"type": "choice", "choice": "subject-matter department", "probabilities": {"communications team": 0, "subject-matter department": 1, "legal and executive team": 0}, "confidence": 1}}
+{"case_id": "media_inquiry_response_owner__2", "answer": {"type": "choice", "choice": "legal and executive team", "probabilities": {"communications team": 0, "subject-matter department": 0, "legal and executive team": 1}, "confidence": 1}}
+{"case_id": "student_assignment_proficiency__1", "answer": {"type": "score", "score": 1, "probabilities": {"0": 0, "1": 1, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "student_assignment_proficiency__3", "answer": {"type": "score", "score": 3, "probabilities": {"0": 0, "1": 0, "2": 0, "3": 1}, "confidence": 1}}
+{"case_id": "student_assignment_proficiency__0", "answer": {"type": "score", "score": 0, "probabilities": {"0": 1, "1": 0, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "student_assignment_proficiency__2", "answer": {"type": "score", "score": 2, "probabilities": {"0": 0, "1": 0, "2": 1, "3": 0}, "confidence": 1}}
+{"case_id": "loan_payment_past_due__0", "answer": {"type": "bool", "bool": 0}}
+{"case_id": "loan_payment_past_due__1", "answer": {"type": "bool", "bool": 1}}
+{"case_id": "patent_submission_action__1", "answer": {"type": "choice", "choice": "collect more technical detail", "probabilities": {"file patent application": 0, "collect more technical detail": 1, "decline filing": 0}, "confidence": 1}}
+{"case_id": "patent_submission_action__2", "answer": {"type": "choice", "choice": "decline filing", "probabilities": {"file patent application": 0, "collect more technical detail": 0, "decline filing": 1}, "confidence": 1}}
+{"case_id": "patent_submission_action__0", "answer": {"type": "choice", "choice": "file patent application", "probabilities": {"file patent application": 1, "collect more technical detail": 0, "decline filing": 0}, "confidence": 1}}
+{"case_id": "project_schedule_health__3", "answer": {"type": "score", "score": 3, "probabilities": {"0": 0, "1": 0, "2": 0, "3": 1}, "confidence": 1}}
+{"case_id": "project_schedule_health__0", "answer": {"type": "score", "score": 0, "probabilities": {"0": 1, "1": 0, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "project_schedule_health__1", "answer": {"type": "score", "score": 1, "probabilities": {"0": 0, "1": 1, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "project_schedule_health__2", "answer": {"type": "score", "score": 2, "probabilities": {"0": 0, "1": 0, "2": 1, "3": 0}, "confidence": 1}}
+{"case_id": "food_allergen_present__0", "answer": {"type": "bool", "bool": 0}}
+{"case_id": "food_allergen_present__1", "answer": {"type": "bool", "bool": 1}}
+{"case_id": "utility_service_restoration_action__0", "answer": {"type": "choice", "choice": "restore remotely", "probabilities": {"restore remotely": 1, "dispatch field crew": 0, "maintain outage for safety review": 0}, "confidence": 1}}
+{"case_id": "utility_service_restoration_action__2", "answer": {"type": "choice", "choice": "maintain outage for safety review", "probabilities": {"restore remotely": 0, "dispatch field crew": 0, "maintain outage for safety review": 1}, "confidence": 1}}
+{"case_id": "utility_service_restoration_action__1", "answer": {"type": "choice", "choice": "dispatch field crew", "probabilities": {"restore remotely": 0, "dispatch field crew": 1, "maintain outage for safety review": 0}, "confidence": 1}}
+{"case_id": "financial_forecast_reliability__0", "answer": {"type": "score", "score": 0, "probabilities": {"0": 1, "1": 0, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "financial_forecast_reliability__2", "answer": {"type": "score", "score": 3, "probabilities": {"0": 0, "1": 0, "2": 0, "3": 1}, "confidence": 1}}
+{"case_id": "financial_forecast_reliability__3", "answer": {"type": "score", "score": 3, "probabilities": {"0": 0, "1": 0, "2": 0, "3": 1}, "confidence": 1}}
+{"case_id": "financial_forecast_reliability__1", "answer": {"type": "score", "score": 1, "probabilities": {"0": 0, "1": 1, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "export_control_review_needed__0", "answer": {"type": "bool", "bool": 0}}
+{"case_id": "export_control_review_needed__1", "answer": {"type": "bool", "bool": 1}}
+{"case_id": "community_grant_award_type__2", "answer": {"type": "choice", "choice": "decline award", "probabilities": {"award full amount": 0, "award partial amount": 0, "decline award": 1}, "confidence": 1}}
+{"case_id": "community_grant_award_type__0", "answer": {"type": "choice", "choice": "award full amount", "probabilities": {"award full amount": 1, "award partial amount": 0, "decline award": 0}, "confidence": 1}}
+{"case_id": "community_grant_award_type__1", "answer": {"type": "choice", "choice": "award partial amount", "probabilities": {"award full amount": 0, "award partial amount": 1, "decline award": 0}, "confidence": 1}}
+{"case_id": "call_center_escalation_severity__3", "answer": {"type": "score", "score": 3, "probabilities": {"0": 0, "1": 0, "2": 0, "3": 1}, "confidence": 1}}
+{"case_id": "call_center_escalation_severity__0", "answer": {"type": "score", "score": 0, "probabilities": {"0": 1, "1": 0, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "call_center_escalation_severity__1", "answer": {"type": "score", "score": 2, "probabilities": {"0": 0, "1": 0, "2": 1, "3": 0}, "confidence": 1}}
+{"case_id": "call_center_escalation_severity__2", "answer": {"type": "score", "score": 2, "probabilities": {"0": 0, "1": 0, "2": 1, "3": 0}, "confidence": 1}}
+{"case_id": "building_code_violation_present__1", "answer": {"type": "bool", "bool": 1}}
+{"case_id": "building_code_violation_present__0", "answer": {"type": "bool", "bool": 0}}
+{"case_id": "news_article_publication_decision__0", "answer": {"type": "choice", "choice": "publish", "probabilities": {"publish": 1, "return for revision": 0, "do not publish": 0}, "confidence": 1}}
+{"case_id": "news_article_publication_decision__1", "answer": {"type": "choice", "choice": "return for revision", "probabilities": {"publish": 0, "return for revision": 1, "do not publish": 0}, "confidence": 1}}
+{"case_id": "news_article_publication_decision__2", "answer": {"type": "choice", "choice": "do not publish", "probabilities": {"publish": 0, "return for revision": 0, "do not publish": 1}, "confidence": 1}}
+{"case_id": "data_migration_quality__0", "answer": {"type": "score", "score": 0, "probabilities": {"0": 1, "1": 0, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "data_migration_quality__3", "answer": {"type": "score", "score": 3, "probabilities": {"0": 0, "1": 0, "2": 0, "3": 1}, "confidence": 1}}
+{"case_id": "data_migration_quality__2", "answer": {"type": "score", "score": 3, "probabilities": {"0": 0, "1": 0, "2": 0, "3": 1}, "confidence": 1}}
+{"case_id": "data_migration_quality__1", "answer": {"type": "score", "score": 1, "probabilities": {"0": 0, "1": 1, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "union_grievance_filed__0", "answer": {"type": "bool", "bool": 0}}
+{"case_id": "union_grievance_filed__1", "answer": {"type": "bool", "bool": 1}}
+{"case_id": "airline_passenger_rebooking_action__2", "answer": {"type": "choice", "choice": "refund unused ticket", "probabilities": {"keep current itinerary": 0, "rebook on another flight": 0, "refund unused ticket": 1}, "confidence": 1}}
+{"case_id": "airline_passenger_rebooking_action__1", "answer": {"type": "choice", "choice": "keep current itinerary", "probabilities": {"keep current itinerary": 1, "rebook on another flight": 0, "refund unused ticket": 0}, "confidence": 1}}
+{"case_id": "airline_passenger_rebooking_action__0", "answer": {"type": "choice", "choice": "keep current itinerary", "probabilities": {"keep current itinerary": 1, "rebook on another flight": 0, "refund unused ticket": 0}, "confidence": 1}}
+{"case_id": "real_estate_offer_strength__0", "answer": {"type": "score", "score": 0, "probabilities": {"0": 1, "1": 0, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "real_estate_offer_strength__3", "answer": {"type": "score", "score": 3, "probabilities": {"0": 0, "1": 0, "2": 0, "3": 1}, "confidence": 1}}
+{"case_id": "real_estate_offer_strength__2", "answer": {"type": "score", "score": 3, "probabilities": {"0": 0, "1": 0, "2": 0, "3": 1}, "confidence": 1}}
+{"case_id": "real_estate_offer_strength__1", "answer": {"type": "score", "score": 2, "probabilities": {"0": 0, "1": 0, "2": 1, "3": 0}, "confidence": 1}}
+{"case_id": "incident_root_cause_identified__1", "answer": {"type": "bool", "bool": 1}}
+{"case_id": "incident_root_cause_identified__0", "answer": {"type": "bool", "bool": 0}}
+{"case_id": "collection_account_next_action__1", "answer": {"type": "choice", "choice": "offer payment arrangement", "probabilities": {"send routine reminder": 0, "offer payment arrangement": 1, "refer for legal collection": 0}, "confidence": 1}}
+{"case_id": "collection_account_next_action__0", "answer": {"type": "choice", "choice": "send routine reminder", "probabilities": {"send routine reminder": 1, "offer payment arrangement": 0, "refer for legal collection": 0}, "confidence": 1}}
+{"case_id": "collection_account_next_action__2", "answer": {"type": "choice", "choice": "refer for legal collection", "probabilities": {"send routine reminder": 0, "offer payment arrangement": 0, "refer for legal collection": 1}, "confidence": 1}}
+{"case_id": "clinical_trial_protocol_deviation_severity__0", "answer": {"type": "score", "score": 0, "probabilities": {"0": 1, "1": 0, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "clinical_trial_protocol_deviation_severity__3", "answer": {"type": "score", "score": 3, "probabilities": {"0": 0, "1": 0, "2": 0, "3": 1}, "confidence": 1}}
+{"case_id": "clinical_trial_protocol_deviation_severity__1", "answer": {"type": "score", "score": 0, "probabilities": {"0": 1, "1": 0, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "clinical_trial_protocol_deviation_severity__2", "answer": {"type": "score", "score": 2, "probabilities": {"0": 0, "1": 0, "2": 1, "3": 0}, "confidence": 1}}
+{"case_id": "emergency_contact_updated__1", "answer": {"type": "bool", "bool": 1}}
+{"case_id": "emergency_contact_updated__0", "answer": {"type": "bool", "bool": 0}}
+{"case_id": "museum_object_acquisition_decision__2", "answer": {"type": "choice", "choice": "decline object", "probabilities": {"acquire object": 0, "defer pending research": 0, "decline object": 1}, "confidence": 1}}
+{"case_id": "museum_object_acquisition_decision__0", "answer": {"type": "choice", "choice": "acquire object", "probabilities": {"acquire object": 1, "defer pending research": 0, "decline object": 0}, "confidence": 1}}
+{"case_id": "museum_object_acquisition_decision__1", "answer": {"type": "choice", "choice": "defer pending research", "probabilities": {"acquire object": 0, "defer pending research": 1, "decline object": 0}, "confidence": 1}}
+{"case_id": "maintenance_work_order_completion__3", "answer": {"type": "score", "score": 3, "probabilities": {"0": 0, "1": 0, "2": 0, "3": 1}, "confidence": 1}}
+{"case_id": "maintenance_work_order_completion__1", "answer": {"type": "score", "score": 1, "probabilities": {"0": 0, "1": 1, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "maintenance_work_order_completion__2", "answer": {"type": "score", "score": 2, "probabilities": {"0": 0, "1": 0, "2": 1, "3": 0}, "confidence": 1}}
+{"case_id": "maintenance_work_order_completion__0", "answer": {"type": "score", "score": 1, "probabilities": {"0": 0, "1": 1, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "parking_violation_contested__1", "answer": {"type": "bool", "bool": 1}}
+{"case_id": "parking_violation_contested__0", "answer": {"type": "bool", "bool": 0}}
+{"case_id": "product_feature_request_disposition__0", "answer": {"type": "choice", "choice": "add to roadmap", "probabilities": {"add to roadmap": 1, "retain for future consideration": 0, "close request": 0}, "confidence": 1}}
+{"case_id": "product_feature_request_disposition__1", "answer": {"type": "choice", "choice": "retain for future consideration", "probabilities": {"add to roadmap": 0, "retain for future consideration": 1, "close request": 0}, "confidence": 1}}
+{"case_id": "product_feature_request_disposition__2", "answer": {"type": "choice", "choice": "close request", "probabilities": {"add to roadmap": 0, "retain for future consideration": 0, "close request": 1}, "confidence": 1}}
+{"case_id": "merchant_fraud_risk__0", "answer": {"type": "score", "score": 0, "probabilities": {"0": 1, "1": 0, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "merchant_fraud_risk__3", "answer": {"type": "score", "score": 3, "probabilities": {"0": 0, "1": 0, "2": 0, "3": 1}, "confidence": 1}}
+{"case_id": "merchant_fraud_risk__1", "answer": {"type": "score", "score": 1, "probabilities": {"0": 0, "1": 1, "2": 0, "3": 0}, "confidence": 1}}
+{"case_id": "merchant_fraud_risk__2", "answer": {"type": "score", "score": 3, "probabilities": {"0": 0, "1": 0, "2": 0, "3": 1}, "confidence": 1}}
+{"case_id": "hazardous_materials_label_present__1", "answer": {"type": "bool", "bool": 1}}
+{"case_id": "hazardous_materials_label_present__0", "answer": {"type": "bool", "bool": 0}}

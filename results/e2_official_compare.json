@@ -1,0 +1,884 @@
+{
+  "rows": [
+    {
+      "case_id": "quickstart_ticket/department",
+      "kind": "choice",
+      "names": [
+        "billing",
+        "technical",
+        "sales"
+      ],
+      "official_raw": {
+        "choice": "billing",
+        "probabilities": {
+          "billing": 0.84,
+          "technical": 0.159,
+          "sales": 0.001
+        },
+        "confidence": 0.596
+      },
+      "official": [
+        0.84,
+        0.159,
+        0.001
+      ],
+      "baseline": [
+        0.001018905985175067,
+        0.9989811331033707,
+        1.029233537088478e-09
+      ],
+      "selected": [
+        0.4108000658452511,
+        0.5870666578412056,
+        0.0021333084732759744
+      ],
+      "baseline_summary": {
+        "argmax": 1
+      },
+      "baseline_tvd": 0.839981113044481,
+      "baseline_argmax_match": false,
+      "selected_summary": {
+        "argmax": 1
+      },
+      "selected_tvd": 0.4291999502346152,
+      "selected_argmax_match": false
+    },
+    {
+      "case_id": "quickstart_ticket/frustration",
+      "kind": "score",
+      "names": [
+        "L0",
+        "L1",
+        "L2"
+      ],
+      "official_raw": {
+        "score": 1.035,
+        "confidence": 0.842
+      },
+      "official": null,
+      "baseline": [
+        1.0350204935078775e-08,
+        0.9999973177909851,
+        2.6930156024981442e-06
+      ],
+      "selected": [
+        0.0016255383197858464,
+        0.8710824251174927,
+        0.12729198019951582
+      ],
+      "baseline_summary": {
+        "score": 1.0000027038221901,
+        "argmax": 1
+      },
+      "selected_summary": {
+        "score": 1.1256663855165243,
+        "argmax": 1
+      }
+    },
+    {
+      "case_id": "quickstart_ticket/is_urgent",
+      "kind": "noul",
+      "names": [
+        "no",
+        "yes"
+      ],
+      "official_raw": {
+        "noul": 0.999
+      },
+      "official": [
+        0.0010000000000000009,
+        0.999
+      ],
+      "baseline": [
+        6.7786390819349774e-15,
+        1.0
+      ],
+      "selected": [
+        3.855327884139115e-05,
+        0.9999614357948303
+      ],
+      "baseline_summary": {
+        "yes": 1.0
+      },
+      "baseline_tvd": 0.0009999999999966117,
+      "baseline_argmax_match": true,
+      "selected_summary": {
+        "yes": 0.9999614357948303
+      },
+      "selected_tvd": 0.0009614412579944664,
+      "selected_argmax_match": true
+    },
+    {
+      "case_id": "easy_ticket/department",
+      "kind": "choice",
+      "names": [
+        "returns",
+        "shipping",
+        "billing"
+      ],
+      "official_raw": {
+        "choice": "returns",
+        "probabilities": {
+          "returns": 1.0,
+          "shipping": 0.0,
+          "billing": 0.0
+        },
+        "confidence": 1.0
+      },
+      "official": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "baseline": [
+        1.0,
+        9.403311475524414e-13,
+        4.190139980246892e-13
+      ],
+      "selected": [
+        0.99982850253582,
+        0.00012171696107543539,
+        4.975991782885103e-05
+      ],
+      "baseline_summary": {
+        "argmax": 0
+      },
+      "baseline_tvd": 6.796725727885653e-13,
+      "baseline_argmax_match": true,
+      "selected_summary": {
+        "argmax": 0
+      },
+      "selected_tvd": 0.00017148717154213955,
+      "selected_argmax_match": true
+    },
+    {
+      "case_id": "ambiguous_ticket (5 questions in 1 call)/department",
+      "kind": "choice",
+      "names": [
+        "returns",
+        "shipping",
+        "billing"
+      ],
+      "official_raw": {
+        "choice": "returns",
+        "probabilities": {
+          "returns": 0.6,
+          "billing": 0.38,
+          "shipping": 0.02
+        },
+        "confidence": 0.39
+      },
+      "official": [
+        0.6,
+        0.02,
+        0.38
+      ],
+      "baseline": [
+        0.2274501414809862,
+        0.24874128402842288,
+        0.5238085769930407
+      ],
+      "selected": [
+        0.649319626390934,
+        0.05206999788060784,
+        0.2986103780567646
+      ],
+      "baseline_summary": {
+        "argmax": 2
+      },
+      "baseline_tvd": 0.3725498597702387,
+      "baseline_argmax_match": false,
+      "selected_summary": {
+        "argmax": 0
+      },
+      "selected_tvd": 0.08138962310738862,
+      "selected_argmax_match": true
+    },
+    {
+      "case_id": "ambiguous_ticket (5 questions in 1 call)/return_reason",
+      "kind": "choice",
+      "names": [
+        "wrong_size",
+        "wrong_item",
+        "damaged",
+        "changed_mind",
+        "other"
+      ],
+      "official_raw": {
+        "choice": "wrong_size",
+        "probabilities": {
+          "wrong_size": 1.0,
+          "wrong_item": 0.0,
+          "damaged": 0.0,
+          "changed_mind": 0.0,
+          "other": 0.0
+        },
+        "confidence": 1.0
+      },
+      "official": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "baseline": [
+        0.9999995231628418,
+        2.7020354668958934e-07,
+        2.6915445841925047e-10,
+        3.1018762845146054e-13,
+        2.0788338611230707e-07
+      ],
+      "selected": [
+        0.9832064062356949,
+        0.008934123441576958,
+        0.00017113646936195437,
+        0.0005503570646396838,
+        0.007137996144592762
+      ],
+      "baseline_summary": {
+        "argmax": 0
+      },
+      "baseline_tvd": 4.775967778255346e-07,
+      "baseline_argmax_match": true,
+      "selected_summary": {
+        "argmax": 0
+      },
+      "selected_tvd": 0.016793603442238236,
+      "selected_argmax_match": true
+    },
+    {
+      "case_id": "ambiguous_ticket (5 questions in 1 call)/shipping_issue",
+      "kind": "choice",
+      "names": [
+        "not_delivered",
+        "delayed",
+        "wrong_address",
+        "damaged_in_transit",
+        "other"
+      ],
+      "official_raw": {
+        "choice": "delayed",
+        "probabilities": {
+          "delayed": 0.63,
+          "other": 0.37,
+          "not_delivered": 0.0,
+          "wrong_address": 0.0,
+          "damaged_in_transit": 0.0
+        },
+        "confidence": 0.53
+      },
+      "official": [
+        0.0,
+        0.63,
+        0.0,
+        0.0,
+        0.37
+      ],
+      "baseline": [
+        2.5946593086426974e-11,
+        1.0,
+        9.275086266787112e-12,
+        4.97777608891031e-12,
+        4.471466492930146e-09
+      ],
+      "selected": [
+        7.249859754665522e-05,
+        0.9769440740346909,
+        0.00033180056561832316,
+        6.34850791811914e-05,
+        0.022588159190490842
+      ],
+      "baseline_summary": {
+        "argmax": 1
+      },
+      "baseline_tvd": 0.3699999977843665,
+      "baseline_argmax_match": true,
+      "selected_summary": {
+        "argmax": 1
+      },
+      "selected_tvd": 0.3474118495432731,
+      "selected_argmax_match": true
+    },
+    {
+      "case_id": "ambiguous_ticket (5 questions in 1 call)/requested_resolution",
+      "kind": "choice",
+      "names": [
+        "exchange",
+        "refund",
+        "replacement",
+        "information"
+      ],
+      "official_raw": {
+        "choice": "exchange",
+        "probabilities": {
+          "exchange": 0.37,
+          "refund": 0.29,
+          "replacement": 0.24,
+          "information": 0.1
+        },
+        "confidence": 0.16
+      },
+      "official": [
+        0.37,
+        0.29,
+        0.24,
+        0.1
+      ],
+      "baseline": [
+        0.8621207699179649,
+        0.00017422304998171434,
+        0.13727862164461158,
+        0.0004263980181069167
+      ],
+      "selected": [
+        0.08544824598357081,
+        0.05957886704709381,
+        0.15411348827183247,
+        0.700859397649765
+      ],
+      "baseline_summary": {
+        "argmax": 0
+      },
+      "baseline_tvd": 0.49212076360263235,
+      "baseline_argmax_match": true,
+      "selected_summary": {
+        "argmax": 3
+      },
+      "selected_tvd": 0.600859398173634,
+      "selected_argmax_match": false
+    },
+    {
+      "case_id": "ambiguous_ticket (5 questions in 1 call)/tone",
+      "kind": "choice",
+      "names": [
+        "calm",
+        "frustrated",
+        "angry"
+      ],
+      "official_raw": {
+        "choice": "frustrated",
+        "probabilities": {
+          "frustrated": 0.92,
+          "angry": 0.08,
+          "calm": 0.0
+        },
+        "confidence": 0.88
+      },
+      "official": [
+        0.0,
+        0.92,
+        0.08
+      ],
+      "baseline": [
+        2.8004922116852695e-12,
+        0.6915789884413925,
+        0.3084210211304139
+      ],
+      "selected": [
+        0.0001748745694385434,
+        0.7243565768003464,
+        0.27546853199601173
+      ],
+      "baseline_summary": {
+        "argmax": 1
+      },
+      "baseline_tvd": 0.22842101634591094,
+      "baseline_argmax_match": true,
+      "selected_summary": {
+        "argmax": 1
+      },
+      "selected_tvd": 0.19564341488255196,
+      "selected_argmax_match": true
+    },
+    {
+      "case_id": "noul_ticket/is_human_escalation",
+      "kind": "noul",
+      "names": [
+        "no",
+        "yes"
+      ],
+      "official_raw": {
+        "noul": 0.99
+      },
+      "official": [
+        0.010000000000000009,
+        0.99
+      ],
+      "baseline": [
+        8.977362759494717e-15,
+        1.0
+      ],
+      "selected": [
+        0.00011117605936306063,
+        0.9998888075351715
+      ],
+      "baseline_summary": {
+        "yes": 1.0
+      },
+      "baseline_tvd": 0.00999999999999552,
+      "baseline_argmax_match": true,
+      "selected_summary": {
+        "yes": 0.9998888075351715
+      },
+      "selected_tvd": 0.009888815737904233,
+      "selected_argmax_match": true
+    },
+    {
+      "case_id": "noul_ticket/is_repeat_contact",
+      "kind": "noul",
+      "names": [
+        "no",
+        "yes"
+      ],
+      "official_raw": {
+        "noul": 0.93
+      },
+      "official": [
+        0.06999999999999995,
+        0.93
+      ],
+      "baseline": [
+        1.645522639589364e-13,
+        1.0
+      ],
+      "selected": [
+        0.0010007904638769105,
+        0.9989991784095764
+      ],
+      "baseline_summary": {
+        "yes": 1.0
+      },
+      "baseline_tvd": 0.06999999999991768,
+      "baseline_argmax_match": true,
+      "selected_summary": {
+        "yes": 0.9989991784095764
+      },
+      "selected_tvd": 0.0689991939728497,
+      "selected_argmax_match": true
+    },
+    {
+      "case_id": "return_topic (structured criteria)/return_topic",
+      "kind": "choice",
+      "names": [
+        "return_policy",
+        "return_status"
+      ],
+      "official_raw": {
+        "choice": "return_status",
+        "probabilities": {
+          "return_policy": 0.0,
+          "return_status": 1.0
+        },
+        "confidence": 1.0
+      },
+      "official": [
+        0.0,
+        1.0
+      ],
+      "baseline": [
+        1.376784655815133e-05,
+        0.9999862313270569
+      ],
+      "selected": [
+        0.01165636045334395,
+        0.9883436560630798
+      ],
+      "baseline_summary": {
+        "argmax": 1
+      },
+      "baseline_tvd": 1.3768259750633282e-05,
+      "baseline_argmax_match": true,
+      "selected_summary": {
+        "argmax": 1
+      },
+      "selected_tvd": 0.011656352195132058,
+      "selected_argmax_match": true
+    },
+    {
+      "case_id": "severity_table/0",
+      "kind": "score",
+      "names": [
+        "L0",
+        "L1",
+        "L2"
+      ],
+      "official_raw": {
+        "score": 0.0,
+        "probabilities": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "confidence": 1.0
+      },
+      "official": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "baseline": [
+        1.0,
+        3.5957973189072224e-12,
+        3.8561797884720993e-13
+      ],
+      "selected": [
+        0.9989159405231476,
+        0.0008934535908338148,
+        0.000190614102393738
+      ],
+      "baseline_summary": {
+        "score": 4.367033276601642e-12,
+        "argmax": 0
+      },
+      "baseline_tvd": 1.990707648877216e-12,
+      "baseline_argmax_match": true,
+      "selected_summary": {
+        "score": 0.0012746817956212908,
+        "argmax": 0
+      },
+      "selected_tvd": 0.001084063585039985,
+      "selected_argmax_match": true
+    },
+    {
+      "case_id": "severity_table/1",
+      "kind": "score",
+      "names": [
+        "L0",
+        "L1",
+        "L2"
+      ],
+      "official_raw": {
+        "score": 1.0,
+        "probabilities": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "confidence": 1.0
+      },
+      "official": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "baseline": [
+        7.508797821733737e-13,
+        0.9999999105930328,
+        7.656903679609424e-08
+      ],
+      "selected": [
+        4.471838110475801e-05,
+        0.9996586591005325,
+        0.0002966421252494911
+      ],
+      "baseline_summary": {
+        "score": 1.0000000637311064,
+        "argmax": 1
+      },
+      "baseline_tvd": 8.298837741948118e-08,
+      "baseline_argmax_match": true,
+      "selected_summary": {
+        "score": 1.0002519433510315,
+        "argmax": 1
+      },
+      "selected_tvd": 0.00034135070291085867,
+      "selected_argmax_match": true
+    },
+    {
+      "case_id": "severity_table/2",
+      "kind": "score",
+      "names": [
+        "L0",
+        "L1",
+        "L2"
+      ],
+      "official_raw": {
+        "score": 1.12,
+        "probabilities": [
+          0.0,
+          0.88,
+          0.12
+        ],
+        "confidence": 0.81
+      },
+      "official": [
+        0.0,
+        0.88,
+        0.12
+      ],
+      "baseline": [
+        1.4924376932857683e-09,
+        0.8998394459486008,
+        0.10016056866578538
+      ],
+      "selected": [
+        0.00034100678385584615,
+        0.8791073709726334,
+        0.12055162258911878
+      ],
+      "baseline_summary": {
+        "score": 1.1001605832801715,
+        "argmax": 1
+      },
+      "baseline_tvd": 0.01983943938762654,
+      "baseline_argmax_match": true,
+      "selected_summary": {
+        "score": 1.120210616150871,
+        "argmax": 1
+      },
+      "selected_tvd": 0.000892629200170636,
+      "selected_argmax_match": true
+    },
+    {
+      "case_id": "severity_table/3",
+      "kind": "score",
+      "names": [
+        "L0",
+        "L1",
+        "L2"
+      ],
+      "official_raw": {
+        "score": 1.3,
+        "probabilities": [
+          0.0,
+          0.7,
+          0.3
+        ],
+        "confidence": 0.54
+      },
+      "official": [
+        0.0,
+        0.7,
+        0.3
+      ],
+      "baseline": [
+        3.588897471253679e-09,
+        0.14838255010545254,
+        0.8516174554824829
+      ],
+      "selected": [
+        0.00026853179952013306,
+        0.8314131498336792,
+        0.16831830330193043
+      ],
+      "baseline_summary": {
+        "score": 1.8516174610704184,
+        "argmax": 2
+      },
+      "baseline_tvd": 0.5516174544829638,
+      "baseline_argmax_match": false,
+      "selected_summary": {
+        "score": 1.16804975643754,
+        "argmax": 1
+      },
+      "selected_tvd": 0.13168168916563447,
+      "selected_argmax_match": true
+    },
+    {
+      "case_id": "severity_table/4",
+      "kind": "score",
+      "names": [
+        "L0",
+        "L1",
+        "L2"
+      ],
+      "official_raw": {
+        "score": 2.0,
+        "probabilities": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "confidence": 1.0
+      },
+      "official": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "baseline": [
+        4.25745192329559e-12,
+        2.0626340120220767e-11,
+        1.0
+      ],
+      "selected": [
+        5.3995320968169835e-05,
+        0.000508252237978013,
+        0.9994377344846725
+      ],
+      "baseline_summary": {
+        "score": 2.000000000020626,
+        "argmax": 2
+      },
+      "baseline_tvd": 1.2441896021758178e-11,
+      "baseline_argmax_match": true,
+      "selected_summary": {
+        "score": 1.999383721207323,
+        "argmax": 2
+      },
+      "selected_tvd": 0.0005622565371368182,
+      "selected_argmax_match": true
+    },
+    {
+      "case_id": "spinner_ticket (3 Score questions in 1 call)/severity",
+      "kind": "score",
+      "names": [
+        "L0",
+        "L1",
+        "L2"
+      ],
+      "official_raw": {
+        "score": 1.24,
+        "probabilities": [
+          0.0,
+          0.76,
+          0.24
+        ],
+        "confidence": 0.63
+      },
+      "official": [
+        0.0,
+        0.76,
+        0.24
+      ],
+      "baseline": [
+        1.1196470381925568e-08,
+        0.13177230240453497,
+        0.8682276755571365
+      ],
+      "selected": [
+        0.00044283394709054846,
+        0.5139363277703524,
+        0.4856208264827728
+      ],
+      "baseline_summary": {
+        "score": 1.868227653518808,
+        "argmax": 2
+      },
+      "baseline_tvd": 0.628227692174536,
+      "baseline_argmax_match": false,
+      "selected_summary": {
+        "score": 1.485177980735898,
+        "argmax": 1
+      },
+      "selected_tvd": 0.24606366632975551,
+      "selected_argmax_match": true
+    },
+    {
+      "case_id": "spinner_ticket (3 Score questions in 1 call)/frustration",
+      "kind": "score",
+      "names": [
+        "L0",
+        "L1",
+        "L2"
+      ],
+      "official_raw": {
+        "score": 1.45,
+        "probabilities": [
+          0.0,
+          0.55,
+          0.45
+        ],
+        "confidence": 0.33
+      },
+      "official": [
+        0.0,
+        0.55,
+        0.45
+      ],
+      "baseline": [
+        4.0500896814514234e-08,
+        0.9828513562679291,
+        0.01714859384810552
+      ],
+      "selected": [
+        0.0019575222286221106,
+        0.8009185642004013,
+        0.19712392427027225
+      ],
+      "baseline_summary": {
+        "score": 1.0171485439641401,
+        "argmax": 1
+      },
+      "baseline_tvd": 0.43285140146036016,
+      "baseline_argmax_match": true,
+      "selected_summary": {
+        "score": 1.1951664127409458,
+        "argmax": 1
+      },
+      "selected_tvd": 0.25287608107937554,
+      "selected_argmax_match": true
+    },
+    {
+      "case_id": "spinner_ticket (3 Score questions in 1 call)/report_quality",
+      "kind": "score",
+      "names": [
+        "L0",
+        "L1",
+        "L2",
+        "L3"
+      ],
+      "official_raw": {
+        "score": 3.0,
+        "probabilities": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "confidence": 1.0
+      },
+      "official": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "baseline": [
+        2.061072534566494e-11,
+        7.679062233637533e-12,
+        2.821739295555403e-07,
+        0.9999997317790985
+      ],
+      "selected": [
+        0.0007742585185042117,
+        0.001669713863520883,
+        0.1445683054625988,
+        0.8529877066612244
+      ],
+      "baseline_summary": {
+        "score": 2.999999759692834,
+        "argmax": 3
+      },
+      "baseline_tvd": 2.752115604161887e-07,
+      "baseline_argmax_match": true,
+      "selected_summary": {
+        "score": 2.8497694447723916,
+        "argmax": 3
+      },
+      "selected_tvd": 0.14701228559169977,
+      "selected_argmax_match": true
+    }
+  ],
+  "severity_table_tau": {
+    "baseline": {
+      "tau": 0.9999999999999999,
+      "p": 0.016666666666666666
+    },
+    "selected": {
+      "tau": 0.9999999999999999,
+      "p": 0.016666666666666666
+    }
+  },
+  "baseline_totals": {
+    "n": 19,
+    "argmax_match": 15,
+    "mean_tvd": 0.2114012285328739
+  },
+  "selected_totals": {
+    "n": 19,
+    "argmax_match": 17,
+    "mean_tvd": 0.1338678501005709
+  }
+}

@@ -1,0 +1,3828 @@
+[
+  {
+    "number": 1,
+    "case_id": "4c284a6a2edd527bdf71__public_administration_followup_required",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 2,
+    "case_id": "2744766f31d4d05f4056__air_transportation_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 3,
+    "case_id": "f21c6a5206b901013cbb__residential_care_followup_required",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 4,
+    "case_id": "8aecfcee2386c55e0bf4__environmental_compliance_case_status",
+    "display_to_canonical": [
+      3,
+      2,
+      0,
+      4,
+      1
+    ]
+  },
+  {
+    "number": 5,
+    "case_id": "dd5b3f34b9e914209270__software_services_procedure_followed",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 6,
+    "case_id": "9fb702f2343506e98f53__higher_education_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 7,
+    "case_id": "993836a09420f3881b42__higher_education_case_status",
+    "display_to_canonical": [
+      2,
+      3,
+      0,
+      1
+    ]
+  },
+  {
+    "number": 8,
+    "case_id": "64bc570b8e85bd6963db__publishing_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 9,
+    "case_id": "b4314feacff1d29aab96__building_construction_action_routing",
+    "display_to_canonical": [
+      2,
+      1,
+      4,
+      3,
+      0
+    ]
+  },
+  {
+    "number": 10,
+    "case_id": "09f02230475059cb3e91__publishing_procedure_followed",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 11,
+    "case_id": "cd6fe4c8d4706972821e__emergency_management_service_continuity_impact",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 12,
+    "case_id": "6d7d10ad9d8ff4ee960f__scientific_research_followup_required",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 13,
+    "case_id": "105b11f9b361faa2fd6f__heavy_civil_construction_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 14,
+    "case_id": "fdc1d2a8fefde61066b2__social_assistance_followup_required",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 15,
+    "case_id": "58da44e7494d81f954f1__public_administration_action_routing",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      4,
+      3
+    ]
+  },
+  {
+    "number": 16,
+    "case_id": "4b11848e9946f05cae95__air_transportation_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 17,
+    "case_id": "5b2d7cec2684ab4a5e6a__mineral_mining_procedure_followed",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 18,
+    "case_id": "b8e66e9e4a10e01b172c__emergency_management_followup_urgency",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 19,
+    "case_id": "20b702caab3152c9fe11__higher_education_procedure_followed",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 20,
+    "case_id": "63ba90528f1361d47220__scientific_research_followup_required",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 21,
+    "case_id": "44cf48b9d921d8662ba6__cybersecurity_operations_followup_urgency",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 22,
+    "case_id": "68dfcc66bef7c829d59c__public_administration_operational_risk",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 23,
+    "case_id": "ec660f81bed398344370__environmental_compliance_case_status",
+    "display_to_canonical": [
+      0,
+      3,
+      2,
+      1
+    ]
+  },
+  {
+    "number": 24,
+    "case_id": "4dd56c152904f5823c46__software_services_service_continuity_impact",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 25,
+    "case_id": "68dfcc66bef7c829d59c__legal_services_followup_required",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 26,
+    "case_id": "fa0bbf1f6ba41b11c47e__legal_services_operational_risk",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 27,
+    "case_id": "28f6d6e1e794a472bf22__public_administration_action_routing",
+    "display_to_canonical": [
+      0,
+      2,
+      3,
+      1
+    ]
+  },
+  {
+    "number": 28,
+    "case_id": "fa0bbf1f6ba41b11c47e__legal_services_case_status",
+    "display_to_canonical": [
+      1,
+      3,
+      0,
+      2,
+      4
+    ]
+  },
+  {
+    "number": 29,
+    "case_id": "a46560e6aa6339a65df8__accounting_services_operational_risk",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 30,
+    "case_id": "a4baacec163552d60bcf__legal_services_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 31,
+    "case_id": "81eb81286f0521084fdb__software_services_action_routing",
+    "display_to_canonical": [
+      4,
+      3,
+      2,
+      0,
+      1
+    ]
+  },
+  {
+    "number": 32,
+    "case_id": "329521f6618dbc22a69f__quality_assurance_incident_response_category",
+    "display_to_canonical": [
+      1,
+      2,
+      3,
+      4,
+      0
+    ]
+  },
+  {
+    "number": 33,
+    "case_id": "71cb017d39148107c8d1__legal_services_case_status",
+    "display_to_canonical": [
+      3,
+      1,
+      2,
+      4,
+      0
+    ]
+  },
+  {
+    "number": 34,
+    "case_id": "c2b2ff25bdbf3882c795__forestry_operations_followup_required",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 35,
+    "case_id": "5bda46e48481a30d5b24__scientific_research_operational_risk",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 36,
+    "case_id": "2776960bd2c24512fb59__truck_transportation_procedure_followed",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 37,
+    "case_id": "b1e48ae60063e3c63e07__software_services_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 38,
+    "case_id": "28ffdecea647cc16e4c8__transit_and_ground_transportation_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 39,
+    "case_id": "5f6606232641f121b0d3__legal_services_case_status",
+    "display_to_canonical": [
+      2,
+      1,
+      0,
+      3
+    ]
+  },
+  {
+    "number": 40,
+    "case_id": "64bc570b8e85bd6963db__rail_transportation_incident_response_category",
+    "display_to_canonical": [
+      4,
+      3,
+      1,
+      0,
+      2
+    ]
+  },
+  {
+    "number": 41,
+    "case_id": "e3874e512c883e244c57__public_administration_compliance_exposure",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 42,
+    "case_id": "f2cf8a3f60de4b9af811__oil_and_gas_extraction_action_routing",
+    "display_to_canonical": [
+      0,
+      2,
+      1,
+      4,
+      3
+    ]
+  },
+  {
+    "number": 43,
+    "case_id": "34146aae7cb552109196__scientific_research_procedure_followed",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 44,
+    "case_id": "4c16a8d5266a98b1f3ea__quality_assurance_operational_risk",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 45,
+    "case_id": "71cb017d39148107c8d1__water_transportation_followup_required",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 46,
+    "case_id": "09f02230475059cb3e91__religious_organizations_procedure_followed",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 47,
+    "case_id": "f21c6a5206b901013cbb__specialty_trade_construction_followup_required",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 48,
+    "case_id": "3e2d02c504d3f263ce86__forestry_operations_action_routing",
+    "display_to_canonical": [
+      3,
+      0,
+      2,
+      4,
+      1
+    ]
+  },
+  {
+    "number": 49,
+    "case_id": "5ebf1c2c4cb00915868d__water_and_wastewater_utilities_action_routing",
+    "display_to_canonical": [
+      3,
+      2,
+      1,
+      0
+    ]
+  },
+  {
+    "number": 50,
+    "case_id": "78d32f0f351b4e96cd37__public_administration_action_routing",
+    "display_to_canonical": [
+      4,
+      1,
+      3,
+      2,
+      0
+    ]
+  },
+  {
+    "number": 51,
+    "case_id": "c8af5f09d85f769f10da__scientific_research_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 52,
+    "case_id": "ca05a7c4cc6502e1dd17__legal_services_case_status",
+    "display_to_canonical": [
+      4,
+      3,
+      1,
+      2,
+      0
+    ]
+  },
+  {
+    "number": 53,
+    "case_id": "039e19fd8f5f2445befc__quality_assurance_case_status",
+    "display_to_canonical": [
+      3,
+      2,
+      1,
+      0
+    ]
+  },
+  {
+    "number": 54,
+    "case_id": "92b5b209c7b889c4e265__transit_and_ground_transportation_operational_risk",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 55,
+    "case_id": "86fd60db1789e479dcfb__environmental_compliance_followup_required",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 56,
+    "case_id": "cee3739a6424ae40fe3f__water_and_wastewater_utilities_compliance_disposition",
+    "display_to_canonical": [
+      3,
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "number": 57,
+    "case_id": "4dd56c152904f5823c46__quality_assurance_case_status",
+    "display_to_canonical": [
+      3,
+      2,
+      1,
+      0
+    ]
+  },
+  {
+    "number": 58,
+    "case_id": "36527acee83d16841cc5__emergency_management_incident_response_category",
+    "display_to_canonical": [
+      0,
+      2,
+      4,
+      3,
+      1
+    ]
+  },
+  {
+    "number": 59,
+    "case_id": "720ae26528bc2850a175__emergency_management_case_status",
+    "display_to_canonical": [
+      4,
+      0,
+      2,
+      1,
+      3
+    ]
+  },
+  {
+    "number": 60,
+    "case_id": "e360efbbbde9dfda6592__cybersecurity_operations_case_status",
+    "display_to_canonical": [
+      3,
+      1,
+      0,
+      2
+    ]
+  },
+  {
+    "number": 61,
+    "case_id": "28f6d6e1e794a472bf22__environmental_compliance_followup_required",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 62,
+    "case_id": "7c8b70e678fff2b0cb41__emergency_management_procedure_followed",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 63,
+    "case_id": "63ba90528f1361d47220__scientific_research_case_status",
+    "display_to_canonical": [
+      0,
+      2,
+      1,
+      3
+    ]
+  },
+  {
+    "number": 64,
+    "case_id": "b0406513eaf3634defe8__scientific_research_operational_risk",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 65,
+    "case_id": "259b16ed5b2988924ab8__museums_and_parks_procedure_followed",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 66,
+    "case_id": "5ebf1c2c4cb00915868d__outpatient_healthcare_followup_required",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 67,
+    "case_id": "6c9a9efcc68a09f7c2ca__rail_transportation_action_routing",
+    "display_to_canonical": [
+      0,
+      2,
+      4,
+      3,
+      1
+    ]
+  },
+  {
+    "number": 68,
+    "case_id": "f9aca95a4d0c9c224113__software_services_procedure_followed",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 69,
+    "case_id": "993836a09420f3881b42__oil_and_gas_extraction_procedure_followed",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 70,
+    "case_id": "799eb230343f39409e95__electric_power_utilities_service_continuity_impact",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 71,
+    "case_id": "16c7e96b6d4606afe5f0__engineering_services_case_status",
+    "display_to_canonical": [
+      4,
+      3,
+      1,
+      0,
+      2
+    ]
+  },
+  {
+    "number": 72,
+    "case_id": "28ffdecea647cc16e4c8__fire_and_rescue_procedure_followed",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 73,
+    "case_id": "96d307991ee28a36e53f__emergency_management_followup_urgency",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 74,
+    "case_id": "69bd90340317033c4817__animal_production_procedure_followed",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 75,
+    "case_id": "b4314feacff1d29aab96__social_assistance_service_continuity_impact",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 76,
+    "case_id": "0a2193c7950b33ed1564__software_services_action_routing",
+    "display_to_canonical": [
+      3,
+      4,
+      0,
+      2,
+      1
+    ]
+  },
+  {
+    "number": 77,
+    "case_id": "6c9a9efcc68a09f7c2ca__chemical_manufacturing_followup_required",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 78,
+    "case_id": "ca30bd2f533343742aa8__forestry_operations_followup_required",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 79,
+    "case_id": "3880de10d768a5de2de4__law_enforcement_evidence_strength",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 80,
+    "case_id": "fdc1d2a8fefde61066b2__real_estate_followup_required",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 81,
+    "case_id": "45b9cc4e5fb823db0893__chemical_manufacturing_case_status",
+    "display_to_canonical": [
+      3,
+      4,
+      2,
+      0,
+      1
+    ]
+  },
+  {
+    "number": 82,
+    "case_id": "b0406513eaf3634defe8__social_assistance_followup_required",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 83,
+    "case_id": "c98d0d60e84b10f13168__quality_assurance_case_status",
+    "display_to_canonical": [
+      3,
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "number": 84,
+    "case_id": "20b702caab3152c9fe11__law_enforcement_case_status",
+    "display_to_canonical": [
+      3,
+      1,
+      0,
+      2
+    ]
+  },
+  {
+    "number": 85,
+    "case_id": "2bae282a097c4e9da59d__quality_assurance_procedure_followed",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 86,
+    "case_id": "11daae71ee6a745696fc__transit_and_ground_transportation_compliance_disposition",
+    "display_to_canonical": [
+      4,
+      0,
+      2,
+      1,
+      3
+    ]
+  },
+  {
+    "number": 87,
+    "case_id": "993836a09420f3881b42__environmental_compliance_procedure_followed",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 88,
+    "case_id": "3e4664584d533beb27f8__environmental_compliance_case_status",
+    "display_to_canonical": [
+      1,
+      2,
+      0,
+      3
+    ]
+  },
+  {
+    "number": 89,
+    "case_id": "45b9cc4e5fb823db0893__insurance_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 90,
+    "case_id": "3e2d02c504d3f263ce86__motor_vehicle_retail_action_routing",
+    "display_to_canonical": [
+      3,
+      2,
+      1,
+      4,
+      0
+    ]
+  },
+  {
+    "number": 91,
+    "case_id": "bae17f0535d1cb6b2c11__emergency_management_procedure_followed",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 92,
+    "case_id": "0f650d705c0ee74be42f__scientific_research_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 93,
+    "case_id": "9df0f9fa1c3ef5b59f8d__scientific_research_case_status",
+    "display_to_canonical": [
+      0,
+      1,
+      3,
+      2
+    ]
+  },
+  {
+    "number": 94,
+    "case_id": "acd191a8f1a8719cceca__public_administration_followup_required",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 95,
+    "case_id": "15c41e08f5616729d9e2__public_administration_compliance_exposure",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 96,
+    "case_id": "832fe6a2dab423333369__environmental_compliance_operational_risk",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 97,
+    "case_id": "7c375170350350e57880__residential_care_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 98,
+    "case_id": "875b028e850a405ef9a9__forestry_operations_action_routing",
+    "display_to_canonical": [
+      1,
+      3,
+      2,
+      4,
+      0
+    ]
+  },
+  {
+    "number": 99,
+    "case_id": "fc6333a557de3430a5aa__environmental_compliance_operational_risk",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 100,
+    "case_id": "655254e9cf1ef2e0839d__publishing_operational_risk",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 101,
+    "case_id": "c883a21a69ee95c401c0__environmental_compliance_compliance_exposure",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 102,
+    "case_id": "3fac9771af62ffa01f30__software_services_procedure_followed",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 103,
+    "case_id": "fc6333a557de3430a5aa__public_administration_followup_required",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 104,
+    "case_id": "f2ecd4892337a03eb2fe__residential_care_incident_response_category",
+    "display_to_canonical": [
+      1,
+      3,
+      0,
+      2
+    ]
+  },
+  {
+    "number": 105,
+    "case_id": "9a56df39b5cd59c71aa8__quality_assurance_incident_response_category",
+    "display_to_canonical": [
+      2,
+      1,
+      3,
+      0,
+      4
+    ]
+  },
+  {
+    "number": 106,
+    "case_id": "181754230a4bdcafd8cd__quality_assurance_case_status",
+    "display_to_canonical": [
+      3,
+      2,
+      0,
+      1
+    ]
+  },
+  {
+    "number": 107,
+    "case_id": "d89c1ecc96f8c692f63a__scientific_research_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 108,
+    "case_id": "d60b0c048347d5934e0b__transit_and_ground_transportation_procedure_followed",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 109,
+    "case_id": "28f6d6e1e794a472bf22__environmental_compliance_compliance_exposure",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 110,
+    "case_id": "4340cef6d7aa4d4ca450__quality_assurance_followup_required",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 111,
+    "case_id": "945138a00972ed853040__legal_services_followup_required",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 112,
+    "case_id": "259b16ed5b2988924ab8__legal_services_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 113,
+    "case_id": "ca05a7c4cc6502e1dd17__legal_services_followup_required",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 114,
+    "case_id": "1e8e775c925a059b3368__residential_care_followup_required",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 115,
+    "case_id": "d61e3c79a178ac55d143__scientific_research_action_routing",
+    "display_to_canonical": [
+      1,
+      2,
+      0,
+      4,
+      3
+    ]
+  },
+  {
+    "number": 116,
+    "case_id": "e897c8ca259856ba07f2__software_services_case_status",
+    "display_to_canonical": [
+      0,
+      3,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "number": 117,
+    "case_id": "d9509b5ac2ae5d3036f6__cybersecurity_operations_action_routing",
+    "display_to_canonical": [
+      1,
+      0,
+      3,
+      2
+    ]
+  },
+  {
+    "number": 118,
+    "case_id": "9fb702f2343506e98f53__performing_arts_action_routing",
+    "display_to_canonical": [
+      1,
+      4,
+      2,
+      0,
+      3
+    ]
+  },
+  {
+    "number": 119,
+    "case_id": "e0fef64bfa9fb32ad66a__water_and_wastewater_utilities_operational_risk",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 120,
+    "case_id": "b20035b58207ff392c9f__residential_care_followup_required",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 121,
+    "case_id": "a46560e6aa6339a65df8__public_administration_followup_required",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 122,
+    "case_id": "259b16ed5b2988924ab8__banking_service_continuity_impact",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 123,
+    "case_id": "15c41e08f5616729d9e2__legal_services_procedure_followed",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 124,
+    "case_id": "832fe6a2dab423333369__mineral_mining_procedure_followed",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 125,
+    "case_id": "c883a21a69ee95c401c0__public_administration_operational_risk",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 126,
+    "case_id": "3880de10d768a5de2de4__residential_care_followup_required",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 127,
+    "case_id": "f7d481783290543f6b28__food_manufacturing_followup_urgency",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 128,
+    "case_id": "799eb230343f39409e95__metal_fabrication_compliance_disposition",
+    "display_to_canonical": [
+      3,
+      2,
+      0,
+      1,
+      4
+    ]
+  },
+  {
+    "number": 129,
+    "case_id": "c22e5dfa1868d1f76c8c__residential_care_service_continuity_impact",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 130,
+    "case_id": "fa0bbf1f6ba41b11c47e__environmental_compliance_action_routing",
+    "display_to_canonical": [
+      3,
+      2,
+      1,
+      0
+    ]
+  },
+  {
+    "number": 131,
+    "case_id": "72ed08c4a097a2f3c411__engineering_services_followup_required",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 132,
+    "case_id": "cf047ea7647501df598d__air_transportation_followup_urgency",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 133,
+    "case_id": "a48e3a7f44a47e3805f7__forestry_operations_case_status",
+    "display_to_canonical": [
+      2,
+      3,
+      4,
+      1,
+      0
+    ]
+  },
+  {
+    "number": 134,
+    "case_id": "d09697870b44c5551a91__quality_assurance_followup_required",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 135,
+    "case_id": "e0fef64bfa9fb32ad66a__oil_and_gas_extraction_procedure_followed",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 136,
+    "case_id": "35452e8cab33c32962ca__software_services_case_status",
+    "display_to_canonical": [
+      2,
+      1,
+      0,
+      3
+    ]
+  },
+  {
+    "number": 137,
+    "case_id": "09f02230475059cb3e91__banking_service_continuity_impact",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 138,
+    "case_id": "f21c6a5206b901013cbb__grocery_retail_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 139,
+    "case_id": "11daae71ee6a745696fc__museums_and_parks_procedure_followed",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 140,
+    "case_id": "3880de10d768a5de2de4__repair_and_maintenance_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 141,
+    "case_id": "b74743f1e959f698fe47__quality_assurance_case_status",
+    "display_to_canonical": [
+      2,
+      0,
+      1,
+      3
+    ]
+  },
+  {
+    "number": 142,
+    "case_id": "3e4664584d533beb27f8__environmental_compliance_compliance_exposure",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 143,
+    "case_id": "602e9d1777e67c1b99e6__engineering_services_case_status",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 144,
+    "case_id": "96d307991ee28a36e53f__air_transportation_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 145,
+    "case_id": "9041d157e14153f8fcd3__legal_services_procedure_followed",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 146,
+    "case_id": "36613fc7376ad91cf460__outpatient_healthcare_followup_required",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 147,
+    "case_id": "1495c2678d74f124595c__emergency_management_case_status",
+    "display_to_canonical": [
+      1,
+      3,
+      2,
+      0
+    ]
+  },
+  {
+    "number": 148,
+    "case_id": "e7891f3a519326183ad0__legal_services_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 149,
+    "case_id": "ea9f0dafd9308b3b84b3__quality_assurance_followup_required",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 150,
+    "case_id": "d7f79249f7df42e6a477__mineral_mining_operational_risk",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 151,
+    "case_id": "e360efbbbde9dfda6592__cybersecurity_operations_followup_urgency",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 152,
+    "case_id": "69bd90340317033c4817__hospital_care_compliance_exposure",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 153,
+    "case_id": "9df0f9fa1c3ef5b59f8d__forestry_operations_followup_required",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 154,
+    "case_id": "ea5909598866da245501__performing_arts_operational_risk",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 155,
+    "case_id": "9ab931cb2ff82751060f__software_services_procedure_followed",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 156,
+    "case_id": "4c16a8d5266a98b1f3ea__cybersecurity_operations_case_status",
+    "display_to_canonical": [
+      0,
+      3,
+      2,
+      1
+    ]
+  },
+  {
+    "number": 157,
+    "case_id": "fdc1d2a8fefde61066b2__insurance_evidence_strength",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 158,
+    "case_id": "d7f79249f7df42e6a477__banking_followup_required",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 159,
+    "case_id": "d60b0c048347d5934e0b__food_manufacturing_action_routing",
+    "display_to_canonical": [
+      3,
+      2,
+      1,
+      0
+    ]
+  },
+  {
+    "number": 160,
+    "case_id": "f7d481783290543f6b28__banking_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 161,
+    "case_id": "d61e3c79a178ac55d143__scientific_research_procedure_followed",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 162,
+    "case_id": "d61e3c79a178ac55d143__residential_care_incident_response_category",
+    "display_to_canonical": [
+      2,
+      4,
+      0,
+      1,
+      3
+    ]
+  },
+  {
+    "number": 163,
+    "case_id": "5438ebdb2eeecf46a0df__environmental_compliance_case_status",
+    "display_to_canonical": [
+      4,
+      0,
+      2,
+      1,
+      3
+    ]
+  },
+  {
+    "number": 164,
+    "case_id": "ec1eaa8937224fb8e071__engineering_services_procedure_followed",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 165,
+    "case_id": "fad5e8e648a9f8e9f272__truck_transportation_incident_response_category",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 166,
+    "case_id": "f7d481783290543f6b28__transit_and_ground_transportation_incident_response_category",
+    "display_to_canonical": [
+      0,
+      3,
+      1,
+      2
+    ]
+  },
+  {
+    "number": 167,
+    "case_id": "7fd54e014f30b87bf7eb__real_estate_case_status",
+    "display_to_canonical": [
+      3,
+      4,
+      1,
+      0,
+      2
+    ]
+  },
+  {
+    "number": 168,
+    "case_id": "156d8f876850e9281d5f__residential_care_followup_required",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 169,
+    "case_id": "97a613d2aac5060d17f0__cybersecurity_operations_action_routing",
+    "display_to_canonical": [
+      0,
+      3,
+      2,
+      1,
+      4
+    ]
+  },
+  {
+    "number": 170,
+    "case_id": "60e8aba5e8f08526fa66__emergency_management_incident_response_category",
+    "display_to_canonical": [
+      4,
+      3,
+      2,
+      1,
+      0
+    ]
+  },
+  {
+    "number": 171,
+    "case_id": "2416f188682b5e925155__environmental_compliance_followup_required",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 172,
+    "case_id": "20b702caab3152c9fe11__grocery_retail_operational_risk",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 173,
+    "case_id": "24be79cfb5e7d4c27e1f__air_transportation_service_continuity_impact",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 174,
+    "case_id": "7f1a0085455bfdcded0d__publishing_operational_risk",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 175,
+    "case_id": "f666c13e60ea344e086a__insurance_compliance_disposition",
+    "display_to_canonical": [
+      0,
+      1,
+      3,
+      2
+    ]
+  },
+  {
+    "number": 176,
+    "case_id": "36613fc7376ad91cf460__truck_transportation_operational_risk",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 177,
+    "case_id": "eacaba242c1bcd3e4014__scientific_research_case_status",
+    "display_to_canonical": [
+      2,
+      1,
+      3,
+      0
+    ]
+  },
+  {
+    "number": 178,
+    "case_id": "7fd54e014f30b87bf7eb__motor_vehicle_retail_followup_required",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 179,
+    "case_id": "a16fb55cc0a3a43b4159__quality_assurance_evidence_strength",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 180,
+    "case_id": "9b8bec2ae76a084df4e0__scientific_research_operational_risk",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 181,
+    "case_id": "572767708b50af5fce4c__transport_equipment_manufacturing_incident_response_category",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      4,
+      3
+    ]
+  },
+  {
+    "number": 182,
+    "case_id": "f2ecd4892337a03eb2fe__scientific_research_case_status",
+    "display_to_canonical": [
+      2,
+      3,
+      0,
+      1
+    ]
+  },
+  {
+    "number": 183,
+    "case_id": "92b5b209c7b889c4e265__elementary_education_case_status",
+    "display_to_canonical": [
+      4,
+      0,
+      1,
+      3,
+      2
+    ]
+  },
+  {
+    "number": 184,
+    "case_id": "ea5909598866da245501__elementary_education_procedure_followed",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 185,
+    "case_id": "cdb54b4acec738d76815__engineering_services_procedure_followed",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 186,
+    "case_id": "28ffdecea647cc16e4c8__warehousing_case_status",
+    "display_to_canonical": [
+      4,
+      2,
+      1,
+      0,
+      3
+    ]
+  },
+  {
+    "number": 187,
+    "case_id": "7f1a0085455bfdcded0d__building_construction_action_routing",
+    "display_to_canonical": [
+      3,
+      1,
+      2,
+      4,
+      0
+    ]
+  },
+  {
+    "number": 188,
+    "case_id": "cee3739a6424ae40fe3f__water_transportation_operational_risk",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 189,
+    "case_id": "13aed7acaa2c2ba9dd88__emergency_management_followup_urgency",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 190,
+    "case_id": "c22e5dfa1868d1f76c8c__scientific_research_followup_required",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 191,
+    "case_id": "f666c13e60ea344e086a__transit_and_ground_transportation_action_routing",
+    "display_to_canonical": [
+      0,
+      2,
+      1,
+      3
+    ]
+  },
+  {
+    "number": 192,
+    "case_id": "22de3d3458b59e09ac74__elementary_education_operational_risk",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 193,
+    "case_id": "a7f5d044d920027c9144__emergency_management_incident_response_category",
+    "display_to_canonical": [
+      4,
+      1,
+      2,
+      0,
+      3
+    ]
+  },
+  {
+    "number": 194,
+    "case_id": "68dfcc66bef7c829d59c__legal_services_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 195,
+    "case_id": "e4d49316f4f256cadc73__cybersecurity_operations_compliance_exposure",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 196,
+    "case_id": "992b3fd56c40338061e6__transit_and_ground_transportation_action_routing",
+    "display_to_canonical": [
+      3,
+      0,
+      1,
+      4,
+      2
+    ]
+  },
+  {
+    "number": 197,
+    "case_id": "5438ebdb2eeecf46a0df__environmental_compliance_operational_risk",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 198,
+    "case_id": "11daae71ee6a745696fc__building_construction_action_routing",
+    "display_to_canonical": [
+      2,
+      0,
+      1,
+      3
+    ]
+  },
+  {
+    "number": 199,
+    "case_id": "832fe6a2dab423333369__scientific_research_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 200,
+    "case_id": "655254e9cf1ef2e0839d__motor_vehicle_retail_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 201,
+    "case_id": "a4015bfb28ca693188a8__software_services_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 202,
+    "case_id": "cdb54b4acec738d76815__software_services_service_continuity_impact",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 203,
+    "case_id": "5ebf1c2c4cb00915868d__electric_power_utilities_case_status",
+    "display_to_canonical": [
+      2,
+      3,
+      1,
+      0
+    ]
+  },
+  {
+    "number": 204,
+    "case_id": "617a357d6cde38e5e157__software_services_case_status",
+    "display_to_canonical": [
+      0,
+      2,
+      4,
+      1,
+      3
+    ]
+  },
+  {
+    "number": 205,
+    "case_id": "34146aae7cb552109196__software_services_service_continuity_impact",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 206,
+    "case_id": "173f57dd3f7720d3a2e2__residential_care_followup_required",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 207,
+    "case_id": "f2cf8a3f60de4b9af811__fitness_and_recreation_procedure_followed",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 208,
+    "case_id": "c51ceb7d217ba60b2930__engineering_services_case_status",
+    "display_to_canonical": [
+      3,
+      0,
+      2,
+      1
+    ]
+  },
+  {
+    "number": 209,
+    "case_id": "b920103698d8fcc98c6a__software_services_procedure_followed",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 210,
+    "case_id": "22de3d3458b59e09ac74__outpatient_healthcare_service_continuity_impact",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 211,
+    "case_id": "a46560e6aa6339a65df8__procurement_case_status",
+    "display_to_canonical": [
+      1,
+      2,
+      3,
+      4,
+      0
+    ]
+  },
+  {
+    "number": 212,
+    "case_id": "ca30bd2f533343742aa8__scientific_research_action_routing",
+    "display_to_canonical": [
+      1,
+      3,
+      4,
+      2,
+      0
+    ]
+  },
+  {
+    "number": 213,
+    "case_id": "c8af5f09d85f769f10da__engineering_services_case_status",
+    "display_to_canonical": [
+      2,
+      1,
+      0,
+      3,
+      4
+    ]
+  },
+  {
+    "number": 214,
+    "case_id": "e7891f3a519326183ad0__legal_services_case_status",
+    "display_to_canonical": [
+      2,
+      1,
+      4,
+      3,
+      0
+    ]
+  },
+  {
+    "number": 215,
+    "case_id": "58da44e7494d81f954f1__legal_services_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 216,
+    "case_id": "36613fc7376ad91cf460__courier_delivery_action_routing",
+    "display_to_canonical": [
+      1,
+      0,
+      3,
+      2,
+      4
+    ]
+  },
+  {
+    "number": 217,
+    "case_id": "5b2d7cec2684ab4a5e6a__courier_delivery_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 218,
+    "case_id": "7e179b8226d2af1ce588__scientific_research_case_status",
+    "display_to_canonical": [
+      0,
+      2,
+      1,
+      3
+    ]
+  },
+  {
+    "number": 219,
+    "case_id": "acd191a8f1a8719cceca__legal_services_case_status",
+    "display_to_canonical": [
+      1,
+      3,
+      4,
+      0,
+      2
+    ]
+  },
+  {
+    "number": 220,
+    "case_id": "30c128555409764c611d__forestry_operations_followup_required",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 221,
+    "case_id": "5b2d7cec2684ab4a5e6a__human_resources_action_routing",
+    "display_to_canonical": [
+      2,
+      3,
+      0,
+      1
+    ]
+  },
+  {
+    "number": 222,
+    "case_id": "c457caeba29929d8384a__emergency_management_operational_risk",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 223,
+    "case_id": "63ba90528f1361d47220__residential_care_service_continuity_impact",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 224,
+    "case_id": "c5063f466e0ba941a91f__quality_assurance_evidence_strength",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 225,
+    "case_id": "259b16ed5b2988924ab8__metal_fabrication_compliance_disposition",
+    "display_to_canonical": [
+      1,
+      2,
+      3,
+      0
+    ]
+  },
+  {
+    "number": 226,
+    "case_id": "e897c8ca259856ba07f2__software_services_action_routing",
+    "display_to_canonical": [
+      3,
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "number": 227,
+    "case_id": "95f40a4bb94aca2d7657__food_manufacturing_action_routing",
+    "display_to_canonical": [
+      4,
+      3,
+      2,
+      0,
+      1
+    ]
+  },
+  {
+    "number": 228,
+    "case_id": "6d7d10ad9d8ff4ee960f__grocery_retail_followup_required",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 229,
+    "case_id": "d89c1ecc96f8c692f63a__forestry_operations_case_status",
+    "display_to_canonical": [
+      0,
+      2,
+      4,
+      1,
+      3
+    ]
+  },
+  {
+    "number": 230,
+    "case_id": "92b5b209c7b889c4e265__food_service_procedure_followed",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 231,
+    "case_id": "cdb54b4acec738d76815__residential_care_incident_response_category",
+    "display_to_canonical": [
+      1,
+      2,
+      3,
+      0
+    ]
+  },
+  {
+    "number": 232,
+    "case_id": "992b3fd56c40338061e6__telecommunications_service_continuity_impact",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 233,
+    "case_id": "fad5e8e648a9f8e9f272__publishing_procedure_followed",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 234,
+    "case_id": "71cb017d39148107c8d1__transit_and_ground_transportation_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 235,
+    "case_id": "b0406513eaf3634defe8__specialty_trade_construction_incident_response_category",
+    "display_to_canonical": [
+      1,
+      3,
+      4,
+      0,
+      2
+    ]
+  },
+  {
+    "number": 236,
+    "case_id": "70b031fb17dd27e24d00__emergency_management_operational_risk",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 237,
+    "case_id": "f2ecd4892337a03eb2fe__forestry_operations_followup_required",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 238,
+    "case_id": "7fd54e014f30b87bf7eb__social_assistance_service_continuity_impact",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 239,
+    "case_id": "f666c13e60ea344e086a__transit_and_ground_transportation_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 240,
+    "case_id": "1da922f284ec59677d40__public_administration_action_routing",
+    "display_to_canonical": [
+      0,
+      2,
+      1,
+      4,
+      3
+    ]
+  },
+  {
+    "number": 241,
+    "case_id": "f2cf8a3f60de4b9af811__water_and_wastewater_utilities_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 242,
+    "case_id": "dd5b3f34b9e914209270__quality_assurance_operational_risk",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 243,
+    "case_id": "488a4eb8290c177d4204__software_services_procedure_followed",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 244,
+    "case_id": "cc860c791c164cc5e1b7__quality_assurance_procedure_followed",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 245,
+    "case_id": "94c7373d5048554e0d2c__emergency_management_operational_risk",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 246,
+    "case_id": "6d959d14cc67c6f29dd5__emergency_management_incident_response_category",
+    "display_to_canonical": [
+      1,
+      4,
+      2,
+      0,
+      3
+    ]
+  },
+  {
+    "number": 247,
+    "case_id": "c51ceb7d217ba60b2930__scientific_research_procedure_followed",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 248,
+    "case_id": "22de3d3458b59e09ac74__higher_education_procedure_followed",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 249,
+    "case_id": "00640f88014b06b02860__forestry_operations_action_routing",
+    "display_to_canonical": [
+      3,
+      0,
+      4,
+      1,
+      2
+    ]
+  },
+  {
+    "number": 250,
+    "case_id": "22de3d3458b59e09ac74__motor_vehicle_retail_case_status",
+    "display_to_canonical": [
+      1,
+      3,
+      4,
+      2,
+      0
+    ]
+  },
+  {
+    "number": 251,
+    "case_id": "e063426cf7d5d3c627d6__public_administration_compliance_exposure",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 252,
+    "case_id": "ec660f81bed398344370__legal_services_case_status",
+    "display_to_canonical": [
+      2,
+      0,
+      1,
+      3
+    ]
+  },
+  {
+    "number": 253,
+    "case_id": "1da922f284ec59677d40__telecommunications_service_continuity_impact",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 254,
+    "case_id": "7920ba426a1355a6690e__quality_assurance_followup_required",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 255,
+    "case_id": "c38e503c0c225a933dc1__forestry_operations_case_status",
+    "display_to_canonical": [
+      1,
+      3,
+      0,
+      2
+    ]
+  },
+  {
+    "number": 256,
+    "case_id": "cee3739a6424ae40fe3f__electric_power_utilities_operational_risk",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 257,
+    "case_id": "2744766f31d4d05f4056__emergency_management_incident_response_category",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 258,
+    "case_id": "95f40a4bb94aca2d7657__crop_production_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 259,
+    "case_id": "acd191a8f1a8719cceca__environmental_compliance_action_routing",
+    "display_to_canonical": [
+      1,
+      3,
+      2,
+      0
+    ]
+  },
+  {
+    "number": 260,
+    "case_id": "d9509b5ac2ae5d3036f6__quality_assurance_evidence_strength",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 261,
+    "case_id": "58da44e7494d81f954f1__environmental_compliance_case_status",
+    "display_to_canonical": [
+      2,
+      3,
+      0,
+      1
+    ]
+  },
+  {
+    "number": 262,
+    "case_id": "b7a0eca81369d084ffaa__quality_assurance_incident_response_category",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "number": 263,
+    "case_id": "1e8e775c925a059b3368__scientific_research_case_status",
+    "display_to_canonical": [
+      0,
+      2,
+      1,
+      3
+    ]
+  },
+  {
+    "number": 264,
+    "case_id": "b1e48ae60063e3c63e07__software_services_procedure_followed",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 265,
+    "case_id": "992b3fd56c40338061e6__human_resources_followup_required",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 266,
+    "case_id": "13ccf6a876fb5b39c990__software_services_procedure_followed",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 267,
+    "case_id": "d61e3c79a178ac55d143__scientific_research_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 268,
+    "case_id": "00640f88014b06b02860__forestry_operations_followup_required",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 269,
+    "case_id": "ac7727e551ca0f24c8a8__legal_services_procedure_followed",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 270,
+    "case_id": "9ab931cb2ff82751060f__residential_care_incident_response_category",
+    "display_to_canonical": [
+      3,
+      0,
+      2,
+      1
+    ]
+  },
+  {
+    "number": 271,
+    "case_id": "c5063f466e0ba941a91f__cybersecurity_operations_case_status",
+    "display_to_canonical": [
+      2,
+      3,
+      1,
+      0
+    ]
+  },
+  {
+    "number": 272,
+    "case_id": "d89c1ecc96f8c692f63a__scientific_research_procedure_followed",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 273,
+    "case_id": "a8efb39f217fbb0b76f8__public_administration_action_routing",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      4,
+      3
+    ]
+  },
+  {
+    "number": 274,
+    "case_id": "3e4664584d533beb27f8__environmental_compliance_operational_risk",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 275,
+    "case_id": "66a220ef207048ff120e__legal_services_case_status",
+    "display_to_canonical": [
+      1,
+      0,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 276,
+    "case_id": "655254e9cf1ef2e0839d__higher_education_case_status",
+    "display_to_canonical": [
+      0,
+      1,
+      4,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 277,
+    "case_id": "36613fc7376ad91cf460__transport_equipment_manufacturing_case_status",
+    "display_to_canonical": [
+      0,
+      2,
+      4,
+      3,
+      1
+    ]
+  },
+  {
+    "number": 278,
+    "case_id": "a4015bfb28ca693188a8__residential_care_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 279,
+    "case_id": "3045b95d0bbb03fefbff__cybersecurity_operations_case_status",
+    "display_to_canonical": [
+      3,
+      4,
+      2,
+      0,
+      1
+    ]
+  },
+  {
+    "number": 280,
+    "case_id": "590e5ad65be7268ce356__hospital_care_followup_urgency",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 281,
+    "case_id": "1e8e775c925a059b3368__engineering_services_followup_required",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 282,
+    "case_id": "1b7e223eea0cd95bd423__public_administration_operational_risk",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 283,
+    "case_id": "6d7d10ad9d8ff4ee960f__metal_fabrication_compliance_disposition",
+    "display_to_canonical": [
+      4,
+      3,
+      1,
+      0,
+      2
+    ]
+  },
+  {
+    "number": 284,
+    "case_id": "832fe6a2dab423333369__rail_transportation_action_routing",
+    "display_to_canonical": [
+      2,
+      3,
+      4,
+      0,
+      1
+    ]
+  },
+  {
+    "number": 285,
+    "case_id": "7f1a0085455bfdcded0d__higher_education_procedure_followed",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 286,
+    "case_id": "1495c2678d74f124595c__emergency_management_incident_response_category",
+    "display_to_canonical": [
+      3,
+      1,
+      2,
+      4,
+      0
+    ]
+  },
+  {
+    "number": 287,
+    "case_id": "7f1a0085455bfdcded0d__grocery_retail_operational_risk",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 288,
+    "case_id": "35452e8cab33c32962ca__residential_care_followup_required",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 289,
+    "case_id": "d60b0c048347d5934e0b__accommodation_procedure_followed",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 290,
+    "case_id": "2dbfaf9cc5d624dd7d1b__cybersecurity_operations_followup_urgency",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 291,
+    "case_id": "0f650d705c0ee74be42f__engineering_services_case_status",
+    "display_to_canonical": [
+      3,
+      1,
+      2,
+      0
+    ]
+  },
+  {
+    "number": 292,
+    "case_id": "0f722db7a4d7a81f966f__cybersecurity_operations_action_routing",
+    "display_to_canonical": [
+      1,
+      3,
+      0,
+      2
+    ]
+  },
+  {
+    "number": 293,
+    "case_id": "a0bee81aacd27430f970__emergency_management_followup_urgency",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 294,
+    "case_id": "34146aae7cb552109196__forestry_operations_case_status",
+    "display_to_canonical": [
+      2,
+      3,
+      1,
+      0
+    ]
+  },
+  {
+    "number": 295,
+    "case_id": "cd88f3623067035eded1__quality_assurance_procedure_followed",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 296,
+    "case_id": "09f02230475059cb3e91__real_estate_case_status",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 297,
+    "case_id": "06444a26a6371aca374b__forestry_operations_followup_required",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 298,
+    "case_id": "45b9cc4e5fb823db0893__fitness_and_recreation_case_status",
+    "display_to_canonical": [
+      1,
+      0,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 299,
+    "case_id": "ca05a7c4cc6502e1dd17__environmental_compliance_procedure_followed",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 300,
+    "case_id": "3e2d02c504d3f263ce86__publishing_operational_risk",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 301,
+    "case_id": "6d5782b46595d7ceafb0__air_transportation_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 302,
+    "case_id": "a8efb39f217fbb0b76f8__public_administration_followup_required",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 303,
+    "case_id": "6e10be4d0c39b8ffaafe__cybersecurity_operations_action_routing",
+    "display_to_canonical": [
+      3,
+      1,
+      0,
+      2
+    ]
+  },
+  {
+    "number": 304,
+    "case_id": "3fac9771af62ffa01f30__quality_assurance_incident_response_category",
+    "display_to_canonical": [
+      0,
+      4,
+      1,
+      3,
+      2
+    ]
+  },
+  {
+    "number": 305,
+    "case_id": "5ebf1c2c4cb00915868d__elementary_education_operational_risk",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 306,
+    "case_id": "f7d481783290543f6b28__specialty_trade_construction_followup_required",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 307,
+    "case_id": "ac7727e551ca0f24c8a8__legal_services_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 308,
+    "case_id": "9fb702f2343506e98f53__environmental_compliance_followup_required",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 309,
+    "case_id": "d7f79249f7df42e6a477__engineering_services_procedure_followed",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 310,
+    "case_id": "e3874e512c883e244c57__public_administration_case_status",
+    "display_to_canonical": [
+      2,
+      1,
+      0,
+      3
+    ]
+  },
+  {
+    "number": 311,
+    "case_id": "c48c3560ea654e7e971b__software_services_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 312,
+    "case_id": "f666c13e60ea344e086a__procurement_procedure_followed",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 313,
+    "case_id": "2416f188682b5e925155__environmental_compliance_action_routing",
+    "display_to_canonical": [
+      2,
+      0,
+      1,
+      3
+    ]
+  },
+  {
+    "number": 314,
+    "case_id": "30c128555409764c611d__engineering_services_case_status",
+    "display_to_canonical": [
+      1,
+      2,
+      0,
+      3,
+      4
+    ]
+  },
+  {
+    "number": 315,
+    "case_id": "95f40a4bb94aca2d7657__hospital_care_procedure_followed",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 316,
+    "case_id": "590e5ad65be7268ce356__specialty_trade_construction_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 317,
+    "case_id": "d7f79249f7df42e6a477__real_estate_action_routing",
+    "display_to_canonical": [
+      1,
+      3,
+      2,
+      0,
+      4
+    ]
+  },
+  {
+    "number": 318,
+    "case_id": "1b7e223eea0cd95bd423__legal_services_procedure_followed",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 319,
+    "case_id": "8e9c9a027e4f707fb6c6__software_services_action_routing",
+    "display_to_canonical": [
+      2,
+      3,
+      1,
+      0
+    ]
+  },
+  {
+    "number": 320,
+    "case_id": "572767708b50af5fce4c__chemical_manufacturing_case_status",
+    "display_to_canonical": [
+      4,
+      0,
+      2,
+      1,
+      3
+    ]
+  },
+  {
+    "number": 321,
+    "case_id": "c38e503c0c225a933dc1__engineering_services_procedure_followed",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 322,
+    "case_id": "0f5a94cd342e64a9c7b0__cybersecurity_operations_action_routing",
+    "display_to_canonical": [
+      1,
+      0,
+      4,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 323,
+    "case_id": "ff74dcaa77a5d2fbecd9__emergency_management_procedure_followed",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 324,
+    "case_id": "590e5ad65be7268ce356__procurement_procedure_followed",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 325,
+    "case_id": "f96a95adc7bf20bfbf2a__residential_care_incident_response_category",
+    "display_to_canonical": [
+      1,
+      0,
+      4,
+      3,
+      2
+    ]
+  },
+  {
+    "number": 326,
+    "case_id": "1da922f284ec59677d40__water_transportation_followup_required",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 327,
+    "case_id": "69bd90340317033c4817__food_service_case_status",
+    "display_to_canonical": [
+      3,
+      1,
+      0,
+      2
+    ]
+  },
+  {
+    "number": 328,
+    "case_id": "fdc1d2a8fefde61066b2__courier_delivery_incident_response_category",
+    "display_to_canonical": [
+      1,
+      4,
+      2,
+      3,
+      0
+    ]
+  },
+  {
+    "number": 329,
+    "case_id": "3e2d02c504d3f263ce86__banking_procedure_followed",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 330,
+    "case_id": "b920103698d8fcc98c6a__software_services_service_continuity_impact",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 331,
+    "case_id": "5fcedb050abe61cde9d4__higher_education_followup_required",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 332,
+    "case_id": "b6191cd65e176c4ecc5b__public_administration_operational_risk",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 333,
+    "case_id": "b0406513eaf3634defe8__performing_arts_action_routing",
+    "display_to_canonical": [
+      1,
+      3,
+      2,
+      0,
+      4
+    ]
+  },
+  {
+    "number": 334,
+    "case_id": "993836a09420f3881b42__social_assistance_service_continuity_impact",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 335,
+    "case_id": "e063426cf7d5d3c627d6__public_administration_action_routing",
+    "display_to_canonical": [
+      1,
+      3,
+      2,
+      0
+    ]
+  },
+  {
+    "number": 336,
+    "case_id": "e0fef64bfa9fb32ad66a__transit_and_ground_transportation_operational_risk",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 337,
+    "case_id": "b4314feacff1d29aab96__water_and_wastewater_utilities_followup_required",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 338,
+    "case_id": "68dfcc66bef7c829d59c__environmental_compliance_action_routing",
+    "display_to_canonical": [
+      1,
+      2,
+      3,
+      0,
+      4
+    ]
+  },
+  {
+    "number": 339,
+    "case_id": "a8efb39f217fbb0b76f8__public_administration_operational_risk",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 340,
+    "case_id": "6fd68d0a2731b7aa398c__engineering_services_case_status",
+    "display_to_canonical": [
+      0,
+      3,
+      1,
+      2
+    ]
+  },
+  {
+    "number": 341,
+    "case_id": "c883a21a69ee95c401c0__environmental_compliance_procedure_followed",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 342,
+    "case_id": "2776960bd2c24512fb59__food_manufacturing_action_routing",
+    "display_to_canonical": [
+      2,
+      1,
+      0,
+      3,
+      4
+    ]
+  },
+  {
+    "number": 343,
+    "case_id": "105b11f9b361faa2fd6f__accommodation_procedure_followed",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 344,
+    "case_id": "945138a00972ed853040__legal_services_case_status",
+    "display_to_canonical": [
+      2,
+      4,
+      1,
+      3,
+      0
+    ]
+  },
+  {
+    "number": 345,
+    "case_id": "2d3570c0f8739c1bbdd1__software_services_case_status",
+    "display_to_canonical": [
+      0,
+      3,
+      4,
+      2,
+      1
+    ]
+  },
+  {
+    "number": 346,
+    "case_id": "e0fef64bfa9fb32ad66a__transit_and_ground_transportation_action_routing",
+    "display_to_canonical": [
+      3,
+      2,
+      0,
+      1
+    ]
+  },
+  {
+    "number": 347,
+    "case_id": "f7dc1e8a7cb64354f234__quality_assurance_operational_risk",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 348,
+    "case_id": "25aeef747518eb1f301d__residential_care_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 349,
+    "case_id": "ca30bd2f533343742aa8__engineering_services_procedure_followed",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 350,
+    "case_id": "cc860c791c164cc5e1b7__cybersecurity_operations_followup_urgency",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 351,
+    "case_id": "654ebe304b148c6de919__quality_assurance_evidence_strength",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 352,
+    "case_id": "a46560e6aa6339a65df8__legal_services_followup_required",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 353,
+    "case_id": "945138a00972ed853040__public_administration_followup_required",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 354,
+    "case_id": "485325224d48de2cf2b4__cybersecurity_operations_compliance_exposure",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 355,
+    "case_id": "3e4664584d533beb27f8__public_administration_followup_required",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 356,
+    "case_id": "6c9a9efcc68a09f7c2ca__food_manufacturing_operational_risk",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 357,
+    "case_id": "a29e350381ea238278d8__emergency_management_case_status",
+    "display_to_canonical": [
+      2,
+      0,
+      4,
+      1,
+      3
+    ]
+  },
+  {
+    "number": 358,
+    "case_id": "d09697870b44c5551a91__software_services_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 359,
+    "case_id": "64bc570b8e85bd6963db__truck_transportation_incident_response_category",
+    "display_to_canonical": [
+      3,
+      0,
+      2,
+      4,
+      1
+    ]
+  },
+  {
+    "number": 360,
+    "case_id": "bd3193a2b7fdd0124c77__residential_care_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 361,
+    "case_id": "9fb702f2343506e98f53__religious_organizations_followup_required",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 362,
+    "case_id": "c22e5dfa1868d1f76c8c__forestry_operations_followup_required",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 363,
+    "case_id": "905e43588c7f36beadc2__software_services_case_status",
+    "display_to_canonical": [
+      2,
+      3,
+      1,
+      0
+    ]
+  },
+  {
+    "number": 364,
+    "case_id": "58da44e7494d81f954f1__public_administration_followup_required",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 365,
+    "case_id": "395f6cf9b4074b7a809a__engineering_services_case_status",
+    "display_to_canonical": [
+      0,
+      1,
+      3,
+      2
+    ]
+  },
+  {
+    "number": 366,
+    "case_id": "f2cf8a3f60de4b9af811__outpatient_healthcare_service_continuity_impact",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 367,
+    "case_id": "af901ff4065cd69345f3__environmental_compliance_compliance_exposure",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 368,
+    "case_id": "654ebe304b148c6de919__quality_assurance_procedure_followed",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 369,
+    "case_id": "9f9b63aad8dc8dc42c4e__emergency_management_procedure_followed",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 370,
+    "case_id": "a8efb39f217fbb0b76f8__legal_services_operational_risk",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 371,
+    "case_id": "64bc570b8e85bd6963db__mineral_mining_procedure_followed",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 372,
+    "case_id": "4340cef6d7aa4d4ca450__quality_assurance_operational_risk",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 373,
+    "case_id": "8d929e945d922cf6ed6a__engineering_services_followup_required",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 374,
+    "case_id": "c883a21a69ee95c401c0__public_administration_case_status",
+    "display_to_canonical": [
+      0,
+      3,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "number": 375,
+    "case_id": "7e179b8226d2af1ce588__scientific_research_procedure_followed",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 376,
+    "case_id": "dd0e0c37a0bbb63fa87a__emergency_management_procedure_followed",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 377,
+    "case_id": "1c866e0dc472b8aa5d4c__air_transportation_service_continuity_impact",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 378,
+    "case_id": "e33203943869cc4e4895__cybersecurity_operations_followup_urgency",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 379,
+    "case_id": "5fcedb050abe61cde9d4__courier_delivery_incident_response_category",
+    "display_to_canonical": [
+      0,
+      2,
+      1,
+      3
+    ]
+  },
+  {
+    "number": 380,
+    "case_id": "6c9a9efcc68a09f7c2ca__social_assistance_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 381,
+    "case_id": "dfc5691c2dcb031fd481__residential_care_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 382,
+    "case_id": "cd6fe4c8d4706972821e__air_transportation_service_continuity_impact",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 383,
+    "case_id": "ab6dd505a60b8d359bdc__cybersecurity_operations_compliance_exposure",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 384,
+    "case_id": "7c375170350350e57880__scientific_research_case_status",
+    "display_to_canonical": [
+      2,
+      1,
+      0,
+      3
+    ]
+  },
+  {
+    "number": 385,
+    "case_id": "799eb230343f39409e95__religious_organizations_followup_required",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 386,
+    "case_id": "ea5909598866da245501__fire_and_rescue_action_routing",
+    "display_to_canonical": [
+      1,
+      0,
+      4,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 387,
+    "case_id": "8aecfcee2386c55e0bf4__environmental_compliance_procedure_followed",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 388,
+    "case_id": "45b9cc4e5fb823db0893__truck_transportation_procedure_followed",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 389,
+    "case_id": "5b2d7cec2684ab4a5e6a__animal_production_operational_risk",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 390,
+    "case_id": "5fcedb050abe61cde9d4__residential_care_priority_level",
+    "display_to_canonical": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "number": 391,
+    "case_id": "5bda46e48481a30d5b24__residential_care_followup_required",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 392,
+    "case_id": "c8af5f09d85f769f10da__forestry_operations_action_routing",
+    "display_to_canonical": [
+      2,
+      1,
+      3,
+      0
+    ]
+  },
+  {
+    "number": 393,
+    "case_id": "67b317a9754274cb8385__emergency_management_procedure_followed",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 394,
+    "case_id": "ec1eaa8937224fb8e071__forestry_operations_action_routing",
+    "display_to_canonical": [
+      0,
+      2,
+      3,
+      1
+    ]
+  },
+  {
+    "number": 395,
+    "case_id": "cdb54b4acec738d76815__engineering_services_case_status",
+    "display_to_canonical": [
+      2,
+      1,
+      3,
+      0,
+      4
+    ]
+  },
+  {
+    "number": 396,
+    "case_id": "20b702caab3152c9fe11__hospital_care_procedure_followed",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  },
+  {
+    "number": 397,
+    "case_id": "1b7e223eea0cd95bd423__public_administration_case_status",
+    "display_to_canonical": [
+      1,
+      3,
+      0,
+      2,
+      4
+    ]
+  },
+  {
+    "number": 398,
+    "case_id": "1ef2347aaf0e18391916__emergency_management_procedure_followed",
+    "display_to_canonical": [
+      1,
+      0
+    ]
+  },
+  {
+    "number": 399,
+    "case_id": "3880de10d768a5de2de4__oil_and_gas_extraction_action_routing",
+    "display_to_canonical": [
+      3,
+      1,
+      2,
+      0
+    ]
+  },
+  {
+    "number": 400,
+    "case_id": "c1af72c738b4a20c33eb__emergency_management_procedure_followed",
+    "display_to_canonical": [
+      0,
+      1
+    ]
+  }
+]

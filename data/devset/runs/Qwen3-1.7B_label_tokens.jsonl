@@ -1,0 +1,198 @@
+{"case_id": "invoice_exception_disposition__0", "kind": "choice", "label": 0, "prediction": 0, "probabilities": [0.8701171875, 0.12939453125, 0.0004813671112060547]}
+{"case_id": "invoice_exception_disposition__1", "kind": "choice", "label": 1, "prediction": 1, "probabilities": [0.270263671875, 0.7119140625, 0.017822265625]}
+{"case_id": "invoice_exception_disposition__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [0.0, 2.384185791015625e-07, 1.0]}
+{"case_id": "customer_churn_risk__0", "kind": "score", "label": 0, "prediction": 0, "probabilities": [0.99853515625, 0.0012445449829101562, 2.0742416381835938e-05, 0.0001633167266845703]}
+{"case_id": "customer_churn_risk__1", "kind": "score", "label": 1, "prediction": 1, "probabilities": [0.198486328125, 0.7607421875, 0.016815185546875, 0.023712158203125]}
+{"case_id": "customer_churn_risk__2", "kind": "score", "label": 2, "prediction": 2, "probabilities": [0.03936767578125, 0.1005859375, 0.791015625, 0.069091796875]}
+{"case_id": "customer_churn_risk__3", "kind": "score", "label": 3, "prediction": 0, "probabilities": [0.89453125, 0.0972900390625, 0.0031280517578125, 0.00484466552734375]}
+{"case_id": "workplace_injury_reported__0", "kind": "noul", "label": 0, "prediction": 0, "probabilities": [0.63720703125, 0.363037109375]}
+{"case_id": "workplace_injury_reported__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "shipment_delay_resolution__0", "kind": "choice", "label": 0, "prediction": 0, "probabilities": [1.0, 8.481740951538086e-05, 5.364418029785156e-07]}
+{"case_id": "shipment_delay_resolution__1", "kind": "choice", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0, 1.7881393432617188e-07]}
+{"case_id": "shipment_delay_resolution__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [1.7881393432617188e-07, 6.556510925292969e-06, 1.0]}
+{"case_id": "software_release_readiness__0", "kind": "score", "label": 0, "prediction": 0, "probabilities": [0.99658203125, 7.456541061401367e-05, 1.2934207916259766e-05, 0.003482818603515625]}
+{"case_id": "software_release_readiness__1", "kind": "score", "label": 1, "prediction": 0, "probabilities": [0.93798828125, 0.00371551513671875, 0.0001684427261352539, 0.05810546875]}
+{"case_id": "software_release_readiness__2", "kind": "score", "label": 2, "prediction": 3, "probabilities": [7.152557373046875e-07, 7.3909759521484375e-06, 5.066394805908203e-06, 1.0]}
+{"case_id": "software_release_readiness__3", "kind": "score", "label": 3, "prediction": 3, "probabilities": [5.960464477539063e-08, 5.364418029785156e-07, 3.5762786865234375e-07, 1.0]}
+{"case_id": "regulated_data_exposed__0", "kind": "noul", "label": 0, "prediction": 1, "probabilities": [0.281494140625, 0.71875]}
+{"case_id": "regulated_data_exposed__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "loan_application_outcome__0", "kind": "choice", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0, 5.960464477539063e-08]}
+{"case_id": "loan_application_outcome__1", "kind": "choice", "label": 1, "prediction": 0, "probabilities": [0.60400390625, 0.006107330322265625, 0.389892578125]}
+{"case_id": "loan_application_outcome__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [0.0, 0.0, 1.0]}
+{"case_id": "machine_maintenance_urgency__0", "kind": "score", "label": 0, "prediction": 0, "probabilities": [0.994140625, 0.005382537841796875, 1.2934207916259766e-05, 0.00037789344787597656]}
+{"case_id": "machine_maintenance_urgency__1", "kind": "score", "label": 1, "prediction": 2, "probabilities": [9.894371032714844e-06, 0.0006327629089355469, 0.978515625, 0.0209503173828125]}
+{"case_id": "machine_maintenance_urgency__2", "kind": "score", "label": 2, "prediction": 3, "probabilities": [0.0, 5.960464477539063e-08, 1.3113021850585938e-06, 1.0]}
+{"case_id": "machine_maintenance_urgency__3", "kind": "score", "label": 3, "prediction": 3, "probabilities": [2.980232238769531e-07, 2.086162567138672e-06, 6.139278411865234e-06, 1.0]}
+{"case_id": "supplier_contract_signed__0", "kind": "noul", "label": 0, "prediction": 0, "probabilities": [1.0, 4.13060188293457e-05]}
+{"case_id": "supplier_contract_signed__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "candidate_interview_next_step__0", "kind": "choice", "label": 0, "prediction": 0, "probabilities": [0.9970703125, 0.0028896331787109375, 0.00010859966278076172]}
+{"case_id": "candidate_interview_next_step__1", "kind": "choice", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0, 5.960464477539063e-08]}
+{"case_id": "candidate_interview_next_step__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [0.0, 2.384185791015625e-07, 1.0]}
+{"case_id": "clinical_triage_priority__0", "kind": "score", "label": 0, "prediction": 0, "probabilities": [0.94677734375, 0.031402587890625, 0.0004916191101074219, 0.021575927734375]}
+{"case_id": "clinical_triage_priority__1", "kind": "score", "label": 1, "prediction": 2, "probabilities": [5.960464477539063e-08, 3.212690353393555e-05, 0.998046875, 0.001926422119140625]}
+{"case_id": "clinical_triage_priority__2", "kind": "score", "label": 2, "prediction": 2, "probabilities": [5.960464477539063e-08, 6.616115570068359e-06, 0.97607421875, 0.0236968994140625]}
+{"case_id": "clinical_triage_priority__3", "kind": "score", "label": 3, "prediction": 2, "probabilities": [5.960464477539063e-08, 2.3245811462402344e-06, 0.5927734375, 0.4072265625]}
+{"case_id": "patient_consent_documented__0", "kind": "noul", "label": 0, "prediction": 0, "probabilities": [1.0, 5.960464477539063e-08]}
+{"case_id": "patient_consent_documented__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "marketing_campaign_action__0", "kind": "choice", "label": 0, "prediction": 2, "probabilities": [5.960464477539063e-08, 3.88026237487793e-05, 1.0]}
+{"case_id": "marketing_campaign_action__1", "kind": "choice", "label": 1, "prediction": 2, "probabilities": [0.0, 0.0, 1.0]}
+{"case_id": "marketing_campaign_action__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [0.0, 0.0, 1.0]}
+{"case_id": "construction_site_hazard_severity__0", "kind": "score", "label": 0, "prediction": 0, "probabilities": [1.0, 1.1920928955078125e-06, 5.960464477539063e-08, 1.7881393432617188e-07]}
+{"case_id": "construction_site_hazard_severity__1", "kind": "score", "label": 1, "prediction": 0, "probabilities": [0.72412109375, 0.27490234375, 0.0003426074981689453, 0.0007719993591308594]}
+{"case_id": "construction_site_hazard_severity__2", "kind": "score", "label": 2, "prediction": 1, "probabilities": [0.16796875, 0.8017578125, 0.0257720947265625, 0.004619598388671875]}
+{"case_id": "construction_site_hazard_severity__3", "kind": "score", "label": 3, "prediction": 1, "probabilities": [0.00012946128845214844, 0.767578125, 0.226806640625, 0.005680084228515625]}
+{"case_id": "lease_renewal_notice_received__0", "kind": "noul", "label": 0, "prediction": 1, "probabilities": [6.556510925292969e-07, 1.0]}
+{"case_id": "lease_renewal_notice_received__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "insurance_claim_disposition__0", "kind": "choice", "label": 0, "prediction": 0, "probabilities": [1.0, 5.960464477539063e-08, 0.0]}
+{"case_id": "insurance_claim_disposition__1", "kind": "choice", "label": 1, "prediction": 1, "probabilities": [3.5762786865234375e-07, 1.0, 0.0001233816146850586]}
+{"case_id": "insurance_claim_disposition__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [0.0, 5.960464477539063e-08, 1.0]}
+{"case_id": "restaurant_health_inspection_rating__0", "kind": "score", "label": 0, "prediction": 0, "probabilities": [0.84765625, 0.1519775390625, 4.786252975463867e-05, 0.0004267692565917969]}
+{"case_id": "restaurant_health_inspection_rating__1", "kind": "score", "label": 1, "prediction": 1, "probabilities": [2.384185791015625e-06, 1.0, 6.973743438720703e-06, 2.8431415557861328e-05]}
+{"case_id": "restaurant_health_inspection_rating__2", "kind": "score", "label": 2, "prediction": 2, "probabilities": [0.00016224384307861328, 0.228515625, 0.70361328125, 0.06756591796875]}
+{"case_id": "restaurant_health_inspection_rating__3", "kind": "score", "label": 3, "prediction": 2, "probabilities": [1.0728836059570312e-06, 0.0007290840148925781, 0.99462890625, 0.004467010498046875]}
+{"case_id": "travel_expense_receipt_attached__0", "kind": "noul", "label": 0, "prediction": 1, "probabilities": [0.07586669921875, 0.92431640625]}
+{"case_id": "travel_expense_receipt_attached__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "legal_matter_response_strategy__0", "kind": "choice", "label": 0, "prediction": 2, "probabilities": [0.00044417381286621094, 0.0002377033233642578, 0.99951171875]}
+{"case_id": "legal_matter_response_strategy__1", "kind": "choice", "label": 1, "prediction": 2, "probabilities": [2.4437904357910156e-06, 0.0236968994140625, 0.97607421875]}
+{"case_id": "legal_matter_response_strategy__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [0.0, 9.5367431640625e-07, 1.0]}
+{"case_id": "cybersecurity_alert_confidence__0", "kind": "score", "label": 0, "prediction": 1, "probabilities": [0.20166015625, 0.7490234375, 0.0226287841796875, 0.026458740234375]}
+{"case_id": "cybersecurity_alert_confidence__1", "kind": "score", "label": 1, "prediction": 1, "probabilities": [0.00019693374633789062, 0.99853515625, 0.00023758411407470703, 0.0010004043579101562]}
+{"case_id": "cybersecurity_alert_confidence__2", "kind": "score", "label": 2, "prediction": 0, "probabilities": [0.74609375, 0.2498779296875, 0.0014858245849609375, 0.0025272369384765625]}
+{"case_id": "cybersecurity_alert_confidence__3", "kind": "score", "label": 3, "prediction": 1, "probabilities": [0.0001633167266845703, 0.9990234375, 0.00026106834411621094, 0.0004875659942626953]}
+{"case_id": "quality_control_defect_found__0", "kind": "noul", "label": 0, "prediction": 1, "probabilities": [0.307373046875, 0.69287109375]}
+{"case_id": "quality_control_defect_found__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "employee_leave_request_decision__0", "kind": "choice", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0, 5.960464477539063e-08]}
+{"case_id": "employee_leave_request_decision__1", "kind": "choice", "label": 1, "prediction": 2, "probabilities": [0.0650634765625, 0.008270263671875, 0.9267578125]}
+{"case_id": "employee_leave_request_decision__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [5.960464477539063e-08, 1.0132789611816406e-06, 1.0]}
+{"case_id": "warehouse_inventory_accuracy__0", "kind": "score", "label": 0, "prediction": 0, "probabilities": [0.99658203125, 0.00044274330139160156, 0.00028586387634277344, 0.002887725830078125]}
+{"case_id": "warehouse_inventory_accuracy__1", "kind": "score", "label": 1, "prediction": 1, "probabilities": [0.00018644332885742188, 0.86083984375, 0.1279296875, 0.01117706298828125]}
+{"case_id": "warehouse_inventory_accuracy__2", "kind": "score", "label": 2, "prediction": 2, "probabilities": [1.0371208190917969e-05, 0.00315093994140625, 0.98974609375, 0.007099151611328125]}
+{"case_id": "warehouse_inventory_accuracy__3", "kind": "score", "label": 3, "prediction": 2, "probabilities": [1.0907649993896484e-05, 0.420654296875, 0.5751953125, 0.004390716552734375]}
+{"case_id": "vendor_onboarding_tax_form_complete__0", "kind": "noul", "label": 0, "prediction": 0, "probabilities": [1.0, 5.960464477539063e-08]}
+{"case_id": "vendor_onboarding_tax_form_complete__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "research_grant_application_status__0", "kind": "choice", "label": 0, "prediction": 0, "probabilities": [0.876953125, 0.0150909423828125, 0.1080322265625]}
+{"case_id": "research_grant_application_status__1", "kind": "choice", "label": 1, "prediction": 2, "probabilities": [0.0, 2.980232238769531e-07, 1.0]}
+{"case_id": "research_grant_application_status__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [0.0, 0.0, 1.0]}
+{"case_id": "hotel_guest_recovery_level__0", "kind": "score", "label": 0, "prediction": 1, "probabilities": [0.0014543533325195312, 0.9375, 0.00096893310546875, 0.0599365234375]}
+{"case_id": "hotel_guest_recovery_level__1", "kind": "score", "label": 1, "prediction": 1, "probabilities": [3.5762786865234375e-07, 1.0, 2.562999725341797e-06, 2.753734588623047e-05]}
+{"case_id": "hotel_guest_recovery_level__2", "kind": "score", "label": 2, "prediction": 1, "probabilities": [0.05133056640625, 0.91015625, 0.004486083984375, 0.034210205078125]}
+{"case_id": "hotel_guest_recovery_level__3", "kind": "score", "label": 3, "prediction": 1, "probabilities": [0.316650390625, 0.591796875, 0.0010728836059570312, 0.0906982421875]}
+{"case_id": "equipment_calibration_current__0", "kind": "noul", "label": 0, "prediction": 1, "probabilities": [7.152557373046875e-07, 1.0]}
+{"case_id": "equipment_calibration_current__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "public_records_request_routing__0", "kind": "choice", "label": 0, "prediction": 0, "probabilities": [0.9892578125, 0.01032257080078125, 0.00020766258239746094]}
+{"case_id": "public_records_request_routing__1", "kind": "choice", "label": 1, "prediction": 0, "probabilities": [0.99365234375, 0.006290435791015625, 2.4139881134033203e-05]}
+{"case_id": "public_records_request_routing__2", "kind": "choice", "label": 2, "prediction": 0, "probabilities": [0.99951171875, 0.0005702972412109375, 1.8358230590820312e-05]}
+{"case_id": "sales_lead_quality__0", "kind": "score", "label": 0, "prediction": 3, "probabilities": [0.00015413761138916016, 0.0293731689453125, 0.056610107421875, 0.9140625]}
+{"case_id": "sales_lead_quality__1", "kind": "score", "label": 1, "prediction": 1, "probabilities": [7.909536361694336e-05, 0.99267578125, 0.006687164306640625, 0.000499725341796875]}
+{"case_id": "sales_lead_quality__2", "kind": "score", "label": 2, "prediction": 2, "probabilities": [0.00015211105346679688, 0.45361328125, 0.5302734375, 0.0160064697265625]}
+{"case_id": "sales_lead_quality__3", "kind": "score", "label": 3, "prediction": 2, "probabilities": [8.344650268554688e-07, 0.00432586669921875, 0.994140625, 0.0013189315795898438]}
+{"case_id": "environmental_permit_required__0", "kind": "noul", "label": 0, "prediction": 0, "probabilities": [1.0, 2.8431415557861328e-05]}
+{"case_id": "environmental_permit_required__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "product_return_disposition__0", "kind": "choice", "label": 0, "prediction": 0, "probabilities": [0.99609375, 0.0038242340087890625, 2.4974346160888672e-05]}
+{"case_id": "product_return_disposition__1", "kind": "choice", "label": 1, "prediction": 1, "probabilities": [2.0623207092285156e-05, 0.9912109375, 0.008575439453125]}
+{"case_id": "product_return_disposition__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [0.0, 1.7881393432617188e-07, 1.0]}
+{"case_id": "network_outage_business_impact__0", "kind": "score", "label": 0, "prediction": 3, "probabilities": [0.269775390625, 0.14892578125, 0.01045989990234375, 0.57080078125]}
+{"case_id": "network_outage_business_impact__1", "kind": "score", "label": 1, "prediction": 3, "probabilities": [0.0001017451286315918, 0.01464080810546875, 0.02130126953125, 0.9638671875]}
+{"case_id": "network_outage_business_impact__2", "kind": "score", "label": 2, "prediction": 3, "probabilities": [5.960464477539063e-08, 1.1146068572998047e-05, 0.0005359649658203125, 0.99951171875]}
+{"case_id": "network_outage_business_impact__3", "kind": "score", "label": 3, "prediction": 3, "probabilities": [0.0, 1.7881393432617188e-07, 0.0017004013061523438, 0.99853515625]}
+{"case_id": "employee_policy_acknowledgment_present__0", "kind": "noul", "label": 0, "prediction": 0, "probabilities": [1.0, 1.1920928955078125e-07]}
+{"case_id": "employee_policy_acknowledgment_present__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "pharmacy_prescription_resolution__0", "kind": "choice", "label": 0, "prediction": 2, "probabilities": [0.0282745361328125, 0.035186767578125, 0.9365234375]}
+{"case_id": "pharmacy_prescription_resolution__1", "kind": "choice", "label": 1, "prediction": 2, "probabilities": [0.0, 8.344650268554688e-07, 1.0]}
+{"case_id": "pharmacy_prescription_resolution__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [0.0, 7.748603820800781e-07, 1.0]}
+{"case_id": "manufacturing_batch_release_confidence__0", "kind": "score", "label": 0, "prediction": 2, "probabilities": [0.0, 0.0, 1.0, 7.969141006469727e-05]}
+{"case_id": "manufacturing_batch_release_confidence__1", "kind": "score", "label": 1, "prediction": 2, "probabilities": [0.0, 0.0, 1.0, 5.960464477539063e-08]}
+{"case_id": "manufacturing_batch_release_confidence__2", "kind": "score", "label": 2, "prediction": 2, "probabilities": [0.0, 0.0, 1.0, 9.5367431640625e-07]}
+{"case_id": "manufacturing_batch_release_confidence__3", "kind": "score", "label": 3, "prediction": 2, "probabilities": [0.0, 0.0, 1.0, 2.562999725341797e-06]}
+{"case_id": "education_accommodation_requested__0", "kind": "noul", "label": 0, "prediction": 1, "probabilities": [8.940696716308594e-06, 1.0]}
+{"case_id": "education_accommodation_requested__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "fleet_vehicle_assignment__0", "kind": "choice", "label": 0, "prediction": 0, "probabilities": [1.0, 4.172325134277344e-07, 0.0]}
+{"case_id": "fleet_vehicle_assignment__1", "kind": "choice", "label": 1, "prediction": 0, "probabilities": [0.994140625, 0.00572967529296875, 1.2934207916259766e-05]}
+{"case_id": "fleet_vehicle_assignment__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [1.1920928955078125e-07, 6.204843521118164e-05, 1.0]}
+{"case_id": "audit_finding_materiality__0", "kind": "score", "label": 0, "prediction": 2, "probabilities": [3.170967102050781e-05, 0.00014221668243408203, 0.955078125, 0.044677734375]}
+{"case_id": "audit_finding_materiality__1", "kind": "score", "label": 1, "prediction": 2, "probabilities": [6.735324859619141e-06, 3.993511199951172e-05, 0.82666015625, 0.17333984375]}
+{"case_id": "audit_finding_materiality__2", "kind": "score", "label": 2, "prediction": 3, "probabilities": [0.0, 1.1920928955078125e-07, 0.042083740234375, 0.9580078125]}
+{"case_id": "audit_finding_materiality__3", "kind": "score", "label": 3, "prediction": 3, "probabilities": [0.0, 6.556510925292969e-07, 0.056640625, 0.943359375]}
+{"case_id": "supplier_conflict_disclosed__0", "kind": "noul", "label": 0, "prediction": 1, "probabilities": [3.159046173095703e-06, 1.0]}
+{"case_id": "supplier_conflict_disclosed__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [1.7881393432617188e-07, 1.0]}
+{"case_id": "media_inquiry_response_owner__0", "kind": "choice", "label": 0, "prediction": 1, "probabilities": [0.1956787109375, 0.79833984375, 0.00572967529296875]}
+{"case_id": "media_inquiry_response_owner__1", "kind": "choice", "label": 1, "prediction": 1, "probabilities": [4.649162292480469e-06, 1.0, 9.5367431640625e-06]}
+{"case_id": "media_inquiry_response_owner__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [1.0132789611816406e-06, 2.9325485229492188e-05, 1.0]}
+{"case_id": "student_assignment_proficiency__0", "kind": "score", "label": 0, "prediction": 0, "probabilities": [0.99853515625, 0.00048732757568359375, 2.014636993408203e-05, 0.0008292198181152344]}
+{"case_id": "student_assignment_proficiency__1", "kind": "score", "label": 1, "prediction": 2, "probabilities": [5.960464477539063e-08, 3.218650817871094e-05, 1.0, 0.00020992755889892578]}
+{"case_id": "student_assignment_proficiency__2", "kind": "score", "label": 2, "prediction": 2, "probabilities": [1.7881393432617188e-07, 1.043081283569336e-05, 0.998046875, 0.001926422119140625]}
+{"case_id": "student_assignment_proficiency__3", "kind": "score", "label": 3, "prediction": 3, "probabilities": [1.7881393432617188e-07, 1.2218952178955078e-05, 0.43017578125, 0.56982421875]}
+{"case_id": "loan_payment_past_due__0", "kind": "noul", "label": 0, "prediction": 0, "probabilities": [0.9990234375, 0.0011339187622070312]}
+{"case_id": "loan_payment_past_due__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [5.960464477539063e-08, 1.0]}
+{"case_id": "patent_submission_action__0", "kind": "choice", "label": 0, "prediction": 0, "probabilities": [1.0, 5.143880844116211e-05, 1.7881393432617188e-07]}
+{"case_id": "patent_submission_action__1", "kind": "choice", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0, 5.960464477539063e-08]}
+{"case_id": "patent_submission_action__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [0.0, 5.960464477539063e-08, 1.0]}
+{"case_id": "project_schedule_health__0", "kind": "score", "label": 0, "prediction": 3, "probabilities": [0.091064453125, 0.0173797607421875, 0.0001208186149597168, 0.8916015625]}
+{"case_id": "project_schedule_health__1", "kind": "score", "label": 1, "prediction": 1, "probabilities": [0.018707275390625, 0.6591796875, 0.0007481575012207031, 0.3212890625]}
+{"case_id": "project_schedule_health__2", "kind": "score", "label": 2, "prediction": 3, "probabilities": [1.1920928955078125e-07, 3.0219554901123047e-05, 0.00010889768600463867, 1.0]}
+{"case_id": "project_schedule_health__3", "kind": "score", "label": 3, "prediction": 3, "probabilities": [0.0, 5.960464477539063e-08, 3.5762786865234375e-07, 1.0]}
+{"case_id": "food_allergen_present__0", "kind": "noul", "label": 0, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "food_allergen_present__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "utility_service_restoration_action__0", "kind": "choice", "label": 0, "prediction": 0, "probabilities": [0.99462890625, 0.005218505859375, 6.318092346191406e-06]}
+{"case_id": "utility_service_restoration_action__1", "kind": "choice", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0, 1.1920928955078125e-07]}
+{"case_id": "utility_service_restoration_action__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [0.0, 0.0, 1.0]}
+{"case_id": "financial_forecast_reliability__0", "kind": "score", "label": 0, "prediction": 0, "probabilities": [1.0, 3.319978713989258e-05, 1.6689300537109375e-05, 6.401538848876953e-05]}
+{"case_id": "financial_forecast_reliability__1", "kind": "score", "label": 1, "prediction": 2, "probabilities": [2.3245811462402344e-06, 0.001140594482421875, 0.974609375, 0.0243988037109375]}
+{"case_id": "financial_forecast_reliability__2", "kind": "score", "label": 2, "prediction": 2, "probabilities": [0.0, 2.980232238769531e-07, 0.986328125, 0.01363372802734375]}
+{"case_id": "financial_forecast_reliability__3", "kind": "score", "label": 3, "prediction": 2, "probabilities": [0.0, 3.5762786865234375e-07, 0.97412109375, 0.0259552001953125]}
+{"case_id": "export_control_review_needed__0", "kind": "noul", "label": 0, "prediction": 0, "probabilities": [0.9951171875, 0.00490570068359375]}
+{"case_id": "export_control_review_needed__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [0.0004305839538574219, 0.99951171875]}
+{"case_id": "community_grant_award_type__0", "kind": "choice", "label": 0, "prediction": 2, "probabilities": [0.11761474609375, 0.0131988525390625, 0.869140625]}
+{"case_id": "community_grant_award_type__1", "kind": "choice", "label": 1, "prediction": 2, "probabilities": [1.7881393432617188e-07, 2.9325485229492188e-05, 1.0]}
+{"case_id": "community_grant_award_type__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [0.0, 5.960464477539063e-08, 1.0]}
+{"case_id": "call_center_escalation_severity__0", "kind": "score", "label": 0, "prediction": 1, "probabilities": [5.716085433959961e-05, 0.57666015625, 0.408935546875, 0.014434814453125]}
+{"case_id": "call_center_escalation_severity__1", "kind": "score", "label": 1, "prediction": 1, "probabilities": [1.055002212524414e-05, 0.98046875, 0.00640106201171875, 0.0131378173828125]}
+{"case_id": "call_center_escalation_severity__2", "kind": "score", "label": 2, "prediction": 1, "probabilities": [2.8014183044433594e-06, 0.7705078125, 0.227783203125, 0.00148773193359375]}
+{"case_id": "call_center_escalation_severity__3", "kind": "score", "label": 3, "prediction": 2, "probabilities": [2.3245811462402344e-06, 0.443359375, 0.5517578125, 0.004924774169921875]}
+{"case_id": "building_code_violation_present__0", "kind": "noul", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0001233816146850586]}
+{"case_id": "building_code_violation_present__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "news_article_publication_decision__0", "kind": "choice", "label": 0, "prediction": 0, "probabilities": [1.0, 0.0, 0.0]}
+{"case_id": "news_article_publication_decision__1", "kind": "choice", "label": 1, "prediction": 2, "probabilities": [0.00033473968505859375, 0.31396484375, 0.685546875]}
+{"case_id": "news_article_publication_decision__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [0.0, 5.960464477539063e-08, 1.0]}
+{"case_id": "data_migration_quality__0", "kind": "score", "label": 0, "prediction": 2, "probabilities": [5.960464477539063e-08, 2.980232238769531e-07, 0.9833984375, 0.0164031982421875]}
+{"case_id": "data_migration_quality__1", "kind": "score", "label": 1, "prediction": 2, "probabilities": [5.960464477539063e-08, 1.0728836059570312e-06, 0.86328125, 0.1365966796875]}
+{"case_id": "data_migration_quality__2", "kind": "score", "label": 2, "prediction": 2, "probabilities": [0.0, 1.1920928955078125e-07, 0.71875, 0.281494140625]}
+{"case_id": "data_migration_quality__3", "kind": "score", "label": 3, "prediction": 3, "probabilities": [0.0, 0.0, 0.0222930908203125, 0.9775390625]}
+{"case_id": "union_grievance_filed__0", "kind": "noul", "label": 0, "prediction": 0, "probabilities": [1.0, 7.724761962890625e-05]}
+{"case_id": "union_grievance_filed__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "airline_passenger_rebooking_action__0", "kind": "choice", "label": 0, "prediction": 0, "probabilities": [1.0, 7.867813110351562e-06, 5.781650543212891e-06]}
+{"case_id": "airline_passenger_rebooking_action__1", "kind": "choice", "label": 1, "prediction": 2, "probabilities": [2.980232238769531e-07, 0.00757598876953125, 0.9921875]}
+{"case_id": "airline_passenger_rebooking_action__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [0.0, 5.960464477539063e-08, 1.0]}
+{"case_id": "real_estate_offer_strength__0", "kind": "score", "label": 0, "prediction": 1, "probabilities": [2.664327621459961e-05, 0.99951171875, 0.0002694129943847656, 0.00040435791015625]}
+{"case_id": "real_estate_offer_strength__1", "kind": "score", "label": 1, "prediction": 1, "probabilities": [8.344650268554688e-07, 1.0, 7.724761962890625e-05, 3.11732292175293e-05]}
+{"case_id": "real_estate_offer_strength__2", "kind": "score", "label": 2, "prediction": 1, "probabilities": [5.066394805908203e-06, 0.99951171875, 0.0002033710479736328, 0.00015354156494140625]}
+{"case_id": "real_estate_offer_strength__3", "kind": "score", "label": 3, "prediction": 1, "probabilities": [1.0132789611816406e-06, 0.99951171875, 0.00021648406982421875, 0.00011587142944335938]}
+{"case_id": "incident_root_cause_identified__0", "kind": "noul", "label": 0, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "incident_root_cause_identified__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "collection_account_next_action__0", "kind": "choice", "label": 0, "prediction": 1, "probabilities": [0.00011926889419555664, 0.9970703125, 0.0029811859130859375]}
+{"case_id": "collection_account_next_action__1", "kind": "choice", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0, 1.1920928955078125e-07]}
+{"case_id": "collection_account_next_action__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [1.1920928955078125e-07, 1.8358230590820312e-05, 1.0]}
+{"case_id": "clinical_trial_protocol_deviation_severity__0", "kind": "score", "label": 0, "prediction": 0, "probabilities": [0.99951171875, 0.0003249645233154297, 1.8358230590820312e-05, 0.0001970529556274414]}
+{"case_id": "clinical_trial_protocol_deviation_severity__1", "kind": "score", "label": 1, "prediction": 0, "probabilities": [1.0, 6.401538848876953e-05, 1.430511474609375e-06, 5.9604644775390625e-06]}
+{"case_id": "clinical_trial_protocol_deviation_severity__2", "kind": "score", "label": 2, "prediction": 0, "probabilities": [0.99755859375, 0.0018672943115234375, 7.468461990356445e-05, 0.00027751922607421875]}
+{"case_id": "clinical_trial_protocol_deviation_severity__3", "kind": "score", "label": 3, "prediction": 2, "probabilities": [1.0967254638671875e-05, 0.0024394989013671875, 0.984375, 0.01319122314453125]}
+{"case_id": "emergency_contact_updated__0", "kind": "noul", "label": 0, "prediction": 0, "probabilities": [1.0, 9.03010368347168e-05]}
+{"case_id": "emergency_contact_updated__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [0.0, 1.0]}
+{"case_id": "museum_object_acquisition_decision__0", "kind": "choice", "label": 0, "prediction": 0, "probabilities": [1.0, 1.7881393432617188e-07, 5.960464477539063e-08]}
+{"case_id": "museum_object_acquisition_decision__1", "kind": "choice", "label": 1, "prediction": 2, "probabilities": [0.0, 9.5367431640625e-07, 1.0]}
+{"case_id": "museum_object_acquisition_decision__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [0.0, 0.0, 1.0]}
+{"case_id": "maintenance_work_order_completion__0", "kind": "score", "label": 0, "prediction": 3, "probabilities": [1.3709068298339844e-06, 0.269775390625, 0.325439453125, 0.405029296875]}
+{"case_id": "maintenance_work_order_completion__1", "kind": "score", "label": 1, "prediction": 1, "probabilities": [1.1920928955078125e-07, 0.998046875, 0.0008549690246582031, 0.0010309219360351562]}
+{"case_id": "maintenance_work_order_completion__2", "kind": "score", "label": 2, "prediction": 2, "probabilities": [0.0, 2.9802322387695312e-06, 0.99951171875, 0.0006461143493652344]}
+{"case_id": "maintenance_work_order_completion__3", "kind": "score", "label": 3, "prediction": 3, "probabilities": [0.0, 1.7881393432617188e-07, 0.005218505859375, 0.99462890625]}
+{"case_id": "parking_violation_contested__0", "kind": "noul", "label": 0, "prediction": 0, "probabilities": [0.87060546875, 0.12939453125]}
+{"case_id": "parking_violation_contested__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [1.1920928955078125e-07, 1.0]}
+{"case_id": "product_feature_request_disposition__0", "kind": "choice", "label": 0, "prediction": 2, "probabilities": [1.1920928955078125e-07, 1.150369644165039e-05, 1.0]}
+{"case_id": "product_feature_request_disposition__1", "kind": "choice", "label": 1, "prediction": 2, "probabilities": [2.384185791015625e-07, 8.749961853027344e-05, 1.0]}
+{"case_id": "product_feature_request_disposition__2", "kind": "choice", "label": 2, "prediction": 2, "probabilities": [0.0, 0.0, 1.0]}
+{"case_id": "merchant_fraud_risk__0", "kind": "score", "label": 0, "prediction": 0, "probabilities": [1.0, 5.3048133850097656e-05, 2.384185791015625e-07, 1.1920928955078125e-06]}
+{"case_id": "merchant_fraud_risk__1", "kind": "score", "label": 1, "prediction": 1, "probabilities": [2.0802021026611328e-05, 1.0, 2.4318695068359375e-05, 3.319978713989258e-05]}
+{"case_id": "merchant_fraud_risk__2", "kind": "score", "label": 2, "prediction": 1, "probabilities": [5.602836608886719e-06, 1.0, 0.0001442432403564453, 5.650520324707031e-05]}
+{"case_id": "merchant_fraud_risk__3", "kind": "score", "label": 3, "prediction": 1, "probabilities": [0.0006060600280761719, 0.998046875, 0.0006451606750488281, 0.0007314682006835938]}
+{"case_id": "hazardous_materials_label_present__0", "kind": "noul", "label": 0, "prediction": 1, "probabilities": [0.11279296875, 0.88720703125]}
+{"case_id": "hazardous_materials_label_present__1", "kind": "noul", "label": 1, "prediction": 1, "probabilities": [2.980232238769531e-07, 1.0]}
