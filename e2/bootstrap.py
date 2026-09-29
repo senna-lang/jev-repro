@@ -36,8 +36,8 @@ def ci(diffs: np.ndarray, rng: np.random.Generator) -> dict:
 
 
 def main() -> None:
-    base = json.loads(Path("results/e2_pred_baseline.json").read_text())
-    lora = json.loads(Path("results/e2_pred_selected.json").read_text())
+    base = json.loads(Path("results/artifacts/e2_pred_baseline.json").read_text())
+    lora = json.loads(Path("results/artifacts/e2_pred_selected.json").read_text())
     rows = {r["case_id"]: r for r in map(json.loads, Path("data/e2/teacher_branches.jsonl").read_text().splitlines()) if r["split"] == "eval"}
     rng = np.random.default_rng(SEED)
     report = {"resamples": RESAMPLES, "seed": SEED, "teacher": {}, "human": {}}
@@ -55,7 +55,7 @@ def main() -> None:
         dist = np.array([np.subtract(per_case(lora[c], q)[1:], per_case(base[c], q)[1:]) for c, q in empirical.items() if keep(c)])
         report["human"][kind] = {"agreement": ci(agree, rng), "brier": ci(dist[:, 0], rng), "nll": ci(dist[:, 1], rng)}
 
-    Path("results/e2_bootstrap.json").write_text(json.dumps(report, indent=2) + "\n")
+    Path("results/artifacts/e2_bootstrap.json").write_text(json.dumps(report, indent=2) + "\n")
     for section in ("teacher", "human"):
         for kind, metrics in report[section].items():
             print(section, kind, {m: (round(v["diff"], 4), [round(x, 4) for x in v["ci95"]], v["excludes_zero"]) for m, v in metrics.items()})

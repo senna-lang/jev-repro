@@ -1,7 +1,7 @@
 """Eclipse/Mozilla Bugzillaの実バグ報告のseverityラベル（技術的深刻度）を読み込む。
 
 `support_tickets`のpriorityラベル（業務優先度、テキストとの相関が実質ゼロ、
-`results/2026-09-23_gate1_pooling_and_severity_data.md`参照）に代わる、より適切な
+`results/logs/2026-09-23_gate1_pooling_and_severity_data.md`参照）に代わる、より適切な
 severity代理データの候補。BugzillaのSeverity Labelはバグトリアージ担当者が付ける
 技術的深刻度そのもので、公式Score severity_tableが表す軸（cosmetic〜blocking）に近い。
 

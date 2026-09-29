@@ -63,7 +63,7 @@ def score(predictions: dict[str, list[float]], majority: dict[str, int], empiric
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--predictions", nargs="*", default=[], help="name=path.json")
-    parser.add_argument("--out", type=Path, default=Path("results/e2_human_eval.json"))
+    parser.add_argument("--out", type=Path, default=Path("results/artifacts/e2_human_eval.json"))
     args = parser.parse_args()
 
     votes = load_votes()
@@ -74,7 +74,7 @@ def main() -> None:
 
     predictors = {"teacher": {c: r["probabilities"] for c, r in rows.items()}}
     jev = {}
-    for record in map(json.loads, Path("results/e2_jev_eval_raw.jsonl").read_text().splitlines()):
+    for record in map(json.loads, Path("results/artifacts/e2_jev_eval_raw.jsonl").read_text().splitlines()):
         for case_id, answer in record["answers"].items():
             if case_id in rows:
                 jev[case_id] = to_distribution(rows[case_id], answer)

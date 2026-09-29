@@ -51,7 +51,7 @@ def main() -> None:
                        "official": _official_distribution(case["branch"].kind, case["names"], case["official"]),
                        "official_raw": case["official"], "jev_now": _distribution(case, body["answers"][f"q{i}"]),
                        "jev_now_raw": body["answers"][f"q{i}"]}
-    out = Path("results/e2_jev_official.json")
+    out = Path("results/artifacts/e2_jev_official.json")
     out.write_text(json.dumps({"model": MODEL, "input_tokens": tokens, "rows": rows}, indent=2) + "\n")
     print("input_tokens", tokens)
     for r in rows:

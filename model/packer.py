@@ -1,6 +1,6 @@
 """共有stateと複数branchを1本のトークン列へ直列化する。
 
-2026-09-22の診断（`results/2026-09-22_score_diagnosis.md`）で、特殊トークン（`<STATE_END>`/
+2026-09-22の診断（`results/logs/2026-09-22_score_diagnosis.md`）で、特殊トークン（`<STATE_END>`/
 `<SEP>`/`<DECISION>`）による構造化フォーマットは、凍結backboneが持つ信号（LM head
 zero-shotで最遠ペア0.900・公式severity 4/5一致）をほぼ完全に潰すことが分かった
 （同条件で0.50前後まで低下）。選択肢を地の文の中にコンマ区切りで埋め込み「次の1語で
