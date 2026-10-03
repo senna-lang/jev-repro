@@ -38,11 +38,19 @@ def dequantize_module(packed: dict[str, np.ndarray], module: str, quantization: 
     return np.array(mx.dequantize(w, s, b, group_size=quantization["group_size"], bits=quantization["bits"]).astype(mx.float16))
 
 
+def module_names(config: dict, backbone) -> list[str]:
+    """LoRA targets, plus embed_tokens and an untied lm_head when the backbone asks for them."""
+    modules = [f"model.layers.{i}.{t}" for i in range(config["num_hidden_layers"]) for t in TARGETS]
+    if backbone.io_layers:
+        modules += ["model.embed_tokens"] + ([] if config["tie_word_embeddings"] else ["lm_head"])
+    return modules
+
+
 def packed_dequantized_weights(backbone) -> dict[str, np.ndarray]:
     """`<module>.weight` -> FP16 array for all LoRA targets of the pinned packed base."""
     directory = Path(snapshot_download(backbone.infer_repo, revision=backbone.infer_revision, allow_patterns=["*.safetensors", "*.json"]))
     config = json.loads((directory / "config.json").read_text())
-    modules = [f"model.layers.{i}.{t}" for i in range(config["num_hidden_layers"]) for t in TARGETS]
+    modules = module_names(config, backbone)
     packed = load_tensors(directory, {f"{m}.{p}" for m in modules for p in ("weight", "scales", "biases")})
     return {f"{m}.weight": dequantize_module(packed, m, config["quantization"]) for m in modules}
 
@@ -58,7 +66,7 @@ def main() -> None:
     unpacked_dir = Path(snapshot_download(backbone.train_repo, revision=backbone.train_revision, allow_patterns=["*.safetensors", "*.json"]))
     packed_dir = Path(snapshot_download(backbone.infer_repo, revision=backbone.infer_revision, allow_patterns=["*.safetensors", "*.json"]))
 
-    modules = [f"model.layers.{i}.{t}" for i in range(config["num_hidden_layers"]) for t in TARGETS]
+    modules = module_names(config, backbone)
     unpacked = load_tensors(unpacked_dir, {f"{m}.weight" for m in modules})
     packed = load_tensors(packed_dir, {f"{m}.{p}" for m in modules for p in ("weight", "scales", "biases")})
 

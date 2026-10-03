@@ -20,6 +20,7 @@ class Backbone:
     infer_repo: str  # MLX pack; for the Qwen reference the same repo is merged at load time
     infer_revision: str | None
     train_dtype: torch.dtype
+    io_layers: bool = False  # also check/overwrite embed_tokens (+ untied lm_head) with the packed dequantized values
 
 
 BACKBONES: dict[str, Backbone] = {
@@ -37,7 +38,7 @@ BACKBONES: dict[str, Backbone] = {
         "bonsai-8b",
         "prism-ml/Ternary-Bonsai-8B-unpacked", "ac20f03fc62e872399218b659c8e949dfca05769",
         "prism-ml/Ternary-Bonsai-8B-mlx-2bit", "9260b24298e4211e804663e9f519962cf59f34be",
-        torch.float16,
+        torch.float16, io_layers=True,
     ),
 }
 
