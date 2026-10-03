@@ -33,6 +33,12 @@ BACKBONES: dict[str, Backbone] = {
         "prism-ml/Ternary-Bonsai-4B-mlx-2bit", "e1374ad6bf9b1b56afd743936b8faa33c409a75f",
         torch.float16,
     ),
+    "bonsai-8b": Backbone(
+        "bonsai-8b",
+        "prism-ml/Ternary-Bonsai-8B-unpacked", "ac20f03fc62e872399218b659c8e949dfca05769",
+        "prism-ml/Ternary-Bonsai-8B-mlx-2bit", "9260b24298e4211e804663e9f519962cf59f34be",
+        torch.float16,
+    ),
 }
 
 TRAINING_PATHS = ("unpacked", "packed_dequantized")
