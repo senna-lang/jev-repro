@@ -128,19 +128,37 @@ def compare_snapshots(base: dict, now: dict, tolerance: float) -> dict:
     return {"exact_match": exact, "max_probability_delta": max_delta, "passed": all(exact.values()) and max_delta <= tolerance}
 
 
+def val_predictions(tokenizer, predict, limit: int) -> dict:
+    """Canonical-order predictions and token ids for the first `limit` val requests; shared by CUDA and MLX for the parity check."""
+    requests = []
+    for rows, request in load_requests(Path("data/e2/teacher_branches.jsonl"), Path("data/e2/states.jsonl")):
+        if rows[0]["split"] != "val":
+            continue
+        branches = [Branch(b.kind, b.instructions, row["options"]) for row, b in zip(rows, request.branches)]
+        packed = pack_chat_request(PackedRequest(request.state, branches), tokenizer)
+        requests.append({
+            "state_id": rows[0]["state_id"], "input_ids": [int(t) for t in packed.input_ids],
+            "case_ids": [row["case_id"] for row in rows], "probabilities": predict(request.state, branches),
+        })
+        if len(requests) == limit:
+            break
+    return {"requests": requests}
+
+
 def main() -> None:
-    """python -m e2.evaluate_lora {record|compare|val} --adapter DIR [--out FILE] [--baseline FILE]"""
+    """python -m e2.evaluate_lora {record|compare|val|predict} --adapter DIR [--backbone NAME] [--out FILE] [--baseline FILE]"""
     import argparse
     import json
 
     from e2.train_lora import load_lora_model
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("mode", choices=["record", "compare", "val"])
+    parser.add_argument("mode", choices=["record", "compare", "val", "predict"])
     parser.add_argument("--adapter", type=Path, required=True)
     parser.add_argument("--backbone", default="qwen")
     parser.add_argument("--out", type=Path)
     parser.add_argument("--baseline", type=Path)
+    parser.add_argument("--limit", type=int, default=60, help="predict: number of leading val requests")
     parser.add_argument("--tolerance", type=float, default=1e-3)
     args = parser.parse_args()
     torch.set_num_threads(int(__import__("os").environ.get("VCPU", "8")))
@@ -152,12 +170,15 @@ def main() -> None:
     else:
         config = json.loads((args.adapter / "adapter_config.json").read_text())
         canonical = lambda state, branches: predict_request(model, tokenizer, state, branches, [[list(range(len(b.options)))] for b in branches], device)
-        now = regression_snapshot(tokenizer, canonical, {"r": config["r"], "lora_alpha": config["lora_alpha"]})
-        result = now if args.mode == "record" else compare_snapshots(json.loads(args.baseline.read_text()), now, args.tolerance)
+        if args.mode == "predict":
+            result = val_predictions(tokenizer, canonical, args.limit)
+        else:
+            now = regression_snapshot(tokenizer, canonical, {"r": config["r"], "lora_alpha": config["lora_alpha"]})
+            result = now if args.mode == "record" else compare_snapshots(json.loads(args.baseline.read_text()), now, args.tolerance)
     if args.out:
         args.out.parent.mkdir(parents=True, exist_ok=True)
         args.out.write_text(json.dumps(result, indent=1) + "\n")
-    print(json.dumps({k: v for k, v in result.items() if k not in ("input_ids", "position_ids")}, indent=1))
+    print(json.dumps({k: (len(v) if k == "requests" else v) for k, v in result.items() if k not in ("input_ids", "position_ids")}, indent=1))
     if args.mode == "compare":
         raise SystemExit(0 if result["passed"] else 1)
 
