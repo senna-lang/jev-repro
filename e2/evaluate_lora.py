@@ -98,3 +98,68 @@ def evaluate(model, tokenizer, branches_path: Path, states_path: Path, split: st
         for row, p in zip(rows, predict_request(model, tokenizer, request.state, branches, orders, device)):
             pairs.append((row["kind"], p, row["probabilities"]))
     return teacher_metrics(pairs)
+
+
+def fixed_request() -> tuple[str, str, list[Branch]]:
+    """First `val` request in canonical option order: the shared fixed request of the regression and footprint checks."""
+    for rows, request in load_requests(Path("data/e2/teacher_branches.jsonl"), Path("data/e2/states.jsonl")):
+        if rows[0]["split"] == "val":
+            return rows[0]["state_id"], request.state, [Branch(b.kind, b.instructions, row["options"]) for row, b in zip(rows, request.branches)]
+    raise ValueError("no val request")
+
+
+def regression_snapshot(tokenizer, predict, adapter_record: dict) -> dict:
+    """Backend-independent record of the fixed request. `predict(state, branches)` returns canonical single-order probabilities."""
+    state_id, state, branches = fixed_request()
+    packed = pack_chat_request(PackedRequest(state, branches), tokenizer)
+    return {
+        "state_id": state_id,
+        "input_ids": [int(t) for t in packed.input_ids],
+        "position_ids": [int(p) for p in build_position_ids(packed)],
+        "decision_indices": [span.decision_index for span in packed.branch_spans],
+        "probabilities": predict(state, branches),
+        "adapter": adapter_record,
+    }
+
+
+def compare_snapshots(base: dict, now: dict, tolerance: float) -> dict:
+    exact = {k: base[k] == now[k] for k in ("state_id", "input_ids", "position_ids", "decision_indices", "adapter")}
+    max_delta = max(abs(a - b) for pa, pb in zip(base["probabilities"], now["probabilities"]) for a, b in zip(pa, pb))
+    return {"exact_match": exact, "max_probability_delta": max_delta, "passed": all(exact.values()) and max_delta <= tolerance}
+
+
+def main() -> None:
+    """python -m e2.evaluate_lora {record|compare|val} --adapter DIR [--out FILE] [--baseline FILE]"""
+    import argparse
+    import json
+
+    from e2.train_lora import load_lora_model
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("mode", choices=["record", "compare", "val"])
+    parser.add_argument("--adapter", type=Path, required=True)
+    parser.add_argument("--out", type=Path)
+    parser.add_argument("--baseline", type=Path)
+    parser.add_argument("--tolerance", type=float, default=1e-3)
+    args = parser.parse_args()
+    torch.set_num_threads(int(__import__("os").environ.get("VCPU", "8")))
+    device = torch.device("cuda")
+    model, tokenizer = load_lora_model(args.adapter)
+    model.to(device).eval()
+    if args.mode == "val":
+        result = evaluate(model, tokenizer, Path("data/e2/teacher_branches.jsonl"), Path("data/e2/states.jsonl"), "val", device)
+    else:
+        config = json.loads((args.adapter / "adapter_config.json").read_text())
+        canonical = lambda state, branches: predict_request(model, tokenizer, state, branches, [[list(range(len(b.options)))] for b in branches], device)
+        now = regression_snapshot(tokenizer, canonical, {"r": config["r"], "lora_alpha": config["lora_alpha"]})
+        result = now if args.mode == "record" else compare_snapshots(json.loads(args.baseline.read_text()), now, args.tolerance)
+    if args.out:
+        args.out.parent.mkdir(parents=True, exist_ok=True)
+        args.out.write_text(json.dumps(result, indent=1) + "\n")
+    print(json.dumps({k: v for k, v in result.items() if k not in ("input_ids", "position_ids")}, indent=1))
+    if args.mode == "compare":
+        raise SystemExit(0 if result["passed"] else 1)
+
+
+if __name__ == "__main__":
+    main()
