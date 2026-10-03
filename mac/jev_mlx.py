@@ -21,11 +21,13 @@ from mlx_lm import load as mlx_load
 from mlx_lm.models.activations import swiglu
 from transformers import AutoTokenizer
 
+from e2.backbone import get_backbone
 from e2.chat_packer import pack_chat_request
 from e2.evaluate_lora import _label_ids
-from e2.train_lora import MODEL
 from model.packer import Branch, PackedRequest
 from model.tree_mask import build_position_ids, build_tree_attention_mask
+
+MODEL = get_backbone("qwen").train_repo
 
 DEFAULT_ADAPTER = Path("checkpoints/e2/lr-1e-4/epoch-3-quarter-3")
 

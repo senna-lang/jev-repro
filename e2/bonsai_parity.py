@@ -32,6 +32,21 @@ def load_tensors(directory: Path, wanted: set[str]) -> dict[str, np.ndarray]:
     return found
 
 
+def dequantize_module(packed: dict[str, np.ndarray], module: str, quantization: dict) -> np.ndarray:
+    """FP16 weight of one packed module, exactly as MLX computes it."""
+    w, s, b = (mx.array(packed[f"{module}.{p}"]) for p in ("weight", "scales", "biases"))
+    return np.array(mx.dequantize(w, s, b, group_size=quantization["group_size"], bits=quantization["bits"]).astype(mx.float16))
+
+
+def packed_dequantized_weights(backbone) -> dict[str, np.ndarray]:
+    """`<module>.weight` -> FP16 array for all LoRA targets of the pinned packed base."""
+    directory = Path(snapshot_download(backbone.infer_repo, revision=backbone.infer_revision, allow_patterns=["*.safetensors", "*.json"]))
+    config = json.loads((directory / "config.json").read_text())
+    modules = [f"model.layers.{i}.{t}" for i in range(config["num_hidden_layers"]) for t in TARGETS]
+    packed = load_tensors(directory, {f"{m}.{p}" for m in modules for p in ("weight", "scales", "biases")})
+    return {f"{m}.weight": dequantize_module(packed, m, config["quantization"]) for m in modules}
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--backbone", default="bonsai-4b")
@@ -49,8 +64,7 @@ def main() -> None:
 
     differing, rows = [], []
     for m in modules:
-        w, s, b = (mx.array(packed[f"{m}.{p}"]) for p in ("weight", "scales", "biases"))
-        dequantized = np.array(mx.dequantize(w, s, b, group_size=quantization["group_size"], bits=quantization["bits"]).astype(mx.float16))
+        dequantized = dequantize_module(packed, m, quantization)
         reference = unpacked[f"{m}.weight"].astype(np.float16)
         same = dequantized.shape == reference.shape and dequantized.tobytes() == reference.tobytes()
         numeric = dequantized.astype(np.float32) - reference.astype(np.float32)
