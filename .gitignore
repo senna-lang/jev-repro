@@ -2,3 +2,8 @@ internal-docs/
 __pycache__/
 checkpoints/
 .DS_Store
+evaluation/private/
+.env
+.lociaction/
+.scratch/
+.impeccable.md

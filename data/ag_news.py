@@ -6,10 +6,9 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass
-
 from datasets import Dataset, load_dataset
 
+from data.common import ChoiceExample
 from model.packer import Branch, PackedRequest
 
 QUESTION = "この記事のトピックを、選択肢の中から1つ選べ。"
@@ -31,18 +30,6 @@ def _format_option(label: str) -> str:
     packerが受け取るのは最終的に1つのテキストなので、この畳み込みで表現として等価）。
     """
     return f"{label} — {CRITERIA[label]}"
-
-
-@dataclass
-class AGNewsExample:
-    """1記事分の`PackedRequest`と正解ラベルのindex。
-
-    `label`はAG Newsの元のインデックスを使う
-    （0=World、1=Sports、2=Business、3=Sci/Tech）。正解ラベルは訓練と評価に使う。
-    """
-
-    request: PackedRequest
-    label: int
 
 
 def load_ag_news(split: str = "train") -> Dataset:
@@ -74,12 +61,12 @@ def eval_split(size: int = EVAL_SIZE, seed: int = SHUFFLE_SEED) -> Dataset:
     return load_ag_news("test").shuffle(seed=seed).select(range(size))
 
 
-def to_packed_example(text: str, label: int, label_names: list[str]) -> AGNewsExample:
+def to_packed_example(text: str, label: int, label_names: list[str]) -> ChoiceExample:
     """1記事（本文＋正解ラベル）を、Jevリクエスト形式の`PackedRequest`に変換する。"""
     options = [_format_option(name) for name in label_names]
     branch = Branch(kind="choice", instructions=QUESTION, options=options)
     request = PackedRequest(state=text, branches=[branch])
-    return AGNewsExample(request=request, label=label)
+    return ChoiceExample(request=request, label=label)
 
 
 def _smoke_check() -> None:
@@ -147,7 +134,7 @@ def _smoke_check() -> None:
     for label_idx, count in counts_eval.items():
         assert 300 < count < 800, f"eval側もlabel={label_idx}の件数{count}が偏りすぎ"
 
-    # eval用の1件もAGNewsExampleに変換できることを確認
+    # eval用の1件もChoiceExampleに変換できることを確認
     eval_label_names = eval_examples.features["label"].names
     eval_example0 = to_packed_example(eval_examples[0]["text"], eval_examples[0]["label"], eval_label_names)
     assert 0 <= eval_example0.label < 4

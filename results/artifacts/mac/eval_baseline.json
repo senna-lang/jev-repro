@@ -1,0 +1,2320 @@
+{
+ "summary": {
+  "config": "baseline",
+  "seconds": 3486,
+  "metrics": {
+   "all": {
+    "top1": 0.8875,
+    "brier": 0.03552696522123379,
+    "nll": 0.3190563763878017,
+    "ece": 0.026464572502300145,
+    "n": 240
+   },
+   "noul": {
+    "top1": 0.9367088607594937,
+    "brier": 0.05293836481171809,
+    "nll": 0.2650672305729846,
+    "ece": 0.05020761376694788,
+    "n": 79
+   },
+   "choice": {
+    "top1": 0.9411764705882353,
+    "brier": 0.016174550863442126,
+    "nll": 0.20544648767799856,
+    "ece": 0.04393716713084894,
+    "n": 85
+   },
+   "score": {
+    "top1": 0.7763157894736842,
+    "brier": 0.03907242117865514,
+    "nll": 0.5022403640154836,
+    "ece": 0.08095673873628441,
+    "n": 76
+   }
+  }
+ },
+ "predictions": [
+  {
+   "case_id": "bd3193a2b7fdd0124c77__scientific_research_followup_required",
+   "kind": "noul",
+   "p": [
+    0.0011267504596617073,
+    0.998873233795166
+   ]
+  },
+  {
+   "case_id": "bd3193a2b7fdd0124c77__engineering_services_case_status",
+   "kind": "choice",
+   "p": [
+    0.2637826092541218,
+    0.05760162277147174,
+    0.36162443831562996,
+    0.31699134036898613
+   ]
+  },
+  {
+   "case_id": "bd3193a2b7fdd0124c77__residential_care_service_continuity_impact",
+   "kind": "score",
+   "p": [
+    7.319080759771168e-05,
+    0.0006828084151493385,
+    0.7417645454406738,
+    0.2574794590473175
+   ]
+  },
+  {
+   "case_id": "bd3193a2b7fdd0124c77__residential_care_priority_level",
+   "kind": "score",
+   "p": [
+    9.925882932293462e-05,
+    0.00035387565549171995,
+    0.10438919020816684,
+    0.8951577097177505
+   ]
+  },
+  {
+   "case_id": "c2b2ff25bdbf3882c795__scientific_research_followup_required",
+   "kind": "noul",
+   "p": [
+    0.3486451208591461,
+    0.6513549089431763
+   ]
+  },
+  {
+   "case_id": "c2b2ff25bdbf3882c795__scientific_research_case_status",
+   "kind": "choice",
+   "p": [
+    0.999816358089447,
+    9.493545576333418e-05,
+    6.471532014984405e-05,
+    2.39642313317745e-05
+   ]
+  },
+  {
+   "case_id": "c2b2ff25bdbf3882c795__residential_care_priority_level",
+   "kind": "score",
+   "p": [
+    0.3626287095248699,
+    0.0872497009113431,
+    0.5259220600128174,
+    0.024199511855840683
+   ]
+  },
+  {
+   "case_id": "c2b2ff25bdbf3882c795__forestry_operations_followup_required",
+   "kind": "noul",
+   "p": [
+    0.0027601683395914733,
+    0.9972397983074188
+   ]
+  },
+  {
+   "case_id": "16c7e96b6d4606afe5f0__engineering_services_case_status",
+   "kind": "choice",
+   "p": [
+    0.0036011312040500343,
+    0.44181282818317413,
+    0.264178866520524,
+    0.2802203856408596,
+    0.0101868009660393
+   ]
+  },
+  {
+   "case_id": "16c7e96b6d4606afe5f0__scientific_research_followup_required",
+   "kind": "noul",
+   "p": [
+    0.9860452115535736,
+    0.013954795897006989
+   ]
+  },
+  {
+   "case_id": "16c7e96b6d4606afe5f0__software_services_priority_level",
+   "kind": "score",
+   "p": [
+    0.00902606057934463,
+    0.006438604206778109,
+    0.5169621482491493,
+    0.467573169618845
+   ]
+  },
+  {
+   "case_id": "16c7e96b6d4606afe5f0__engineering_services_procedure_followed",
+   "kind": "noul",
+   "p": [
+    0.9799894988536835,
+    0.020010489970445633
+   ]
+  },
+  {
+   "case_id": "47c57ecea1df21d16f5b__software_services_procedure_followed",
+   "kind": "noul",
+   "p": [
+    0.0008777896291576326,
+    0.9991222023963928
+   ]
+  },
+  {
+   "case_id": "47c57ecea1df21d16f5b__software_services_case_status",
+   "kind": "choice",
+   "p": [
+    0.9968098849058151,
+    0.0002183211709052557,
+    0.0029121441184543073,
+    5.960773910373973e-05
+   ]
+  },
+  {
+   "case_id": "47c57ecea1df21d16f5b__software_services_action_routing",
+   "kind": "choice",
+   "p": [
+    0.001880177907878533,
+    0.9799852669239044,
+    0.01786872639786452,
+    0.0002658385283211828
+   ]
+  },
+  {
+   "case_id": "47c57ecea1df21d16f5b__scientific_research_operational_risk",
+   "kind": "score",
+   "p": [
+    0.01040656492114067,
+    0.19622802920639515,
+    0.1391879040747881,
+    0.6541774943470955
+   ]
+  },
+  {
+   "case_id": "25aeef747518eb1f301d__scientific_research_case_status",
+   "kind": "choice",
+   "p": [
+    6.493617843261745e-05,
+    0.9989789128303528,
+    0.0002769984566839412,
+    0.0005118064873386174,
+    0.0001673557073900156
+   ]
+  },
+  {
+   "case_id": "25aeef747518eb1f301d__residential_care_priority_level",
+   "kind": "score",
+   "p": [
+    0.12321717757731676,
+    0.18261058442294598,
+    0.4511171579360962,
+    0.24305512011051178
+   ]
+  },
+  {
+   "case_id": "25aeef747518eb1f301d__engineering_services_procedure_followed",
+   "kind": "noul",
+   "p": [
+    0.0031948178075253963,
+    0.9968052208423615
+   ]
+  },
+  {
+   "case_id": "25aeef747518eb1f301d__software_services_action_routing",
+   "kind": "choice",
+   "p": [
+    0.9803718477487564,
+    0.01948157633887604,
+    9.107538653552183e-05,
+    1.5499343049896197e-05,
+    4.002676405434613e-05
+   ]
+  },
+  {
+   "case_id": "dfc5691c2dcb031fd481__scientific_research_followup_required",
+   "kind": "noul",
+   "p": [
+    0.0555281937122345,
+    0.9444717764854431
+   ]
+  },
+  {
+   "case_id": "dfc5691c2dcb031fd481__software_services_case_status",
+   "kind": "choice",
+   "p": [
+    0.9992843568325043,
+    0.00029153096465961426,
+    6.272244155525186e-05,
+    0.00035589529761637095,
+    5.5241440577447065e-06
+   ]
+  },
+  {
+   "case_id": "dfc5691c2dcb031fd481__residential_care_priority_level",
+   "kind": "score",
+   "p": [
+    0.0034827436902560294,
+    0.029759351979009807,
+    0.9240390509366989,
+    0.04271887824870646
+   ]
+  },
+  {
+   "case_id": "dfc5691c2dcb031fd481__software_services_service_continuity_impact",
+   "kind": "score",
+   "p": [
+    0.0003761596017284319,
+    0.0027346618589945138,
+    0.02658855402842164,
+    0.9703005999326706
+   ]
+  },
+  {
+   "case_id": "a48e3a7f44a47e3805f7__scientific_research_case_status",
+   "kind": "choice",
+   "p": [
+    3.892221366186277e-05,
+    0.9988264888525009,
+    0.0011042001206078567,
+    3.037568058061879e-05
+   ]
+  },
+  {
+   "case_id": "a48e3a7f44a47e3805f7__scientific_research_followup_required",
+   "kind": "noul",
+   "p": [
+    0.04658631235361099,
+    0.9534136950969696
+   ]
+  },
+  {
+   "case_id": "a48e3a7f44a47e3805f7__residential_care_service_continuity_impact",
+   "kind": "score",
+   "p": [
+    0.0335514300968498,
+    0.2105380641296506,
+    0.10427879728376865,
+    0.6516316458582878
+   ]
+  },
+  {
+   "case_id": "a48e3a7f44a47e3805f7__forestry_operations_case_status",
+   "kind": "choice",
+   "p": [
+    0.9988542795181274,
+    0.0010807657126861159,
+    1.862977467226301e-05,
+    1.9213098312320653e-05,
+    2.71555566087045e-05
+   ]
+  },
+  {
+   "case_id": "34146aae7cb552109196__scientific_research_procedure_followed",
+   "kind": "noul",
+   "p": [
+    0.9959895014762878,
+    0.004010525997728109
+   ]
+  },
+  {
+   "case_id": "34146aae7cb552109196__software_services_action_routing",
+   "kind": "choice",
+   "p": [
+    0.9997718036174774,
+    8.024462408684485e-05,
+    7.535049371654168e-05,
+    6.61411495457287e-05,
+    6.410104731457977e-06
+   ]
+  },
+  {
+   "case_id": "34146aae7cb552109196__software_services_service_continuity_impact",
+   "kind": "score",
+   "p": [
+    0.8647075295448303,
+    0.12428393290610984,
+    0.0017929883615579456,
+    0.009215530342771672
+   ]
+  },
+  {
+   "case_id": "34146aae7cb552109196__forestry_operations_case_status",
+   "kind": "choice",
+   "p": [
+    0.9995954632759094,
+    0.00012901279751531547,
+    3.7094736057952105e-05,
+    0.0002383806740908767
+   ]
+  },
+  {
+   "case_id": "9ab931cb2ff82751060f__residential_care_incident_response_category",
+   "kind": "choice",
+   "p": [
+    0.9999550879001617,
+    2.359056452405639e-05,
+    1.0911654612755228e-05,
+    1.0389162071078317e-05
+   ]
+  },
+  {
+   "case_id": "9ab931cb2ff82751060f__software_services_procedure_followed",
+   "kind": "noul",
+   "p": [
+    0.9998558461666107,
+    0.0001441189924662467
+   ]
+  },
+  {
+   "case_id": "9ab931cb2ff82751060f__residential_care_service_continuity_impact",
+   "kind": "score",
+   "p": [
+    0.07319697155617177,
+    0.07994689233601093,
+    0.34157994017004967,
+    0.5052762404084206
+   ]
+  },
+  {
+   "case_id": "9ab931cb2ff82751060f__engineering_services_followup_required",
+   "kind": "noul",
+   "p": [
+    0.007159024011343718,
+    0.992840975522995
+   ]
+  },
+  {
+   "case_id": "30c128555409764c611d__software_services_procedure_followed",
+   "kind": "noul",
+   "p": [
+    0.006254701409488916,
+    0.9937452971935272
+   ]
+  },
+  {
+   "case_id": "30c128555409764c611d__engineering_services_case_status",
+   "kind": "choice",
+   "p": [
+    2.3696567211572983e-05,
+    0.9999066591262817,
+    2.53660541602585e-05,
+    4.169947573018362e-05,
+    2.5649830455165556e-06
+   ]
+  },
+  {
+   "case_id": "30c128555409764c611d__residential_care_service_continuity_impact",
+   "kind": "score",
+   "p": [
+    0.001740616324241273,
+    0.9314728826284409,
+    0.006209229584783316,
+    0.06057734647765756
+   ]
+  },
+  {
+   "case_id": "30c128555409764c611d__forestry_operations_followup_required",
+   "kind": "noul",
+   "p": [
+    0.006323810666799545,
+    0.9936761856079102
+   ]
+  },
+  {
+   "case_id": "602e9d1777e67c1b99e6__software_services_procedure_followed",
+   "kind": "noul",
+   "p": [
+    0.0003308377163193654,
+    0.9996691048145294
+   ]
+  },
+  {
+   "case_id": "602e9d1777e67c1b99e6__engineering_services_case_status",
+   "kind": "choice",
+   "p": [
+    0.9999733567237854,
+    5.896930758808594e-06,
+    1.365313380574662e-05,
+    7.082414299475204e-06
+   ]
+  },
+  {
+   "case_id": "602e9d1777e67c1b99e6__software_services_priority_level",
+   "kind": "score",
+   "p": [
+    0.9889592081308365,
+    0.010250287712551653,
+    0.0005166286282474175,
+    0.0002738712755672168
+   ]
+  },
+  {
+   "case_id": "602e9d1777e67c1b99e6__residential_care_service_continuity_impact",
+   "kind": "score",
+   "p": [
+    3.761591801776376e-05,
+    3.627968919772684e-05,
+    1.866868115030229e-05,
+    0.9999074637889862
+   ]
+  },
+  {
+   "case_id": "9b8bec2ae76a084df4e0__scientific_research_procedure_followed",
+   "kind": "noul",
+   "p": [
+    0.0008611443627160043,
+    0.9991388320922852
+   ]
+  },
+  {
+   "case_id": "9b8bec2ae76a084df4e0__scientific_research_operational_risk",
+   "kind": "score",
+   "p": [
+    0.046470655128359795,
+    0.7936533540487289,
+    0.15568051859736443,
+    0.004195498477201909
+   ]
+  },
+  {
+   "case_id": "9b8bec2ae76a084df4e0__software_services_action_routing",
+   "kind": "choice",
+   "p": [
+    0.999965101480484,
+    2.2638012183051615e-05,
+    8.025318606996734e-06,
+    4.274444165730529e-06
+   ]
+  },
+  {
+   "case_id": "9b8bec2ae76a084df4e0__residential_care_priority_level",
+   "kind": "score",
+   "p": [
+    0.00952106318436563,
+    0.04538592603057623,
+    0.40402138233184814,
+    0.5410716384649277
+   ]
+  },
+  {
+   "case_id": "cdb54b4acec738d76815__residential_care_incident_response_category",
+   "kind": "choice",
+   "p": [
+    0.06176018621772528,
+    0.934165358543396,
+    0.0033616505097597837,
+    0.0007128409997676499
+   ]
+  },
+  {
+   "case_id": "cdb54b4acec738d76815__software_services_service_continuity_impact",
+   "kind": "score",
+   "p": [
+    0.17234636284410954,
+    0.12409168854355812,
+    0.7029249519109726,
+    0.0006370090559357777
+   ]
+  },
+  {
+   "case_id": "cdb54b4acec738d76815__engineering_services_procedure_followed",
+   "kind": "noul",
+   "p": [
+    0.9924227595329285,
+    0.007577240467071533
+   ]
+  },
+  {
+   "case_id": "cdb54b4acec738d76815__engineering_services_case_status",
+   "kind": "choice",
+   "p": [
+    0.9998052567243576,
+    0.00013540302006731508,
+    2.934529413778364e-05,
+    6.9416539076883055e-06,
+    2.303484632193431e-05
+   ]
+  },
+  {
+   "case_id": "7c375170350350e57880__engineering_services_followup_required",
+   "kind": "noul",
+   "p": [
+    0.4127121716737747,
+    0.5872878283262253
+   ]
+  },
+  {
+   "case_id": "7c375170350350e57880__residential_care_priority_level",
+   "kind": "score",
+   "p": [
+    0.05218030046671629,
+    0.029097790189553052,
+    0.3611651584506035,
+    0.5575567483901978
+   ]
+  },
+  {
+   "case_id": "7c375170350350e57880__scientific_research_case_status",
+   "kind": "choice",
+   "p": [
+    0.9991924166679382,
+    0.0002805071089824196,
+    0.00013209773896960542,
+    0.00039497318721259944
+   ]
+  },
+  {
+   "case_id": "7c375170350350e57880__residential_care_service_continuity_impact",
+   "kind": "score",
+   "p": [
+    0.24602141231298447,
+    0.20174823515117168,
+    0.5044407844543457,
+    0.04778957087546587
+   ]
+  },
+  {
+   "case_id": "c56991fafeb67527d1e3__engineering_services_case_status",
+   "kind": "choice",
+   "p": [
+    0.9977325350046158,
+    0.0020117867316002958,
+    0.00016496490320605517,
+    8.350675670953933e-05,
+    7.187864639490726e-06
+   ]
+  },
+  {
+   "case_id": "c56991fafeb67527d1e3__forestry_operations_followup_required",
+   "kind": "noul",
+   "p": [
+    0.026709163561463356,
+    0.9732908606529236
+   ]
+  },
+  {
+   "case_id": "c56991fafeb67527d1e3__software_services_priority_level",
+   "kind": "score",
+   "p": [
+    0.8318390995264053,
+    0.14049634616822004,
+    0.022627206286415458,
+    0.005037340248236433
+   ]
+  },
+  {
+   "case_id": "c56991fafeb67527d1e3__residential_care_priority_level",
+   "kind": "score",
+   "p": [
+    0.0013810511882184073,
+    0.09963493701070547,
+    0.8975017219781876,
+    0.0014823313686065376
+   ]
+  },
+  {
+   "case_id": "ec1eaa8937224fb8e071__software_services_priority_level",
+   "kind": "score",
+   "p": [
+    0.00023444303951691836,
+    0.0604698098031804,
+    0.9249563068151474,
+    0.014339439338073134
+   ]
+  },
+  {
+   "case_id": "ec1eaa8937224fb8e071__engineering_services_procedure_followed",
+   "kind": "noul",
+   "p": [
+    0.9851649105548859,
+    0.014835108770057559
+   ]
+  },
+  {
+   "case_id": "ec1eaa8937224fb8e071__forestry_operations_action_routing",
+   "kind": "choice",
+   "p": [
+    0.999919056892395,
+    2.8809357218051446e-05,
+    9.974115528166294e-06,
+    4.212848489260068e-05
+   ]
+  },
+  {
+   "case_id": "ec1eaa8937224fb8e071__software_services_case_status",
+   "kind": "choice",
+   "p": [
+    0.04418905661441386,
+    0.012570681516081095,
+    0.025424590799957514,
+    0.917815625667572
+   ]
+  },
+  {
+   "case_id": "63ba90528f1361d47220__scientific_research_case_status",
+   "kind": "choice",
+   "p": [
+    0.00018953926519316155,
+    0.9996515661478043,
+    9.361447973788017e-05,
+    6.524757918668911e-05
+   ]
+  },
+  {
+   "case_id": "63ba90528f1361d47220__scientific_research_followup_required",
+   "kind": "noul",
+   "p": [
+    0.009562249528244138,
+    0.9904377460479736
+   ]
+  },
+  {
+   "case_id": "63ba90528f1361d47220__residential_care_service_continuity_impact",
+   "kind": "score",
+   "p": [
+    0.42922472953796387,
+    0.1879306547343731,
+    0.37015317380428314,
+    0.012691429583355784
+   ]
+  },
+  {
+   "case_id": "63ba90528f1361d47220__scientific_research_priority_level",
+   "kind": "score",
+   "p": [
+    0.0008508704740961548,
+    0.006138621363788843,
+    0.03702765656635165,
+    0.955982893705368
+   ]
+  },
+  {
+   "case_id": "c22e5dfa1868d1f76c8c__scientific_research_followup_required",
+   "kind": "noul",
+   "p": [
+    0.7920445501804352,
+    0.20795544376596808
+   ]
+  },
+  {
+   "case_id": "c22e5dfa1868d1f76c8c__residential_care_service_continuity_impact",
+   "kind": "score",
+   "p": [
+    0.0349567886441946,
+    0.2970838434994221,
+    0.2813163213431835,
+    0.38664302229881287
+   ]
+  },
+  {
+   "case_id": "c22e5dfa1868d1f76c8c__scientific_research_case_status",
+   "kind": "choice",
+   "p": [
+    5.4091918627818814e-05,
+    2.795180671455455e-05,
+    0.9997947365045547,
+    5.74519708607113e-05,
+    6.579841416964882e-05
+   ]
+  },
+  {
+   "case_id": "c22e5dfa1868d1f76c8c__forestry_operations_followup_required",
+   "kind": "noul",
+   "p": [
+    0.5867959558963776,
+    0.41320402920246124
+   ]
+  },
+  {
+   "case_id": "156d8f876850e9281d5f__software_services_case_status",
+   "kind": "choice",
+   "p": [
+    1.3331947826600299e-05,
+    0.08187712356448174,
+    0.9180155694484711,
+    7.876750532886945e-05,
+    1.5233521892810131e-05
+   ]
+  },
+  {
+   "case_id": "156d8f876850e9281d5f__residential_care_followup_required",
+   "kind": "noul",
+   "p": [
+    0.11556272394955158,
+    0.8844372630119324
+   ]
+  },
+  {
+   "case_id": "156d8f876850e9281d5f__scientific_research_action_routing",
+   "kind": "choice",
+   "p": [
+    1.0443537121318514e-05,
+    0.999942809343338,
+    3.331387642901973e-05,
+    1.3462855463330925e-05
+   ]
+  },
+  {
+   "case_id": "156d8f876850e9281d5f__scientific_research_operational_risk",
+   "kind": "score",
+   "p": [
+    0.0037972874561091885,
+    0.005418508866569027,
+    0.04582152934744954,
+    0.9449626356363297
+   ]
+  },
+  {
+   "case_id": "ca30bd2f533343742aa8__engineering_services_procedure_followed",
+   "kind": "noul",
+   "p": [
+    0.2339240200817585,
+    0.7660760283470154
+   ]
+  },
+  {
+   "case_id": "ca30bd2f533343742aa8__forestry_operations_followup_required",
+   "kind": "noul",
+   "p": [
+    0.9279912412166595,
+    0.07200873270630836
+   ]
+  },
+  {
+   "case_id": "ca30bd2f533343742aa8__scientific_research_action_routing",
+   "kind": "choice",
+   "p": [
+    0.980011448264122,
+    0.01263841224135831,
+    0.002786894212476909,
+    0.00042389240115880966,
+    0.004139356082305312
+   ]
+  },
+  {
+   "case_id": "ca30bd2f533343742aa8__software_services_service_continuity_impact",
+   "kind": "score",
+   "p": [
+    9.767231676960364e-05,
+    0.994128629565239,
+    0.0057559345150366426,
+    1.775502255441097e-05
+   ]
+  },
+  {
+   "case_id": "a4015bfb28ca693188a8__scientific_research_action_routing",
+   "kind": "choice",
+   "p": [
+    0.9515814483165741,
+    0.04712363809812814,
+    0.0003175440115228412,
+    0.00036960408033337444,
+    0.0006077574507799
+   ]
+  },
+  {
+   "case_id": "a4015bfb28ca693188a8__engineering_services_followup_required",
+   "kind": "noul",
+   "p": [
+    0.026537332218140364,
+    0.9734626710414886
+   ]
+  },
+  {
+   "case_id": "a4015bfb28ca693188a8__software_services_priority_level",
+   "kind": "score",
+   "p": [
+    0.999590277671814,
+    0.00015580726767439046,
+    0.00021584197656920878,
+    3.8082997207311564e-05
+   ]
+  },
+  {
+   "case_id": "a4015bfb28ca693188a8__residential_care_priority_level",
+   "kind": "score",
+   "p": [
+    0.614821307361126,
+    0.3613008074462414,
+    0.02268667088355869,
+    0.0011912400659639388
+   ]
+  },
+  {
+   "case_id": "8d929e945d922cf6ed6a__scientific_research_action_routing",
+   "kind": "choice",
+   "p": [
+    0.9999373257160187,
+    1.1790184316851082e-05,
+    3.094905676448434e-05,
+    1.567269555380335e-05,
+    4.305416609895474e-06
+   ]
+  },
+  {
+   "case_id": "8d929e945d922cf6ed6a__engineering_services_followup_required",
+   "kind": "noul",
+   "p": [
+    0.0010939623753074557,
+    0.9989059865474701
+   ]
+  },
+  {
+   "case_id": "8d929e945d922cf6ed6a__software_services_service_continuity_impact",
+   "kind": "score",
+   "p": [
+    0.0006788619748476776,
+    0.00027919347121496685,
+    0.9989472031593323,
+    9.46925938478671e-05
+   ]
+  },
+  {
+   "case_id": "8d929e945d922cf6ed6a__software_services_case_status",
+   "kind": "choice",
+   "p": [
+    0.00017407531231583562,
+    0.9993512183427811,
+    0.00010577626608210267,
+    0.000368942510249326
+   ]
+  },
+  {
+   "case_id": "0f650d705c0ee74be42f__engineering_services_case_status",
+   "kind": "choice",
+   "p": [
+    0.6219208091497421,
+    0.33617474138736725,
+    0.02170326909981668,
+    0.020201192470267415
+   ]
+  },
+  {
+   "case_id": "0f650d705c0ee74be42f__scientific_research_procedure_followed",
+   "kind": "noul",
+   "p": [
+    0.9628802239894867,
+    0.03711976925842464
+   ]
+  },
+  {
+   "case_id": "0f650d705c0ee74be42f__scientific_research_priority_level",
+   "kind": "score",
+   "p": [
+    0.8809868097305298,
+    0.06272474024444818,
+    0.029685786459594965,
+    0.02660263585858047
+   ]
+  },
+  {
+   "case_id": "0f650d705c0ee74be42f__forestry_operations_followup_required",
+   "kind": "noul",
+   "p": [
+    0.9220292270183563,
+    0.07797079533338547
+   ]
+  },
+  {
+   "case_id": "875b028e850a405ef9a9__scientific_research_followup_required",
+   "kind": "noul",
+   "p": [
+    0.9764823019504547,
+    0.023517678026109934
+   ]
+  },
+  {
+   "case_id": "875b028e850a405ef9a9__forestry_operations_action_routing",
+   "kind": "choice",
+   "p": [
+    0.9968999177217484,
+    0.00034215884807053953,
+    0.00016692362532921834,
+    0.00014412846121558687,
+    0.002446881146170199
+   ]
+  },
+  {
+   "case_id": "875b028e850a405ef9a9__software_services_priority_level",
+   "kind": "score",
+   "p": [
+    0.9975781887769699,
+    0.0016451703559141606,
+    0.0003059307073272066,
+    0.0004707178486569319
+   ]
+  },
+  {
+   "case_id": "875b028e850a405ef9a9__scientific_research_action_routing",
+   "kind": "choice",
+   "p": [
+    0.00019325544781167991,
+    0.9995017647743225,
+    0.00023719978980807355,
+    6.778213696634339e-05
+   ]
+  },
+  {
+   "case_id": "1e8e775c925a059b3368__scientific_research_case_status",
+   "kind": "choice",
+   "p": [
+    0.9988352507352829,
+    0.0010029491641034838,
+    4.86117928630847e-05,
+    0.00011317636199237313
+   ]
+  },
+  {
+   "case_id": "1e8e775c925a059b3368__engineering_services_followup_required",
+   "kind": "noul",
+   "p": [
+    0.010378238512203097,
+    0.9896217882633209
+   ]
+  },
+  {
+   "case_id": "1e8e775c925a059b3368__residential_care_followup_required",
+   "kind": "noul",
+   "p": [
+    0.31131281703710556,
+    0.6886871755123138
+   ]
+  },
+  {
+   "case_id": "1e8e775c925a059b3368__residential_care_priority_level",
+   "kind": "score",
+   "p": [
+    0.0008601646841270849,
+    0.008225129218772054,
+    0.9901819080114365,
+    0.0007328040046559181
+   ]
+  },
+  {
+   "case_id": "9df0f9fa1c3ef5b59f8d__scientific_research_case_status",
+   "kind": "choice",
+   "p": [
+    0.9161832481622696,
+    0.08331121690571308,
+    0.00021106842177687213,
+    0.0002944410043710377
+   ]
+  },
+  {
+   "case_id": "9df0f9fa1c3ef5b59f8d__residential_care_priority_level",
+   "kind": "score",
+   "p": [
+    0.1470522377640009,
+    0.02587432973086834,
+    0.8234338909387589,
+    0.003639527567429468
+   ]
+  },
+  {
+   "case_id": "9df0f9fa1c3ef5b59f8d__forestry_operations_followup_required",
+   "kind": "noul",
+   "p": [
+    0.0035410973941907287,
+    0.9964589178562164
+   ]
+  },
+  {
+   "case_id": "9df0f9fa1c3ef5b59f8d__software_services_procedure_followed",
+   "kind": "noul",
+   "p": [
+    0.005704599316231906,
+    0.9942954182624817
+   ]
+  },
+  {
+   "case_id": "5bda46e48481a30d5b24__scientific_research_procedure_followed",
+   "kind": "noul",
+   "p": [
+    0.9983990490436554,
+    0.0016009522369131446
+   ]
+  },
+  {
+   "case_id": "5bda46e48481a30d5b24__software_services_action_routing",
+   "kind": "choice",
+   "p": [
+    0.00029901445145696925,
+    0.9989845752716064,
+    3.0571251727451454e-05,
+    6.841863751105848e-05,
+    0.0006174646950967144
+   ]
+  },
+  {
+   "case_id": "5bda46e48481a30d5b24__residential_care_followup_required",
+   "kind": "noul",
+   "p": [
+    0.9994138777256012,
+    0.000586120702791959
+   ]
+  },
+  {
+   "case_id": "5bda46e48481a30d5b24__scientific_research_operational_risk",
+   "kind": "score",
+   "p": [
+    0.00019811308993666898,
+    0.0008450563618680462,
+    0.9989033788442612,
+    5.3429835816132254e-05
+   ]
+  },
+  {
+   "case_id": "c8af5f09d85f769f10da__engineering_services_followup_required",
+   "kind": "noul",
+   "p": [
+    0.011752516846172512,
+    0.9882474839687347
+   ]
+  },
+  {
+   "case_id": "c8af5f09d85f769f10da__forestry_operations_action_routing",
+   "kind": "choice",
+   "p": [
+    0.9982710480690002,
+    0.0001477329060435295,
+    0.0012434286036295816,
+    0.0003377362409082707
+   ]
+  },
+  {
+   "case_id": "c8af5f09d85f769f10da__scientific_research_priority_level",
+   "kind": "score",
+   "p": [
+    0.0008419589557888685,
+    0.00583527926937677,
+    0.08081929117906839,
+    0.9125034511089325
+   ]
+  },
+  {
+   "case_id": "c8af5f09d85f769f10da__engineering_services_case_status",
+   "kind": "choice",
+   "p": [
+    0.9985913336277008,
+    0.00011567837645998225,
+    0.00011344909307808848,
+    0.00013367398696573218,
+    0.0010458254473633133
+   ]
+  },
+  {
+   "case_id": "f2ecd4892337a03eb2fe__forestry_operations_followup_required",
+   "kind": "noul",
+   "p": [
+    0.10215097665786743,
+    0.897849053144455
+   ]
+  },
+  {
+   "case_id": "f2ecd4892337a03eb2fe__software_services_priority_level",
+   "kind": "score",
+   "p": [
+    0.00034847503957280423,
+    0.004621453583240509,
+    0.041082798037678,
+    0.9539472311735153
+   ]
+  },
+  {
+   "case_id": "f2ecd4892337a03eb2fe__residential_care_incident_response_category",
+   "kind": "choice",
+   "p": [
+    0.9340284317731857,
+    0.05235106265172362,
+    0.01318669121246785,
+    0.0004337996542744804
+   ]
+  },
+  {
+   "case_id": "f2ecd4892337a03eb2fe__scientific_research_case_status",
+   "kind": "choice",
+   "p": [
+    0.9997293204069138,
+    0.0002209802441939246,
+    2.9865003170925775e-05,
+    1.9816913209069753e-05
+   ]
+  },
+  {
+   "case_id": "7e179b8226d2af1ce588__scientific_research_case_status",
+   "kind": "choice",
+   "p": [
+    0.24539614096283913,
+    0.7543738037347794,
+    0.00012023607814626303,
+    0.00010985777953465004
+   ]
+  },
+  {
+   "case_id": "7e179b8226d2af1ce588__scientific_research_procedure_followed",
+   "kind": "noul",
+   "p": [
+    0.00037810274807270616,
+    0.9996218681335449
+   ]
+  },
+  {
+   "case_id": "7e179b8226d2af1ce588__software_services_service_continuity_impact",
+   "kind": "score",
+   "p": [
+    0.0010946464171865955,
+    0.041573209688067436,
+    0.954685315489769,
+    0.0026467993448022753
+   ]
+  },
+  {
+   "case_id": "7e179b8226d2af1ce588__forestry_operations_case_status",
+   "kind": "choice",
+   "p": [
+    0.9979615658521652,
+    0.00024645036819492816,
+    0.0017248283693334088,
+    2.8767405524376954e-05,
+    3.8398012293328065e-05
+   ]
+  },
+  {
+   "case_id": "f5e931d8a00a0b8e0e74__scientific_research_followup_required",
+   "kind": "noul",
+   "p": [
+    0.9633083641529083,
+    0.036691611632704735
+   ]
+  },
+  {
+   "case_id": "f5e931d8a00a0b8e0e74__software_services_action_routing",
+   "kind": "choice",
+   "p": [
+    0.04299384797923267,
+    0.006115479220170528,
+    0.1710962257348001,
+    0.41224081069231033,
+    0.3675536587834358
+   ]
+  },
+  {
+   "case_id": "f5e931d8a00a0b8e0e74__residential_care_service_continuity_impact",
+   "kind": "score",
+   "p": [
+    0.0028966868412680924,
+    0.0033688156108837575,
+    0.12070948630571365,
+    0.873025044798851
+   ]
+  },
+  {
+   "case_id": "f5e931d8a00a0b8e0e74__scientific_research_action_routing",
+   "kind": "choice",
+   "p": [
+    0.9999406039714813,
+    3.664401401692885e-05,
+    8.752775897846732e-06,
+    1.4014621228852775e-05
+   ]
+  },
+  {
+   "case_id": "6fd68d0a2731b7aa398c__engineering_services_case_status",
+   "kind": "choice",
+   "p": [
+    0.00016456943467346719,
+    0.9979965835809708,
+    0.000317261414238601,
+    0.0015215437160804868
+   ]
+  },
+  {
+   "case_id": "6fd68d0a2731b7aa398c__scientific_research_procedure_followed",
+   "kind": "noul",
+   "p": [
+    0.9459618031978607,
+    0.05403820052742958
+   ]
+  },
+  {
+   "case_id": "6fd68d0a2731b7aa398c__scientific_research_operational_risk",
+   "kind": "score",
+   "p": [
+    0.009835517383180559,
+    0.2700095362961292,
+    0.7180550470948219,
+    0.002099893375998363
+   ]
+  },
+  {
+   "case_id": "6fd68d0a2731b7aa398c__software_services_procedure_followed",
+   "kind": "noul",
+   "p": [
+    0.0005172962846700102,
+    0.9994826912879944
+   ]
+  },
+  {
+   "case_id": "c51ceb7d217ba60b2930__scientific_research_procedure_followed",
+   "kind": "noul",
+   "p": [
+    0.7862440645694733,
+    0.21375593543052673
+   ]
+  },
+  {
+   "case_id": "c51ceb7d217ba60b2930__scientific_research_followup_required",
+   "kind": "noul",
+   "p": [
+    0.233892560005188,
+    0.766107439994812
+   ]
+  },
+  {
+   "case_id": "c51ceb7d217ba60b2930__software_services_priority_level",
+   "kind": "score",
+   "p": [
+    0.002893005235819146,
+    0.006951644754735753,
+    0.9896229207515717,
+    0.0005324587400536984
+   ]
+  },
+  {
+   "case_id": "c51ceb7d217ba60b2930__engineering_services_case_status",
+   "kind": "choice",
+   "p": [
+    0.000987634834018536,
+    0.9876111000776291,
+    0.011306257511023432,
+    9.49690420384286e-05
+   ]
+  },
+  {
+   "case_id": "06444a26a6371aca374b__software_services_case_status",
+   "kind": "choice",
+   "p": [
+    2.5250998376691314e-06,
+    0.9999753534793854,
+    7.17366724245494e-07,
+    3.617604505734562e-06,
+    1.7818984025197437e-05
+   ]
+  },
+  {
+   "case_id": "06444a26a6371aca374b__forestry_operations_followup_required",
+   "kind": "noul",
+   "p": [
+    0.9998950362205505,
+    0.00010493920490262099
+   ]
+  },
+  {
+   "case_id": "06444a26a6371aca374b__scientific_research_operational_risk",
+   "kind": "score",
+   "p": [
+    0.00017299077353527537,
+    0.00019702906774909934,
+    0.9906965345144272,
+    0.008933486009482294
+   ]
+  },
+  {
+   "case_id": "06444a26a6371aca374b__software_services_service_continuity_impact",
+   "kind": "score",
+   "p": [
+    0.0001402228808728978,
+    0.0001516267984698061,
+    0.016175858094356954,
+    0.9835322797298431
+   ]
+  },
+  {
+   "case_id": "00640f88014b06b02860__forestry_operations_action_routing",
+   "kind": "choice",
+   "p": [
+    0.9999401867389679,
+    3.593020301195793e-05,
+    1.0158856753150758e-05,
+    8.444644095106923e-06,
+    5.246402785985538e-06
+   ]
+  },
+  {
+   "case_id": "00640f88014b06b02860__software_services_priority_level",
+   "kind": "score",
+   "p": [
+    0.0003550903747964185,
+    0.002297739003552124,
+    0.8199866414070129,
+    0.1773605402559042
+   ]
+  },
+  {
+   "case_id": "00640f88014b06b02860__software_services_action_routing",
+   "kind": "choice",
+   "p": [
+    0.9925710260868073,
+    0.004256583604728803,
+    0.002071208378765732,
+    0.0006414625386241823,
+    0.00045975798639119603
+   ]
+  },
+  {
+   "case_id": "00640f88014b06b02860__forestry_operations_followup_required",
+   "kind": "noul",
+   "p": [
+    0.0004565486597130075,
+    0.9995434582233429
+   ]
+  },
+  {
+   "case_id": "d89c1ecc96f8c692f63a__software_services_procedure_followed",
+   "kind": "noul",
+   "p": [
+    0.9874747395515442,
+    0.012525284197181463
+   ]
+  },
+  {
+   "case_id": "d89c1ecc96f8c692f63a__forestry_operations_case_status",
+   "kind": "choice",
+   "p": [
+    0.00870286303688772,
+    0.9908987134695053,
+    2.8333293812465854e-05,
+    2.5117282802966656e-05,
+    0.0003449277573963627
+   ]
+  },
+  {
+   "case_id": "d89c1ecc96f8c692f63a__scientific_research_priority_level",
+   "kind": "score",
+   "p": [
+    0.02741335309110582,
+    0.02364700543694198,
+    0.5957270935177803,
+    0.35321254655718803
+   ]
+  },
+  {
+   "case_id": "d89c1ecc96f8c692f63a__scientific_research_procedure_followed",
+   "kind": "noul",
+   "p": [
+    0.0006455177790485322,
+    0.9993544816970825
+   ]
+  },
+  {
+   "case_id": "b20035b58207ff392c9f__residential_care_followup_required",
+   "kind": "noul",
+   "p": [
+    0.002785659860819578,
+    0.9972143471240997
+   ]
+  },
+  {
+   "case_id": "b20035b58207ff392c9f__software_services_case_status",
+   "kind": "choice",
+   "p": [
+    0.9998436570167542,
+    5.160743376109167e-05,
+    1.2751242252306838e-05,
+    9.19597914617043e-05
+   ]
+  },
+  {
+   "case_id": "b20035b58207ff392c9f__software_services_service_continuity_impact",
+   "kind": "score",
+   "p": [
+    0.921175479888916,
+    0.05635142605751753,
+    0.02152508741710335,
+    0.0009480320877628401
+   ]
+  },
+  {
+   "case_id": "b20035b58207ff392c9f__software_services_priority_level",
+   "kind": "score",
+   "p": [
+    0.023835886036977172,
+    0.006641788582783192,
+    0.962254136800766,
+    0.007268200744874775
+   ]
+  },
+  {
+   "case_id": "395f6cf9b4074b7a809a__engineering_services_case_status",
+   "kind": "choice",
+   "p": [
+    0.9991631209850311,
+    0.000382909684049082,
+    7.54301736378693e-05,
+    0.0003785727749345824
+   ]
+  },
+  {
+   "case_id": "395f6cf9b4074b7a809a__software_services_procedure_followed",
+   "kind": "noul",
+   "p": [
+    0.6206776201725006,
+    0.3793224096298218
+   ]
+  },
+  {
+   "case_id": "395f6cf9b4074b7a809a__scientific_research_operational_risk",
+   "kind": "score",
+   "p": [
+    0.00024614532230771147,
+    0.9840352684259415,
+    0.015100335236638784,
+    0.0006182959987199865
+   ]
+  },
+  {
+   "case_id": "395f6cf9b4074b7a809a__software_services_priority_level",
+   "kind": "score",
+   "p": [
+    0.04568973742425442,
+    0.34713251888751984,
+    0.5787509754300117,
+    0.028426782693713903
+   ]
+  },
+  {
+   "case_id": "173f57dd3f7720d3a2e2__software_services_action_routing",
+   "kind": "choice",
+   "p": [
+    0.9993215501308441,
+    0.00024379545357078314,
+    0.00025082829324674094,
+    4.7507840008620406e-05,
+    0.00013630445261014756
+   ]
+  },
+  {
+   "case_id": "173f57dd3f7720d3a2e2__scientific_research_followup_required",
+   "kind": "noul",
+   "p": [
+    0.005380099988542497,
+    0.9946198761463165
+   ]
+  },
+  {
+   "case_id": "173f57dd3f7720d3a2e2__residential_care_followup_required",
+   "kind": "noul",
+   "p": [
+    0.9687899649143219,
+    0.03121003694832325
+   ]
+  },
+  {
+   "case_id": "173f57dd3f7720d3a2e2__software_services_priority_level",
+   "kind": "score",
+   "p": [
+    3.5462445794109954e-05,
+    0.00018660007390280953,
+    0.01760127628222108,
+    0.9821766912937164
+   ]
+  },
+  {
+   "case_id": "35452e8cab33c32962ca__residential_care_followup_required",
+   "kind": "noul",
+   "p": [
+    0.9357822835445404,
+    0.06421771831810474
+   ]
+  },
+  {
+   "case_id": "35452e8cab33c32962ca__software_services_case_status",
+   "kind": "choice",
+   "p": [
+    0.0005809182657685596,
+    0.00017668369218881708,
+    0.9989207535982132,
+    0.0003216494992557273
+   ]
+  },
+  {
+   "case_id": "35452e8cab33c32962ca__residential_care_service_continuity_impact",
+   "kind": "score",
+   "p": [
+    0.03315659682266414,
+    0.7730963826179504,
+    0.18736803904175758,
+    0.006378976220730692
+   ]
+  },
+  {
+   "case_id": "35452e8cab33c32962ca__residential_care_priority_level",
+   "kind": "score",
+   "p": [
+    0.0011478566957521252,
+    0.00018231947797175962,
+    0.001887049489596393,
+    0.9967827498912811
+   ]
+  },
+  {
+   "case_id": "72ed08c4a097a2f3c411__software_services_case_status",
+   "kind": "choice",
+   "p": [
+    0.999047577381134,
+    0.000757564434024971,
+    7.190971928139334e-05,
+    0.00012292061092011863
+   ]
+  },
+  {
+   "case_id": "72ed08c4a097a2f3c411__engineering_services_followup_required",
+   "kind": "noul",
+   "p": [
+    0.0011267504596617073,
+    0.998873233795166
+   ]
+  },
+  {
+   "case_id": "72ed08c4a097a2f3c411__residential_care_service_continuity_impact",
+   "kind": "score",
+   "p": [
+    0.0005046889782533981,
+    0.5105471312999725,
+    0.4885363280773163,
+    0.0004118681899853982
+   ]
+  },
+  {
+   "case_id": "72ed08c4a097a2f3c411__software_services_action_routing",
+   "kind": "choice",
+   "p": [
+    0.999131366610527,
+    0.0003169673154843622,
+    0.000316109955747379,
+    0.00013234732978162356,
+    0.00010318797376385191
+   ]
+  },
+  {
+   "case_id": "ee2b1163d5825949723a__scientific_research_procedure_followed",
+   "kind": "noul",
+   "p": [
+    0.39544203504920006,
+    0.6045579463243484
+   ]
+  },
+  {
+   "case_id": "ee2b1163d5825949723a__software_services_case_status",
+   "kind": "choice",
+   "p": [
+    0.0005545127387449611,
+    0.8063327968120575,
+    0.09243813902139664,
+    0.1006745477207005
+   ]
+  },
+  {
+   "case_id": "ee2b1163d5825949723a__software_services_procedure_followed",
+   "kind": "noul",
+   "p": [
+    0.019889413146302104,
+    0.9801106154918671
+   ]
+  },
+  {
+   "case_id": "ee2b1163d5825949723a__software_services_service_continuity_impact",
+   "kind": "score",
+   "p": [
+    0.9909637570381165,
+    0.004765977180795744,
+    0.003938906418625265,
+    0.0003313863417133689
+   ]
+  },
+  {
+   "case_id": "f96a95adc7bf20bfbf2a__engineering_services_procedure_followed",
+   "kind": "noul",
+   "p": [
+    0.0004069844144396484,
+    0.9995929598808289
+   ]
+  },
+  {
+   "case_id": "f96a95adc7bf20bfbf2a__forestry_operations_action_routing",
+   "kind": "choice",
+   "p": [
+    0.9997128546237946,
+    3.3818821066233795e-05,
+    7.174100306883702e-05,
+    6.811810635554139e-05,
+    0.00011344700305926381
+   ]
+  },
+  {
+   "case_id": "f96a95adc7bf20bfbf2a__scientific_research_priority_level",
+   "kind": "score",
+   "p": [
+    0.0003235644908272661,
+    0.0007128548750188202,
+    0.7817478775978088,
+    0.21721570566296577
+   ]
+  },
+  {
+   "case_id": "f96a95adc7bf20bfbf2a__residential_care_incident_response_category",
+   "kind": "choice",
+   "p": [
+    0.07693594321608543,
+    0.5126679316163063,
+    0.07140975166112185,
+    0.2924802526831627,
+    0.046506112441420555
+   ]
+  },
+  {
+   "case_id": "d61e3c79a178ac55d143__scientific_research_priority_level",
+   "kind": "score",
+   "p": [
+    0.6812125444412231,
+    0.0043139978079125285,
+    0.3092843107879162,
+    0.005189190502278507
+   ]
+  },
+  {
+   "case_id": "d61e3c79a178ac55d143__scientific_research_procedure_followed",
+   "kind": "noul",
+   "p": [
+    0.9985811114311218,
+    0.00141889278893359
+   ]
+  },
+  {
+   "case_id": "d61e3c79a178ac55d143__scientific_research_action_routing",
+   "kind": "choice",
+   "p": [
+    0.026941550604533404,
+    0.9715955406427383,
+    0.00019802008137048688,
+    0.0011815554134955164,
+    8.332825291290646e-05
+   ]
+  },
+  {
+   "case_id": "d61e3c79a178ac55d143__residential_care_incident_response_category",
+   "kind": "choice",
+   "p": [
+    0.9575462192296982,
+    0.040800697170197964,
+    0.0004767084574268665,
+    0.0009642700606491417,
+    0.00021207143709034426
+   ]
+  },
+  {
+   "case_id": "eacaba242c1bcd3e4014__engineering_services_case_status",
+   "kind": "choice",
+   "p": [
+    0.9997290521860123,
+    0.00021665780695911963,
+    3.956769774049462e-05,
+    1.4759075838810531e-05
+   ]
+  },
+  {
+   "case_id": "eacaba242c1bcd3e4014__software_services_service_continuity_impact",
+   "kind": "score",
+   "p": [
+    0.00914160895626992,
+    0.3250155635178089,
+    0.37228552252054214,
+    0.2935573011636734
+   ]
+  },
+  {
+   "case_id": "eacaba242c1bcd3e4014__engineering_services_procedure_followed",
+   "kind": "noul",
+   "p": [
+    0.11791441775858402,
+    0.8820855915546417
+   ]
+  },
+  {
+   "case_id": "eacaba242c1bcd3e4014__scientific_research_case_status",
+   "kind": "choice",
+   "p": [
+    0.9998619556427002,
+    0.0001129552483689622,
+    1.2829878528464178e-05,
+    1.2261812912583991e-05
+   ]
+  },
+  {
+   "case_id": "823cf26e2429b6f7c89d__forestry_operations_followup_required",
+   "kind": "noul",
+   "p": [
+    0.9337375462055206,
+    0.06626245193183422
+   ]
+  },
+  {
+   "case_id": "823cf26e2429b6f7c89d__forestry_operations_case_status",
+   "kind": "choice",
+   "p": [
+    0.08881101850420237,
+    0.037703195586800575,
+    0.8728676587343216,
+    0.00010610738627292449,
+    0.0005120122477819677
+   ]
+  },
+  {
+   "case_id": "823cf26e2429b6f7c89d__scientific_research_operational_risk",
+   "kind": "score",
+   "p": [
+    0.0007126269047148526,
+    0.06904599349945784,
+    0.4413713589310646,
+    0.4888700172305107
+   ]
+  },
+  {
+   "case_id": "823cf26e2429b6f7c89d__scientific_research_priority_level",
+   "kind": "score",
+   "p": [
+    0.0353268904145807,
+    0.729063093662262,
+    0.23523858189582825,
+    0.0003714510858117137
+   ]
+  },
+  {
+   "case_id": "c38e503c0c225a933dc1__software_services_service_continuity_impact",
+   "kind": "score",
+   "p": [
+    0.9641505032777786,
+    0.020383670896990225,
+    0.012209137683385052,
+    0.003256684882217087
+   ]
+  },
+  {
+   "case_id": "c38e503c0c225a933dc1__forestry_operations_case_status",
+   "kind": "choice",
+   "p": [
+    1.227381693524876e-05,
+    2.585316156000772e-05,
+    0.9999164938926697,
+    4.536540654953569e-05
+   ]
+  },
+  {
+   "case_id": "c38e503c0c225a933dc1__engineering_services_procedure_followed",
+   "kind": "noul",
+   "p": [
+    0.0009048096362676006,
+    0.9990951716899872
+   ]
+  },
+  {
+   "case_id": "c38e503c0c225a933dc1__residential_care_service_continuity_impact",
+   "kind": "score",
+   "p": [
+    0.0013159939408069476,
+    0.05326976254582405,
+    0.3073315843939781,
+    0.6380826979875565
+   ]
+  },
+  {
+   "case_id": "1d720373b36baee8224a__software_services_service_continuity_impact",
+   "kind": "score",
+   "p": [
+    0.000609804304986028,
+    0.001961225483682938,
+    0.09001548867672682,
+    0.9074134826660156
+   ]
+  },
+  {
+   "case_id": "1d720373b36baee8224a__software_services_case_status",
+   "kind": "choice",
+   "p": [
+    0.0028933954308740795,
+    0.9962862879037857,
+    0.00017972873706639803,
+    0.0001496403733654006,
+    0.0004909717408736469
+   ]
+  },
+  {
+   "case_id": "1d720373b36baee8224a__software_services_procedure_followed",
+   "kind": "noul",
+   "p": [
+    0.23537731170654297,
+    0.764622688293457
+   ]
+  },
+  {
+   "case_id": "1d720373b36baee8224a__software_services_action_routing",
+   "kind": "choice",
+   "p": [
+    0.9998936206102371,
+    4.957897613167006e-05,
+    2.665077590791043e-05,
+    3.0119485472823726e-05
+   ]
+  },
+  {
+   "case_id": "2444b5972655abb5a900__quality_assurance_procedure_followed",
+   "kind": "noul",
+   "p": [
+    0.00265962106641382,
+    0.9973403811454773
+   ]
+  },
+  {
+   "case_id": "2444b5972655abb5a900__software_services_case_status",
+   "kind": "choice",
+   "p": [
+    0.00028916416522406507,
+    0.0014643894683104008,
+    0.9912140220403671,
+    0.00030022719874978065,
+    0.006732207024469972
+   ]
+  },
+  {
+   "case_id": "2444b5972655abb5a900__quality_assurance_followup_required",
+   "kind": "noul",
+   "p": [
+    0.003271380322985351,
+    0.9967286586761475
+   ]
+  },
+  {
+   "case_id": "2444b5972655abb5a900__cybersecurity_operations_compliance_exposure",
+   "kind": "score",
+   "p": [
+    0.00023536224944109563,
+    0.0007396774708468001,
+    0.11283885687589645,
+    0.8861860930919647
+   ]
+  },
+  {
+   "case_id": "bf0fc5d44f06e61ebac9__cybersecurity_operations_case_status",
+   "kind": "choice",
+   "p": [
+    0.00023471070744562894,
+    0.9955186098814011,
+    0.0021166410442674533,
+    0.002130028180545196
+   ]
+  },
+  {
+   "case_id": "bf0fc5d44f06e61ebac9__software_services_priority_level",
+   "kind": "score",
+   "p": [
+    0.9971762448549271,
+    0.0027174688002560288,
+    8.338777297467459e-05,
+    2.2849765514365572e-05
+   ]
+  },
+  {
+   "case_id": "bf0fc5d44f06e61ebac9__quality_assurance_procedure_followed",
+   "kind": "noul",
+   "p": [
+    0.9815552532672882,
+    0.018444733694195747
+   ]
+  },
+  {
+   "case_id": "bf0fc5d44f06e61ebac9__cybersecurity_operations_action_routing",
+   "kind": "choice",
+   "p": [
+    0.882883220911026,
+    0.001567101920954883,
+    0.0026109011378139257,
+    0.08764251600950956,
+    0.025296258740127087
+   ]
+  },
+  {
+   "case_id": "f81e42dd6e81c9833ed9__quality_assurance_case_status",
+   "kind": "choice",
+   "p": [
+    0.03855145536363125,
+    0.9479597508907318,
+    0.0013444461073959246,
+    0.008103175554424524,
+    0.004041172956931405
+   ]
+  },
+  {
+   "case_id": "f81e42dd6e81c9833ed9__software_services_service_continuity_impact",
+   "kind": "score",
+   "p": [
+    0.00039928754267748445,
+    0.001157530496129766,
+    0.0034893519477918744,
+    0.994953840970993
+   ]
+  },
+  {
+   "case_id": "f81e42dd6e81c9833ed9__software_services_procedure_followed",
+   "kind": "noul",
+   "p": [
+    0.977241188287735,
+    0.022758812177926302
+   ]
+  },
+  {
+   "case_id": "f81e42dd6e81c9833ed9__quality_assurance_followup_required",
+   "kind": "noul",
+   "p": [
+    0.036867836490273476,
+    0.9631321728229523
+   ]
+  },
+  {
+   "case_id": "633464eca9b523f35cdf__software_services_priority_level",
+   "kind": "score",
+   "p": [
+    0.03230052936123684,
+    0.0858220187947154,
+    0.4148695282638073,
+    0.46700793504714966
+   ]
+  },
+  {
+   "case_id": "633464eca9b523f35cdf__software_services_procedure_followed",
+   "kind": "noul",
+   "p": [
+    0.06121295690536499,
+    0.9387870132923126
+   ]
+  },
+  {
+   "case_id": "633464eca9b523f35cdf__quality_assurance_case_status",
+   "kind": "choice",
+   "p": [
+    0.0013694206427317113,
+    0.09424149431288242,
+    0.8696818649768829,
+    0.024542725645005703,
+    0.010164487990550697
+   ]
+  },
+  {
+   "case_id": "633464eca9b523f35cdf__software_services_service_continuity_impact",
+   "kind": "score",
+   "p": [
+    0.0006452087181969546,
+    0.0010593643528409302,
+    0.027239176211878657,
+    0.9710562825202942
+   ]
+  },
+  {
+   "case_id": "6d17d08c3b976a1fdaf8__software_services_case_status",
+   "kind": "choice",
+   "p": [
+    8.210739542846568e-05,
+    6.832103827036917e-05,
+    0.9998310208320618,
+    1.856100925579085e-05
+   ]
+  },
+  {
+   "case_id": "6d17d08c3b976a1fdaf8__cybersecurity_operations_followup_urgency",
+   "kind": "score",
+   "p": [
+    0.0007692832368775271,
+    0.0019221727561671287,
+    0.22657301276922226,
+    0.770735502243042
+   ]
+  },
+  {
+   "case_id": "6d17d08c3b976a1fdaf8__quality_assurance_procedure_followed",
+   "kind": "noul",
+   "p": [
+    0.8750138878822327,
+    0.12498610094189644
+   ]
+  },
+  {
+   "case_id": "6d17d08c3b976a1fdaf8__software_services_procedure_followed",
+   "kind": "noul",
+   "p": [
+    0.9995660781860352,
+    0.00043392078077886254
+   ]
+  },
+  {
+   "case_id": "aef51eddb52ffaac01bb__software_services_service_continuity_impact",
+   "kind": "score",
+   "p": [
+    0.22778757847845554,
+    0.744437113404274,
+    0.025812829611822963,
+    0.001962485781405121
+   ]
+  },
+  {
+   "case_id": "aef51eddb52ffaac01bb__cybersecurity_operations_case_status",
+   "kind": "choice",
+   "p": [
+    0.0013323462026164634,
+    0.9357216656208038,
+    0.00045951006177347153,
+    0.003454489342402667,
+    0.05903201177716255
+   ]
+  },
+  {
+   "case_id": "aef51eddb52ffaac01bb__software_services_procedure_followed",
+   "kind": "noul",
+   "p": [
+    0.003272573812864721,
+    0.9967274367809296
+   ]
+  },
+  {
+   "case_id": "aef51eddb52ffaac01bb__cybersecurity_operations_action_routing",
+   "kind": "choice",
+   "p": [
+    3.2565439980203337e-06,
+    0.9999766945838928,
+    1.1228352320813428e-05,
+    5.586258680523315e-06,
+    3.2915726038140747e-06
+   ]
+  },
+  {
+   "case_id": "039e19fd8f5f2445befc__quality_assurance_case_status",
+   "kind": "choice",
+   "p": [
+    0.10703479032963514,
+    0.8699775487184525,
+    0.0017265898932237178,
+    0.021261111367493868
+   ]
+  },
+  {
+   "case_id": "039e19fd8f5f2445befc__quality_assurance_procedure_followed",
+   "kind": "noul",
+   "p": [
+    0.00033053188235498965,
+    0.9996694922447205
+   ]
+  },
+  {
+   "case_id": "039e19fd8f5f2445befc__cybersecurity_operations_compliance_exposure",
+   "kind": "score",
+   "p": [
+    0.01814800885040313,
+    0.4127777889370918,
+    0.5529393255710602,
+    0.016134880075696856
+   ]
+  },
+  {
+   "case_id": "039e19fd8f5f2445befc__software_services_action_routing",
+   "kind": "choice",
+   "p": [
+    0.5304493382573128,
+    0.034367169719189405,
+    0.42616744711995125,
+    0.006674420787021518,
+    0.0023415846517309546
+   ]
+  },
+  {
+   "case_id": "905e43588c7f36beadc2__quality_assurance_followup_required",
+   "kind": "noul",
+   "p": [
+    0.0070798121159896255,
+    0.9929201900959015
+   ]
+  },
+  {
+   "case_id": "905e43588c7f36beadc2__quality_assurance_case_status",
+   "kind": "choice",
+   "p": [
+    0.42711061239242554,
+    0.5423011630773544,
+    0.013722722069360316,
+    0.01686552702449262
+   ]
+  },
+  {
+   "case_id": "905e43588c7f36beadc2__software_services_case_status",
+   "kind": "choice",
+   "p": [
+    0.8890789300203323,
+    0.011410598435759312,
+    0.00011774150152632501,
+    0.09939274506177753
+   ]
+  },
+  {
+   "case_id": "905e43588c7f36beadc2__quality_assurance_evidence_strength",
+   "kind": "score",
+   "p": [
+    0.00144255964551121,
+    0.030787351075559855,
+    0.37053870037198067,
+    0.5972314104437828
+   ]
+  },
+  {
+   "case_id": "4340cef6d7aa4d4ca450__quality_assurance_followup_required",
+   "kind": "noul",
+   "p": [
+    0.003197264391928911,
+    0.9968027174472809
+   ]
+  },
+  {
+   "case_id": "4340cef6d7aa4d4ca450__quality_assurance_operational_risk",
+   "kind": "score",
+   "p": [
+    0.0003487817448331043,
+    0.8868886381387711,
+    0.11082994192838669,
+    0.0019326454785186797
+   ]
+  },
+  {
+   "case_id": "4340cef6d7aa4d4ca450__software_services_case_status",
+   "kind": "choice",
+   "p": [
+    0.7942898571491241,
+    0.0008722075144760311,
+    0.20427547860890627,
+    0.0005148058353370288,
+    4.765580092680466e-05
+   ]
+  },
+  {
+   "case_id": "4340cef6d7aa4d4ca450__software_services_service_continuity_impact",
+   "kind": "score",
+   "p": [
+    0.0036489873164100572,
+    0.4033971205353737,
+    0.592773549258709,
+    0.00018033517699223012
+   ]
+  },
+  {
+   "case_id": "0af27919fadb1837d6cc__software_services_procedure_followed",
+   "kind": "noul",
+   "p": [
+    0.0024593122070655227,
+    0.9975406527519226
+   ]
+  },
+  {
+   "case_id": "0af27919fadb1837d6cc__software_services_priority_level",
+   "kind": "score",
+   "p": [
+    0.001843189267674461,
+    0.004438180010765791,
+    0.006459175667259842,
+    0.9872594773769379
+   ]
+  },
+  {
+   "case_id": "0af27919fadb1837d6cc__cybersecurity_operations_case_status",
+   "kind": "choice",
+   "p": [
+    0.9412829726934433,
+    0.05604595236945897,
+    0.0007967602723510936,
+    0.0011186686751898378,
+    0.0007556149375886889
+   ]
+  },
+  {
+   "case_id": "0af27919fadb1837d6cc__quality_assurance_incident_response_category",
+   "kind": "choice",
+   "p": [
+    0.9890438616275787,
+    0.0039727734692860395,
+    0.0035231711517553777,
+    0.0034601918305270374
+   ]
+  },
+  {
+   "case_id": "f9aca95a4d0c9c224113__software_services_case_status",
+   "kind": "choice",
+   "p": [
+    2.6271132014699106e-05,
+    0.9992299973964691,
+    0.000718728113497491,
+    2.499062748029246e-05
+   ]
+  },
+  {
+   "case_id": "f9aca95a4d0c9c224113__software_services_procedure_followed",
+   "kind": "noul",
+   "p": [
+    0.9986322224140167,
+    0.0013677474053110927
+   ]
+  },
+  {
+   "case_id": "f9aca95a4d0c9c224113__cybersecurity_operations_action_routing",
+   "kind": "choice",
+   "p": [
+    0.9987349510192871,
+    0.00015207462092803326,
+    0.0002583671248430619,
+    0.0008546256067347713
+   ]
+  },
+  {
+   "case_id": "f9aca95a4d0c9c224113__cybersecurity_operations_compliance_exposure",
+   "kind": "score",
+   "p": [
+    0.0002085748647004948,
+    2.3312253688345663e-05,
+    0.0004293498132028617,
+    0.9993387758731842
+   ]
+  },
+  {
+   "case_id": "4c16a8d5266a98b1f3ea__quality_assurance_procedure_followed",
+   "kind": "noul",
+   "p": [
+    0.998936265707016,
+    0.0010637581290211529
+   ]
+  },
+  {
+   "case_id": "4c16a8d5266a98b1f3ea__software_services_procedure_followed",
+   "kind": "noul",
+   "p": [
+    0.12608357146382332,
+    0.8739164769649506
+   ]
+  },
+  {
+   "case_id": "4c16a8d5266a98b1f3ea__cybersecurity_operations_case_status",
+   "kind": "choice",
+   "p": [
+    0.9984984695911407,
+    9.484581914875889e-05,
+    0.0012425477470969781,
+    0.00016418359064118704
+   ]
+  },
+  {
+   "case_id": "4c16a8d5266a98b1f3ea__quality_assurance_operational_risk",
+   "kind": "score",
+   "p": [
+    0.15671915002167225,
+    0.41569579392671585,
+    0.3631052300333977,
+    0.0644798157736659
+   ]
+  }
+ ]
+}

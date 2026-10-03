@@ -39,8 +39,9 @@ def _common_prefix_length(sequences: list[list[int]]) -> int:
 def pack_chat_request(request: PackedRequest, tokenizer) -> PackedSequence:
     """単独chat-template promptと完全に同じtoken列を共有prefix + suffixへ変換する。"""
     prompts = [chat_prompt_ids(tokenizer, request.state, branch) for branch in request.branches]
-    state_len = _common_prefix_length(prompts)
-    if state_len == 0 or any(state_len == len(prompt) for prompt in prompts):
+    # A single branch shares its whole prompt with itself; keep at least one suffix token per branch.
+    state_len = min(_common_prefix_length(prompts), min(map(len, prompts)) - 1)
+    if state_len <= 0:
         raise ValueError("chat template prompts do not have a usable shared state prefix")
 
     input_ids = prompts[0][:state_len]

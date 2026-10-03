@@ -1,7 +1,7 @@
 """Gate 1-a: `h_opts`のpooling方式（末尾トークン1つ vs 選択肢区間mean-pool）を比較する。
 
 設計: `internal-docs/EXP_HEAD_VS_BACKBONE.md` §2 Gate 1-a。Gate 0でseverity_tableドメインの
-順序信号が凍結backboneに既に存在することを確認した（`results/2026-09-23_gate0_zeroshot_severity.md`,
+順序信号が凍結backboneに既に存在することを確認した（`results/logs/2026-09-23_gate0_zeroshot_severity.md`,
 tau+0.400・定数予測器でない）ため、backbone介入ではなくreadout側の安価な改善から着手する。
 
 候補選定は`EXP_HEAD_VS_BACKBONE.md` §1.5に従う: **訓練ドメイン（AG News/banking77/emotion/

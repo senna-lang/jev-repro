@@ -6,7 +6,7 @@ sst5最遠ペア二値 0.900、公式severity argmax 4/5一致を出すことが
 `<DECISION>`）の訓練済みpointer readoutは同じタスクで0.525（バイアス校正しても0.795）、
 severityは1/5しか当たらなかった。原因の切り分けの結果、地の文形式（選択肢をコンマ区切りで
 instructions内に埋め込み、末尾を"Answer:"で締める）が0.910・severity tau+0.600まで回復し、
-`model/packer.py::pack()`はこの形式に移行済み（詳細: `results/2026-09-22_score_diagnosis.md`）。
+`model/packer.py::pack()`はこの形式に移行済み（詳細: `results/logs/2026-09-22_score_diagnosis.md`）。
 このスクリプトは移行前の中間案（自然文マーカー／ラベル+解答キュー）を現行`pack()`と比較する
 ための記録として残す。
 

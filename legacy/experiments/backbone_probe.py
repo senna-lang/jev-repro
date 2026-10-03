@@ -1,7 +1,7 @@
 """凍結backboneがそもそも順序尺度（severity/frustration/report_quality/感情強度）の情報を
 持っているかを、readoutを通さずLM head zero-shotで測る（`EXP_HEAD_VS_BACKBONE.md` Gate 0）。
 
-`results/2026-09-22_score_diagnosis.md`で、Score readoutの病理を
+`results/logs/2026-09-22_score_diagnosis.md`で、Score readoutの病理を
 「選択肢固有バイアスの支配＋テキスト依存信号の弱さ」まで絞り込んだ。推論時のバイアス除去で
 前者は消えるが、公式severityは救われない（校正後も全stateをcosmeticに置く）。
 残る問いは、**信号が無いのはreadoutの学習の失敗なのか、凍結backboneにそもそも情報が
@@ -144,7 +144,7 @@ def probe_severity(causal_lm, tokenizer) -> None:
     """公式severity表の5stateを、readoutを通さずLM headで判定する（Gate 0の主判定）。
 
     `argmax`一致率だけだと定数予測器（常に同じレベルを返す）が公式の多数派レベルと偶然
-    一致して高得点に見える（`results/2026-09-22_score_diagnosis.md`の誤読を参照）。
+    一致して高得点に見える（`results/logs/2026-09-22_score_diagnosis.md`の誤読を参照）。
     Kendall tau・p値・定数予測器フラグ・予測幅を必ず併記する
     （`official_compare.py::run_severity_table`と同じ指標定義）。
     """

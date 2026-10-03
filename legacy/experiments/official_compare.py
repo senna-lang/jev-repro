@@ -368,7 +368,7 @@ def run_severity_table(model: JevModel, ex: dict) -> list[float]:
 
     argmax一致率だけだと定数予測器（常に同じレベルを返す）が公式の多数派レベルと
     偶然一致して高得点に見えることがある（2026-09-22の誤読を参照:
-    `results/2026-09-22_score_diagnosis.md`）。Kendall tauと定数予測器フラグを必ず
+    `results/logs/2026-09-22_score_diagnosis.md`）。Kendall tauと定数予測器フラグを必ず
     併記する。
     """
     print(f"\n=== {ex['name']}  (source: {ex['source']}) ===")

@@ -1,6 +1,6 @@
 """仮説2の検証: `support_tickets`のpriorityラベルに対する凍結backboneのzero-shot信号を測る。
 
-Gate 1-b（`results/2026-09-23_gate1_pooling_and_severity_data.md`）で、support_tickets priority
+Gate 1-b（`results/logs/2026-09-23_gate1_pooling_and_severity_data.md`）で、support_tickets priority
 データを訓練に追加してもOOD Kendall tauが実質ゼロ（+0.005, p=0.916）のまま動かなかった。
 2つの仮説が残る:
 

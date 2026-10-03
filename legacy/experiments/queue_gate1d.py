@@ -1,7 +1,7 @@
 """Gate 1-d: サポートチケットの部署振り分け（`data/ticket_queue.py`）をChoice訓練データに追加する。
 
 Gold V1のChoice（部署振り分け等）は学習済みpointerで0.475に留まる。採用根拠
-（`results/2026-09-24_signal_diagnosis.md`）:
+（`results/logs/2026-09-24_signal_diagnosis.md`）:
   - LM head zero-shotではqueueは0.320（chance 0.297）で有意でなかったが、
   - 凍結backbone隠れ状態のlinear probeではheld-out 0.480〜0.495（chance 0.200, p<1e-4）。
     本番pointerも学習readoutなので、採否はlinear probeを基準にする。

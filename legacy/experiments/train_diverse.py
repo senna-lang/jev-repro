@@ -3,7 +3,7 @@
 単一ドメイン・固定4択・固定順のAG Newsだけで訓練すると、readoutが「4文字列パターンの
 位置」に過学習する（実測: W_q,W_k更新分の実効ランク1.83、選択肢順を反転しただけでaccuracy
 0.808→0.183、base/reversed一致率9%）。AG News+banking77の2データセット混合＋順序シャッフル
-で一致率10%→71-80%まで改善したが（`results/2026-09-21_diverse_training_order_invariance.md`）、
+で一致率10%→71-80%まで改善したが（`results/logs/2026-09-21_diverse_training_order_invariance.md`）、
 公式Jev実例との再比較でtone（態度判定）・severity/frustration（順序尺度）は依然不一致が
 残った——訓練データにこのタスク型が一切存在しなかったため。
 

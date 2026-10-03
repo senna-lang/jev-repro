@@ -1,6 +1,6 @@
 """仮説1の検証: 非線形readout（`MLPPointerReadout`）でsupport_tickets OOD Kendall tauが改善するか。
 
-Gate 1-b（`results/2026-09-23_gate1_pooling_and_severity_data.md`）で、線形pointer readout
+Gate 1-b（`results/logs/2026-09-23_gate1_pooling_and_severity_data.md`）で、線形pointer readout
 （bilinear dot product、`PointerReadout`）はsupport_tickets held-outでtau+0.005のまま動かず、
 停止条件を満たさなかった。2つの仮説のうち仮説1（信号はあるが線形readoutでは取り出せない）を
 検証するため、`model/readout.py::MLPPointerReadout`（decision/option特徴を連結し2層MLPで

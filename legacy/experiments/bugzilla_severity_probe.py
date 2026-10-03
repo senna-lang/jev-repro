@@ -1,7 +1,7 @@
 """Q1検証: Bugzilla severityラベル（技術的深刻度）に対する凍結backboneのzero-shot信号を測る。
 
 `support_tickets`のpriorityで同じ手順を省略して無駄な訓練を回した反省
-（`results/2026-09-23_gate1_pooling_and_severity_data.md` Gate 1-b）を踏まえ、
+（`results/logs/2026-09-23_gate1_pooling_and_severity_data.md` Gate 1-b）を踏まえ、
 訓練データとして採用する前にQ1（テキストとラベルの相関が凍結backboneに既に見えるか）を
 zero-shot probeで確認する。`experiments/backbone_probe.py`と同じ手法。
 

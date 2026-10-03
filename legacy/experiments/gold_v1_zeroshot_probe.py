@@ -1,6 +1,6 @@
 """Gold V1のChoice/ScoreをLM head zero-shot（readoutを通さない）で測り、学習済みpointerと比べる。
 
-`results/2026-09-24_language_mismatch_hypothesis_test.md`とnull state校正（`evaluation/run.py
+`results/logs/2026-09-24_language_mismatch_hypothesis_test.md`とnull state校正（`evaluation/run.py
 --null-calibration`）の結果、Gold V1でScoreがランダム以下なのは加法バイアスでも言語でもないと
 分かった。残る切り分け:
     (a) 凍結backboneは信号を持つが、readoutが取り出せていない

@@ -1,7 +1,7 @@
 """弱いドメイン（emotion, sst5）でhead-only（readoutのみ）とgradual unfreezing（backbone末尾n層
 +readout）を比較するablation。
 
-`results/2026-09-22_score_diagnosis.md`で確認した通り、凍結backboneはLM head zero-shotなら
+`results/logs/2026-09-22_score_diagnosis.md`で確認した通り、凍結backboneはLM head zero-shotなら
 severityを4/5・sst5最遠ペアを0.900で解ける。にもかかわらず訓練済みpointer readoutは同じ課題で
 大きく劣る。これは2つの仮説を区別できていない:
 

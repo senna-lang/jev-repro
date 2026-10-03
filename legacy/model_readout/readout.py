@@ -46,7 +46,7 @@ class PointerReadout(nn.Module):
 
 class MLPPointerReadout(nn.Module):
     """`PointerReadout`の非線形版。線形readout（bilinear dot product）でOOD Kendall tauが
-    改善しなかった場合（`results/2026-09-23_gate1_pooling_and_severity_data.md` Gate 1-b:
+    改善しなかった場合（`results/logs/2026-09-23_gate1_pooling_and_severity_data.md` Gate 1-b:
     support_tickets held-outでtau+0.005のまま動かず）の候補。`decision`とdecisionと各選択肢の
     隠れ状態を`[h_dec; h_opt; h_dec*h_opt]`へ連結し、2層MLPでlogitへ落とす
     （elementwise積の項でbilinear相互作用を明示的に残しつつ、非線形性を追加する）。

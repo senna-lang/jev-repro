@@ -3,7 +3,7 @@
 Gate 1-b（`support_tickets`のpriority）はOOD Kendall tauが実質ゼロのままで停止条件を
 満たさず、並行検証（仮説1: 非線形readout／仮説2: zero-shotラベル相関）の結果、
 「`priority`ラベルがそもそもテキストと弱くしか相関していない」ことが主因と判明した
-（`results/2026-09-23_gate1_pooling_and_severity_data.md`）。
+（`results/logs/2026-09-23_gate1_pooling_and_severity_data.md`）。
 
 本Gateでは、`data/bugzilla_severity.py`（`AliArshad/Bugzilla_Eclipse_Bug_Reports_Dataset`、
 実際のバグトリアージのSeverity Label: blocker/critical/major/normal/minor/trivial, K=6）を
