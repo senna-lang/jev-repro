@@ -8,6 +8,7 @@ from __future__ import annotations
 import argparse
 import json
 import math
+import os
 import random
 from dataclasses import dataclass
 from pathlib import Path
@@ -151,6 +152,8 @@ def train_epoch(model, tokenizer, train_path: Path, states_path: Path, optimizer
             raise NonFiniteError(f"non-finite loss at row {index}")
         (loss / ROWS_PER_STEP).backward()
         total_loss += loss.item()
+        if index % 200 == 0:
+            print(json.dumps({"row": index, "of": len(rows), "mean_kl": total_loss / index}), flush=True)
         if index % ROWS_PER_STEP == 0 or index == len(rows):
             optimizer.step()
             if not all(torch.isfinite(p).all() for p in model.parameters() if p.requires_grad):
@@ -176,6 +179,7 @@ def main():
     parser.add_argument("--epochs", type=int, default=3)
     parser.add_argument("--resume", type=Path)
     args = parser.parse_args()
+    torch.set_num_threads(int(os.environ.get("VCPU", "8")))  # pods expose host cores; oversubscription makes CPU-side mask building ~1000x slower
     random.seed(args.seed); torch.manual_seed(args.seed)
     device = torch.device("cuda")
     model, tokenizer = load_lora_model(args.resume, args.backbone, args.training_path)
