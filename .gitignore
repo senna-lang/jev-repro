@@ -9,3 +9,6 @@ evaluation/private/
 .impeccable.md
 # Log-derived data (ticket 04): never publish
 data/speculation/
+
+# Large adapter weights (>100MB): publish via HF Hub, not git
+release/**/*.safetensors
