@@ -7,3 +7,5 @@ evaluation/private/
 .lociaction/
 .scratch/
 .impeccable.md
+# Log-derived data (ticket 04): never publish
+data/speculation/

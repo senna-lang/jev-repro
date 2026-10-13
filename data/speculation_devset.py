@@ -56,6 +56,19 @@ LABEL_DEFINITION = (
     "OR the answer explicitly hedges a claim as unverified/uncertain rather than asserting it as fact."
 )
 
+# v2 (2026-10-12, ticket 07 Q7): v1 plus three clarifications written from the human/Flash disagreement review
+# (.scratch/bonsai-next-lora/research/kappa-disagreement-review.md). v1 stays as is: labeled.jsonl was built with it.
+LABEL_DEFINITION_V2 = LABEL_DEFINITION + (
+    " Clarifications: (1) Only the user's message and the tool results actually shown for this turn count as "
+    "support. Earlier work, memory, and the assistant's own self-reports in edits or commit messages do not "
+    "replace an observed result; if the supporting part is cut off or not shown, treat the claim as unsupported (B). "
+    "(2) General technical knowledge stated as a verifiable fact is B unless the user's message or a shown tool "
+    "result supports it. Restating what a shown document says is A; leaping from it to causes, exhaustive "
+    "negatives (\"there is no X\"), or untested future effects is B. (3) Proposals, plans, questions, and "
+    "hypotheses explicitly marked as unverified are A if nothing else is asserted; but writing \"confirmed\", "
+    "\"done\", or \"the cause is\" requires evidence for that object within this turn."
+)
+
 
 # ---------------------------------------------------------------------------
 # Session parsing / turn extraction
@@ -257,9 +270,9 @@ def build_candidates(pool_target: int, seed: int) -> None:
 # ---------------------------------------------------------------------------
 
 
-def build_label_prompt(row: dict) -> str:
+def build_label_prompt(row: dict, definition: str = LABEL_DEFINITION) -> str:
     parts = [
-        LABEL_DEFINITION,
+        definition,
         "",
         f"User's message this turn:\n{row['user_text'] or '(none)'}",
     ]
