@@ -86,7 +86,7 @@ local LLMs, and transformers; duplicate hits are removed. Adjust `--days`,
 `--per-query`, and `--limit` to change the lookback, candidate pool, and
 number of recommendations (e.g. `./hn --per-query 2 --limit 3`).
 
-From any directory, use `/Users/senna/Documents/Repos/jeb-scratch/hn`.
+From any directory, use `./hn` at the repository root.
 The model loads afresh each run; scoring can take several minutes on a
 memory-constrained Mac. Use `--per-query 1` for a smaller daily list.
 
